@@ -1,0 +1,1621 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Cryo Status</name>
+  <width>1310</width>
+  <height>955</height>
+  <background_color>
+    <color name="IO TCS Backgroung" red="182" green="217" blue="228">
+    </color>
+  </background_color>
+  <widget type="group" version="2.0.0">
+    <name>   LN2 Tank</name>
+    <x>10</x>
+    <y>60</y>
+    <width>410</width>
+    <height>80</height>
+    <style>1</style>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="24.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="51" green="102" blue="150">
+      </color>
+    </foreground_color>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_4</name>
+      <text>Level</text>
+      <x>10</x>
+      <y>10</y>
+      <width>170</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_3</name>
+      <pv_name>Cryo-CBox:LN2:LI3685-PercOut</pv_name>
+      <x>180</x>
+      <y>10</y>
+      <width>110</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <precision>1</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>   LHe Dewar</name>
+    <x>10</x>
+    <y>160</y>
+    <width>410</width>
+    <height>515</height>
+    <style>1</style>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="24.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="51" green="102" blue="150">
+      </color>
+    </foreground_color>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_76</name>
+      <text>Heater state</text>
+      <x>10</x>
+      <y>165</y>
+      <width>170</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_77</name>
+      <text>Pressure</text>
+      <x>10</x>
+      <y>125</y>
+      <width>170</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_79</name>
+      <text>Level</text>
+      <x>10</x>
+      <y>5</y>
+      <width>170</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_27</name>
+      <pv_name>Cryo-Dwr:LHe:LI5200_Lt</pv_name>
+      <x>280</x>
+      <y>5</y>
+      <width>120</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <precision>1</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_28</name>
+      <pv_name>Cryo-Dwr:LHe:LI5200-PercOut</pv_name>
+      <x>180</x>
+      <y>5</y>
+      <width>85</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <precision>1</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_50</name>
+      <pv_name>Cryo-Dwr:Htr:VisuState</pv_name>
+      <x>180</x>
+      <y>165</y>
+      <width>120</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <precision>1</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_55</name>
+      <pv_name>Cryo-CBox:LP:PI3290</pv_name>
+      <x>180</x>
+      <y>125</y>
+      <width>120</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <precision>2</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_84</name>
+      <text>Level state</text>
+      <x>10</x>
+      <y>45</y>
+      <width>170</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_58</name>
+      <pv_name>Cryo-Dwr:LC5200:SwOnStat</pv_name>
+      <x>180</x>
+      <y>45</y>
+      <width>120</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <precision>1</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_71</name>
+      <pv_name>Cryo-Dwr:LC5200:SwOnStat</pv_name>
+      <x>340</x>
+      <y>45</y>
+      <width>30</width>
+      <height>30</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_85</name>
+      <text>Level setpoint</text>
+      <x>10</x>
+      <y>85</y>
+      <width>170</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_59</name>
+      <pv_name>Cryo-Dwr:LHe:LC5200_Sp</pv_name>
+      <x>180</x>
+      <y>85</y>
+      <width>120</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <precision>1</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_72</name>
+      <pv_name>Cryo-Dwr:Htr:VisuState</pv_name>
+      <x>340</x>
+      <y>165</y>
+      <width>30</width>
+      <height>30</height>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>   Mobile Dewar Filling</name>
+      <x>10</x>
+      <y>205</y>
+      <width>390</width>
+      <height>120</height>
+      <style>1</style>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="51" green="150" blue="150">
+        </color>
+      </foreground_color>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_56</name>
+        <pv_name>Cryo-ICn:Dwr:PmsT5220</pv_name>
+        <x>170</x>
+        <y>10</y>
+        <width>140</width>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+        <precision>1</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED_70</name>
+        <pv_name>Cryo-ICn:Dwr:PmsT5220</pv_name>
+        <x>330</x>
+        <y>10</y>
+        <width>30</width>
+        <height>30</height>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_82</name>
+        <text>Temperature</text>
+        <x>10</x>
+        <y>50</y>
+        <width>160</width>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_57</name>
+        <pv_name>Cryo-Dwr:LP:TI5220</pv_name>
+        <x>170</x>
+        <y>50</y>
+        <width>120</width>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+        <precision>1</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_83</name>
+        <text>Status</text>
+        <x>10</x>
+        <y>10</y>
+        <width>150</width>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>   Delivery to ...</name>
+      <x>10</x>
+      <y>345</y>
+      <width>390</width>
+      <height>120</height>
+      <style>1</style>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="51" green="150" blue="150">
+        </color>
+      </foreground_color>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_86</name>
+        <text>Gersemi</text>
+        <x>10</x>
+        <y>50</y>
+        <width>160</width>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_87</name>
+        <text>CM / HNOSS</text>
+        <x>10</x>
+        <y>10</y>
+        <width>160</width>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_62</name>
+        <pv_name>Cryo-Dwr:V:UY5202-PercOut</pv_name>
+        <x>170</x>
+        <y>10</y>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+        <precision>1</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_63</name>
+        <pv_name>Cryo-Dwr:V:UY5203-PercOut</pv_name>
+        <x>170</x>
+        <y>50</y>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+        <precision>1</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>   Helium Return</name>
+    <x>440</x>
+    <y>60</y>
+    <width>410</width>
+    <height>520</height>
+    <style>1</style>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="24.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="51" green="102" blue="150">
+      </color>
+    </foreground_color>
+    <transparent>true</transparent>
+    <widget type="group" version="2.0.0">
+      <name>   Impurity of Return GHe from ...</name>
+      <x>10</x>
+      <y>270</y>
+      <width>390</width>
+      <height>160</height>
+      <style>1</style>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="51" green="150" blue="150">
+        </color>
+      </foreground_color>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_133</name>
+        <text>House 4</text>
+        <x>10</x>
+        <y>10</y>
+        <width>170</width>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_92</name>
+        <pv_name>Cryo-Rec:LP:QI7230</pv_name>
+        <x>180</x>
+        <y>10</y>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+        <precision>1</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_134</name>
+        <text>House 6</text>
+        <x>10</x>
+        <y>50</y>
+        <width>170</width>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_93</name>
+        <pv_name>Cryo-Rec:LP:QI7240</pv_name>
+        <x>180</x>
+        <y>50</y>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+        <precision>1</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_135</name>
+        <text>House 7</text>
+        <x>10</x>
+        <y>90</y>
+        <width>170</width>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_94</name>
+        <pv_name>Cryo-Rec:LP:QI7250</pv_name>
+        <x>180</x>
+        <y>90</y>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+        <precision>1</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>   Gasbag</name>
+      <x>10</x>
+      <y>50</y>
+      <width>390</width>
+      <style>1</style>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="51" green="150" blue="150">
+        </color>
+      </foreground_color>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_136</name>
+        <text>Lidar distance</text>
+        <x>10</x>
+        <y>10</y>
+        <width>170</width>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_95</name>
+        <pv_name>Cryo-Rec:LP:GasBagLidar</pv_name>
+        <x>180</x>
+        <y>10</y>
+        <width>120</width>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+        <precision>1</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_137</name>
+        <text>Rate</text>
+        <x>10</x>
+        <y>50</y>
+        <width>170</width>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_138</name>
+        <text>Level</text>
+        <x>10</x>
+        <y>90</y>
+        <width>170</width>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_97</name>
+        <pv_name>Cryo-Rec:LP:BalloonLevel</pv_name>
+        <x>180</x>
+        <y>90</y>
+        <width>120</width>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+        <precision>1</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_99</name>
+        <pv_name>Cryo-Rec:LP:GasBagLidar-rate</pv_name>
+        <x>180</x>
+        <y>50</y>
+        <width>140</width>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+        <precision>1</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_174</name>
+        <text>Impurity</text>
+        <x>10</x>
+        <y>130</y>
+        <width>170</width>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_131</name>
+        <pv_name>Cryo-Rec:LP:QI7210</pv_name>
+        <x>180</x>
+        <y>130</y>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+        <precision>1</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_142</name>
+      <text>Bauer / Sauer</text>
+      <x>10</x>
+      <y>10</y>
+      <width>180</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_101</name>
+      <pv_name>Cryo-Rec:LP:GSH7225</pv_name>
+      <x>190</x>
+      <y>10</y>
+      <width>150</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <precision>1</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_87</name>
+      <pv_name>Cryo-Rec:LP:GSH7225</pv_name>
+      <x>360</x>
+      <y>10</y>
+      <width>30</width>
+      <height>30</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_171</name>
+      <text>Gashjul</text>
+      <x>10</x>
+      <y>450</y>
+      <width>180</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_128</name>
+      <pv_name>Cryo:HeVol:In</pv_name>
+      <x>190</x>
+      <y>450</y>
+      <width>150</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <precision>1</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>   LHe Production</name>
+    <x>870</x>
+    <y>60</y>
+    <width>430</width>
+    <height>885</height>
+    <style>1</style>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="24.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="51" green="102" blue="150">
+      </color>
+    </foreground_color>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_156</name>
+      <text>LN2 precooling</text>
+      <x>10</x>
+      <y>815</y>
+      <width>180</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_157</name>
+      <text>Coldmode</text>
+      <x>10</x>
+      <y>695</y>
+      <width>180</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_114</name>
+      <pv_name>Cryo-CBox:LN2:VisuState</pv_name>
+      <x>190</x>
+      <y>815</y>
+      <width>160</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <precision>2</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_82</name>
+      <pv_name>Cryo-CBox:LN2:VisuState</pv_name>
+      <x>375</x>
+      <y>815</y>
+      <width>30</width>
+      <height>30</height>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_115</name>
+      <pv_name>Cryo-CBox:CoolMode:VisuState</pv_name>
+      <x>190</x>
+      <y>695</y>
+      <width>160</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <precision>2</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_83</name>
+      <pv_name>Cryo-CBox:CoolMode:VisuState</pv_name>
+      <x>375</x>
+      <y>695</y>
+      <width>30</width>
+      <height>30</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_158</name>
+      <text>80K Adsorber</text>
+      <x>10</x>
+      <y>775</y>
+      <width>180</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_117</name>
+      <pv_name>Cryo-CBox:Ads80K:VisuState</pv_name>
+      <x>190</x>
+      <y>775</y>
+      <width>160</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <precision>2</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_84</name>
+      <pv_name>Cryo-CBox:Ads80K:VisuState</pv_name>
+      <x>375</x>
+      <y>775</y>
+      <width>30</width>
+      <height>30</height>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_118</name>
+      <pv_name>Cryo-Pur:Pur:VisuState</pv_name>
+      <x>190</x>
+      <y>735</y>
+      <width>160</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <precision>1</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_85</name>
+      <pv_name>Cryo-Pur:Pur:VisuState</pv_name>
+      <x>375</x>
+      <y>735</y>
+      <width>30</width>
+      <height>30</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_159</name>
+      <text>Purifier</text>
+      <x>10</x>
+      <y>735</y>
+      <width>180</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>   Kaeser Compressor   </name>
+      <x>10</x>
+      <y>20</y>
+      <width>410</width>
+      <height>160</height>
+      <style>1</style>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="51" green="150" blue="150">
+        </color>
+      </foreground_color>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_160</name>
+        <text>Status</text>
+        <x>10</x>
+        <y>10</y>
+        <width>200</width>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_163</name>
+        <text>Suction pressure</text>
+        <x>10</x>
+        <y>50</y>
+        <width>200</width>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_119</name>
+        <pv_name>Cryo-Cmp:C1:VisuState</pv_name>
+        <x>210</x>
+        <y>10</y>
+        <width>140</width>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+        <precision>1</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_121</name>
+        <pv_name>Cryo-Cmp:LP:PI2240</pv_name>
+        <x>210</x>
+        <y>50</y>
+        <width>125</width>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+        <precision>2</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_122</name>
+        <pv_name>Cryo-Cmp:HP:PI2160</pv_name>
+        <x>210</x>
+        <y>90</y>
+        <width>125</width>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+        <precision>2</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_162</name>
+        <text>Blow pressure</text>
+        <x>10</x>
+        <y>90</y>
+        <width>200</width>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED_86</name>
+        <pv_name>Cryo-Cmp:C1:VisuState</pv_name>
+        <x>365</x>
+        <y>10</y>
+        <width>30</width>
+        <height>30</height>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>   MCD</name>
+      <x>10</x>
+      <y>200</y>
+      <width>410</width>
+      <height>160</height>
+      <style>1</style>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="51" green="150" blue="150">
+        </color>
+      </foreground_color>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_149</name>
+        <text>Status</text>
+        <x>10</x>
+        <y>10</y>
+        <width>130</width>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED_81</name>
+        <pv_name>Cryo-MCD:MCD:VisuState</pv_name>
+        <x>365</x>
+        <y>10</y>
+        <width>30</width>
+        <height>30</height>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_113</name>
+        <pv_name>Cryo-MCD:MCD:VisuState</pv_name>
+        <x>140</x>
+        <y>10</y>
+        <width>160</width>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+        <precision>1</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_146</name>
+        <text>H2O</text>
+        <x>10</x>
+        <y>50</y>
+        <width>70</width>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_116</name>
+        <pv_name>Cryo-Cmp:LP:QI1_2160</pv_name>
+        <x>75</x>
+        <y>50</y>
+        <width>125</width>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+        <precision>1</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_147</name>
+        <text>N2</text>
+        <x>225</x>
+        <y>50</y>
+        <width>40</width>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_120</name>
+        <pv_name>Cryo-Cmp:LP:QI2_2160</pv_name>
+        <x>265</x>
+        <y>50</y>
+        <width>125</width>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+        <precision>1</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_148</name>
+        <text>CxHy</text>
+        <x>10</x>
+        <y>90</y>
+        <width>70</width>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_126</name>
+        <pv_name>Cryo-Cmp:LP:QI3_2160</pv_name>
+        <x>75</x>
+        <y>90</y>
+        <width>125</width>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+        <precision>1</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_154</name>
+        <text>Oil</text>
+        <x>225</x>
+        <y>90</y>
+        <width>40</width>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_127</name>
+        <pv_name>Cryo-Cmp:LP:QI4_2160</pv_name>
+        <x>265</x>
+        <y>90</y>
+        <width>125</width>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+        <precision>1</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>   Turbines</name>
+      <x>10</x>
+      <y>480</y>
+      <width>410</width>
+      <height>195</height>
+      <style>1</style>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="51" green="150" blue="150">
+        </color>
+      </foreground_color>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_77</name>
+        <pv_name>Cryo-Cbox:Tu1:VisuState</pv_name>
+        <x>90</x>
+        <y>40</y>
+        <width>150</width>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+        <precision>2</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_78</name>
+        <pv_name>Cryo-CBox:HP:SI3131</pv_name>
+        <x>90</x>
+        <y>80</y>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+        <precision>0</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_79</name>
+        <pv_name>Cryo-CBox:HP:TI3131</pv_name>
+        <x>90</x>
+        <y>120</y>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+        <precision>1</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_80</name>
+        <pv_name>Cryo-Cbox:Tu2:VisuState</pv_name>
+        <x>250</x>
+        <y>40</y>
+        <width>150</width>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+        <precision>2</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_81</name>
+        <pv_name>Cryo-CBox:HP:SI3151</pv_name>
+        <x>250</x>
+        <y>80</y>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+        <precision>0</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_82</name>
+        <pv_name>Cryo-CBox:HP:TI3151</pv_name>
+        <x>250</x>
+        <y>120</y>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+        <precision>1</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_104</name>
+        <text>State</text>
+        <x>10</x>
+        <y>40</y>
+        <width>80</width>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_105</name>
+        <text>Speed</text>
+        <x>10</x>
+        <y>80</y>
+        <width>80</width>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_106</name>
+        <text>Temp.</text>
+        <x>10</x>
+        <y>120</y>
+        <width>80</width>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_102</name>
+        <text>Turbine 1</text>
+        <x>90</x>
+        <y>10</y>
+        <width>150</width>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_103</name>
+        <text>Turbine 2</text>
+        <x>250</x>
+        <y>10</y>
+        <width>150</width>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>   Buffer Tank</name>
+      <x>10</x>
+      <y>380</y>
+      <width>410</width>
+      <height>80</height>
+      <style>1</style>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="51" green="150" blue="150">
+        </color>
+      </foreground_color>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_169</name>
+        <text>Pressure</text>
+        <x>10</x>
+        <y>10</y>
+        <width>140</width>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_125</name>
+        <pv_name>Cryo-Cmp:HP:PI2170</pv_name>
+        <x>150</x>
+        <y>10</y>
+        <width>110</width>
+        <height>30</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+        <precision>1</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>   High Pressure Storage</name>
+    <x>10</x>
+    <y>695</y>
+    <width>410</width>
+    <height>160</height>
+    <style>1</style>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="24.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="51" green="102" blue="150">
+      </color>
+    </foreground_color>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_139</name>
+      <text>Pressure</text>
+      <x>10</x>
+      <y>10</y>
+      <width>170</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_96</name>
+      <pv_name>Cryo-CBox:Pur:PI3404</pv_name>
+      <x>180</x>
+      <y>10</y>
+      <width>120</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <precision>1</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_140</name>
+      <text>Temperature</text>
+      <x>10</x>
+      <y>50</y>
+      <width>170</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_141</name>
+      <text># bundles</text>
+      <x>10</x>
+      <y>90</y>
+      <width>170</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_98</name>
+      <pv_name>Cryo-HeVol:HPstorage:Bundles</pv_name>
+      <x>180</x>
+      <y>90</y>
+      <width>120</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <precision>0</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_100</name>
+      <pv_name>Env-Container:TT001-smooth:sRdV</pv_name>
+      <x>180</x>
+      <y>50</y>
+      <width>120</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <precision>1</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>   Environmental Parameters</name>
+    <x>440</x>
+    <y>600</y>
+    <width>410</width>
+    <height>240</height>
+    <style>1</style>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="24.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="51" green="102" blue="150">
+      </color>
+    </foreground_color>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_143</name>
+      <text>Outer temperature</text>
+      <x>10</x>
+      <y>10</y>
+      <width>220</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_102</name>
+      <pv_name>Env-Container:TT001:sRdV</pv_name>
+      <x>230</x>
+      <y>10</y>
+      <width>120</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <precision>1</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_144</name>
+      <text>Inner temperature</text>
+      <x>10</x>
+      <y>50</y>
+      <width>220</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_145</name>
+      <text>Inner humidity</text>
+      <x>10</x>
+      <y>90</y>
+      <width>220</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_103</name>
+      <pv_name>Env-FREIA:TT001:sRdV</pv_name>
+      <x>230</x>
+      <y>50</y>
+      <width>120</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <precision>1</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_104</name>
+      <pv_name>Env-FREIA:HT002:sRdV</pv_name>
+      <x>230</x>
+      <y>90</y>
+      <width>120</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <precision>1</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_167</name>
+      <text>Comp. room temp.</text>
+      <x>10</x>
+      <y>170</y>
+      <width>220</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_123</name>
+      <pv_name>Env-CmpRoom:TT001:sRdV</pv_name>
+      <x>230</x>
+      <y>170</y>
+      <width>120</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <precision>1</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_168</name>
+      <text>Inner pressure</text>
+      <x>10</x>
+      <y>130</y>
+      <width>220</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_124</name>
+      <pv_name>Env-FREIA:PT001:sRdV</pv_name>
+      <x>230</x>
+      <y>130</y>
+      <width>150</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <precision>1</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_150</name>
+    <text>Overview of Cryo Centrum</text>
+    <x>10</x>
+    <y>10</y>
+    <width>1290</width>
+    <height>50</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="36.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="open_display">
+        <file>HeliumBalance.bob</file>
+        <target>replace</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>Go to "Helium Balance"</text>
+    <x>451</x>
+    <y>861</y>
+    <width>370</width>
+    <height>60</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="24.0">
+      </font>
+    </font>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+</display>
