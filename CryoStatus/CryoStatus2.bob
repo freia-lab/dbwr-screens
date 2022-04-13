@@ -1542,7 +1542,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_123</name>
-      <pv_name>Env-CmpRoom:TT001:sRdV</pv_name>
+      <pv_name>Cryo-Rec:LP:TI7215</pv_name>
       <x>230</x>
       <y>170</y>
       <width>120</width>

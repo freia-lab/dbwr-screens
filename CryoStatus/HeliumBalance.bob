@@ -1313,7 +1313,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_100</name>
-      <pv_name>Env-CmpRoom:TT001:sRdV</pv_name>
+      <pv_name>Cryo-Rec:LP:TI7215</pv_name>
       <x>3</x>
       <y>165</y>
       <width>143</width>
