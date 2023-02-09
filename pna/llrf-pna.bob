@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
-  <name>laser-lab</name>
+  <name>PNA</name>
   <macros>
-    <P>Llab-</P>
+    <P>LLRF-PNA</P>
   </macros>
-  <width>900</width>
-  <height>880</height>
+  <width>1500</width>
+  <height>1200</height>
   <widget type="label" version="2.0.0">
     <name>Label</name>
     <class>TITLE</class>
-    <text>FREIA Laser Lab</text>
+    <text>PNA N5221A</text>
     <x use_class="true">20</x>
     <y use_class="true">0</y>
     <width>550</width>
@@ -27,45 +27,42 @@
     <vertical_alignment use_class="true">1</vertical_alignment>
     <wrap_words use_class="true">false</wrap_words>
   </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_3</name>
+    <text>Intrument Id:</text>
+    <x>460</x>
+    <y>20</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_1</name>
+    <pv_name>$(P):Id</pv_name>
+    <x>570</x>
+    <y>20</y>
+    <width>410</width>
+    <format>6</format>
+  </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display</name>
     <macros>
-      <S>Laser:</S>
+      <MTRNR>1</MTRNR>
+      <N>2</N>
     </macros>
-    <file>helper-opi-files/laser-stat-simple.bob</file>
-    <x>30</x>
-    <y>60</y>
-    <width>300</width>
-    <height>570</height>
+    <file>helper-opi-files/one-trace.bob</file>
+    <x>20</x>
+    <y>50</y>
+    <width>680</width>
+    <height>1150</height>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_1</name>
     <macros>
-      <S>OPA:</S>
+      <MTRNR>2</MTRNR>
+      <N>3</N>
     </macros>
-    <file>helper-opi-files/opa-stat-simple.bob</file>
-    <x>330</x>
-    <y>60</y>
-    <width>280</width>
-    <height>230</height>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_2</name>
-    <macros>
-      <S>EPP:</S>
-    </macros>
-    <file>helper-opi-files/epp-stat-simple.bob</file>
-    <x>330</x>
-    <y>290</y>
-    <width>280</width>
-    <height>170</height>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_3</name>
-    <file>helper-opi-files/laser-beam-status.bob</file>
-    <x>330</x>
-    <y>460</y>
-    <width>270</width>
-    <height>170</height>
+    <file>helper-opi-files/one-trace.bob</file>
+    <x>690</x>
+    <y>50</y>
+    <width>680</width>
+    <height>1150</height>
   </widget>
 </display>
