@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Display</name>
+  <width>1870</width>
+  <height>1030</height>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_2</name>
+    <width>1894</width>
+    <height>1060</height>
+    <line_color>
+      <color name="GREEN-BORDER" red="40" green="140" blue="40">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="GREEN-BACKGROUND" red="189" green="208" blue="189">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_65</name>
+    <text>Screen switching variable "ioctmpt:screen-vis" not available</text>
+    <x>320</x>
+    <y>470</y>
+    <width>1290</width>
+    <height>170</height>
+    <font>
+      <font name="HUGE-SERIF-BOLD" family="Source Serif Pro" style="BOLD" size="36.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_0</name>
+    <file>../FREIA-status.bob</file>
+    <width>1870</width>
+    <height>1030</height>
+    <visible>false</visible>
+    <rules>
+      <rule name="vis" prop_id="visible" out_exp="false">
+        <exp bool_exp="pvInt0 == 0">
+          <value>true</value>
+        </exp>
+        <pv_name>ioctmp:screen-vis</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_1</name>
+    <file>FREIA-status.bob</file>
+    <width>1870</width>
+    <height>1030</height>
+    <visible>false</visible>
+    <rules>
+      <rule name="vis" prop_id="visible" out_exp="false">
+        <exp bool_exp="pvInt0 == 1">
+          <value>true</value>
+        </exp>
+        <pv_name>ioctmp:screen-vis</pv_name>
+      </rule>
+    </rules>
+  </widget>
+</display>
