@@ -1,6 +1,6 @@
 #!/bin/bash
 
-rsync -e ssh -av \
+rsync -e ssh -av --delete \
     --exclude=deploy.sh* \
     --exclude=.git* \
     --exclude=*~ \
@@ -8,7 +8,7 @@ rsync -e ssh -av \
     --exclude=README.md \
     . konrad@freia.physics.uu.se:/var/www/CSS/dbwrDir
 
-rsync -e ssh -av \
+rsync -e ssh -av --delete \
     --exclude=install.sh* \
     --exclude=.git* \
     --exclude=*~ \
