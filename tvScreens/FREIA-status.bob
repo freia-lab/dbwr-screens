@@ -1090,7 +1090,7 @@
       </rules>
       <widget type="label" version="2.0.0">
         <name>Label_44</name>
-        <text>Cav1 Temp</text>
+        <text>Magnet Temp</text>
         <width>240</width>
         <height>48</height>
         <font>
@@ -1102,7 +1102,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_34</name>
-        <pv_name>CstatV-LHe:TT665L:sRdV</pv_name>
+        <pv_name>CstatV-LHe:TT665M:sRdV</pv_name>
         <x>240</x>
         <y>4</y>
         <width>150</width>
