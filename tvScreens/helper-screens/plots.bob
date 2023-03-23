@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>plots</name>
+  <width>1850</width>
+  <height>950</height>
+  <widget type="databrowser" version="2.0.0">
+    <name>Data Browser</name>
+    <file>../plots/cryo-plant.plt</file>
+    <x>200</x>
+    <y>20</y>
+    <width>1520</width>
+    <height>890</height>
+    <visible>false</visible>
+    <rules>
+      <rule name="Visibility" prop_id="visible" out_exp="false">
+        <exp bool_exp="pvInt0==1">
+          <value>true</value>
+        </exp>
+        <pv_name>$(pv_name)</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <x>200</x>
+    <y>20</y>
+    <width>1520</width>
+    <height>890</height>
+    <visible>false</visible>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="Visibility" prop_id="visible" out_exp="false">
+        <exp bool_exp="pvInt0==2">
+          <value>true</value>
+        </exp>
+        <pv_name>$(pv_name)</pv_name>
+      </rule>
+    </rules>
+    <widget type="group" version="2.0.0">
+      <name>Group</name>
+      <macros>
+        <N>1</N>
+        <T>TT115</T>
+      </macros>
+      <width>1520</width>
+      <height>440</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="databrowser" version="2.0.0">
+        <name>cavity1</name>
+        <macros>
+          <N>1</N>
+          <T>TT115</T>
+        </macros>
+        <file>../plots/hnoss.plt</file>
+        <width>1520</width>
+        <height>440</height>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group_1</name>
+      <macros>
+        <N>2</N>
+        <T>TT116</T>
+      </macros>
+      <y>450</y>
+      <width>1520</width>
+      <height>440</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="databrowser" version="2.0.0">
+        <name>cavity2</name>
+        <file>../plots/hnoss.plt</file>
+        <width>1520</width>
+        <height>440</height>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <x>200</x>
+    <y>20</y>
+    <width>1520</width>
+    <height>890</height>
+    <visible>false</visible>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="Visibility" prop_id="visible" out_exp="false">
+        <exp bool_exp="pvInt0==3">
+          <value>true</value>
+        </exp>
+        <pv_name>$(pv_name)</pv_name>
+      </rule>
+    </rules>
+    <widget type="group" version="2.0.0">
+      <name>Group_2</name>
+      <width>1520</width>
+      <height>290</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="databrowser" version="2.0.0">
+        <name>magnet_temp</name>
+        <file>../plots/magnet-temp.plt</file>
+        <width>1520</width>
+        <height>290</height>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group_3</name>
+      <macros>
+        <N>1</N>
+      </macros>
+      <y>300</y>
+      <width>1520</width>
+      <height>290</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="databrowser" version="2.0.0">
+        <name>magnet_current1</name>
+        <file>../plots/magnet-current.plt</file>
+        <width>1520</width>
+        <height>290</height>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group_4</name>
+      <macros>
+        <N>2</N>
+      </macros>
+      <y>600</y>
+      <width>1520</width>
+      <height>290</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="databrowser" version="2.0.0">
+        <name>magnet_current2</name>
+        <file>../plots/magnet-current.plt</file>
+        <width>1520</width>
+        <height>290</height>
+      </widget>
+    </widget>
+  </widget>
+</display>

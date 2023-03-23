@@ -2,8 +2,7 @@
 <display version="2.0.0">
   <name>FREIA-status-tv</name>
   <macros>
-    <PVNAM>Env-Safety:Bunker1:VisuState</PVNAM>
-    <pv_name>sim://ramp(0,2,5)</pv_name>
+    <pv_name>ioctmp:screen-vis</pv_name>
   </macros>
   <width>1870</width>
   <height>1030</height>
@@ -58,7 +57,31 @@
     </macros>
     <file>helper-screens/status.bob</file>
     <y>60</y>
-    <width>1850</width>
+    <width>1860</width>
     <height>970</height>
+    <rules>
+      <rule name="Visible" prop_id="visible" out_exp="false">
+        <exp bool_exp="pvInt0!=0">
+          <value>false</value>
+        </exp>
+        <pv_name>$(pv_name)</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>plots</name>
+    <file>helper-screens/plots-magnet.bob</file>
+    <y>60</y>
+    <width>1860</width>
+    <height>970</height>
+    <visible>false</visible>
+    <rules>
+      <rule name="Visible" prop_id="visible" out_exp="false">
+        <exp bool_exp="pvInt0&gt;0">
+          <value>true</value>
+        </exp>
+        <pv_name>$(pv_name)</pv_name>
+      </rule>
+    </rules>
   </widget>
 </display>
