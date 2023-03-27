@@ -66,13 +66,13 @@
       <x>20</x>
       <y>500</y>
       <width>440</width>
-      <height>230</height>
+      <height>365</height>
       <style>3</style>
       <transparent>true</transparent>
       <rules>
         <rule name="Visibility" prop_id="visible" out_exp="false">
-          <exp bool_exp="pvInt0 != 2">
-            <value>false</value>
+          <exp bool_exp="(pvInt0 == 1) or (pvInt0 == 2)">
+            <value>true</value>
           </exp>
           <pv_name>$(P)Laser:VisuState</pv_name>
         </rule>
@@ -93,6 +93,20 @@
         <name>Text Update_5</name>
         <pv_name>$(P)OPA:Wavelength:sRdV</pv_name>
         <y>110</y>
+        <width>440</width>
+        <height>120</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="72.0">
+          </font>
+        </font>
+        <transparent>true</transparent>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_6</name>
+        <pv_name>$(P)Laser:outPwr:sRdV</pv_name>
+        <y>230</y>
         <width>440</width>
         <height>120</height>
         <font>
