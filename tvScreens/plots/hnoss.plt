@@ -49,7 +49,7 @@
     <pv>
       <display_name>Cavity $(N) ($(T))</display_name>
       <visible>true</visible>
-      <name>CstatH-LHe:$(T):sRdV</name>
+      <name>CstatH-LHe:$(T):sRdV-dec</name>
       <axis>0</axis>
       <color>
         <red>255</red>
@@ -63,7 +63,7 @@
       <point_size>2</point_size>
       <waveform_index>0</waveform_index>
       <period>0.0</period>
-      <ring_size>5000</ring_size>
+      <ring_size>3000</ring_size>
       <request>OPTIMIZED</request>
       <archive>
         <name>Main</name>

@@ -49,7 +49,7 @@
     <pv>
       <display_name>Current $(N)</display_name>
       <visible>true</visible>
-      <name>MAG-RCH$(N):I_MEAS</name>
+      <name>MAG-RCH$(N):I_MEAS-dec</name>
       <axis>0</axis>
       <color>
         <red>255</red>
@@ -63,7 +63,7 @@
       <point_size>2</point_size>
       <waveform_index>0</waveform_index>
       <period>0.0</period>
-      <ring_size>5000</ring_size>
+      <ring_size>3000</ring_size>
       <request>OPTIMIZED</request>
       <archive>
         <name>pbraw://130.238.200.137:17668/retrieval</name>

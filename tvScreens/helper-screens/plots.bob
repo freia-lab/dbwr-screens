@@ -4,7 +4,7 @@
   <width>1850</width>
   <height>950</height>
   <widget type="databrowser" version="2.0.0">
-    <name>Data Browser</name>
+    <name>CryoPlantPlots (Screen 1)</name>
     <file>../plots/cryo-plant.plt</file>
     <x>200</x>
     <y>20</y>
@@ -21,7 +21,7 @@
     </rules>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Group</name>
+    <name>HNOSS Cavity T plots (Screen 2)</name>
     <x>200</x>
     <y>20</y>
     <width>1520</width>
@@ -78,7 +78,7 @@
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Group</name>
+    <name>Magnet T and I plots (screen 3)</name>
     <x>200</x>
     <y>20</y>
     <width>1520</width>

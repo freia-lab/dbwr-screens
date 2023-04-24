@@ -49,7 +49,7 @@
     <pv>
       <display_name>Cryo-Dwr:LHe:LI5200-PercOut</display_name>
       <visible>true</visible>
-      <name>Cryo-Dwr:LHe:LI5200-PercOut</name>
+      <name>Cryo-Dwr:LHe:LI5200-PercOut-dec</name>
       <axis>0</axis>
       <color>
         <red>255</red>
@@ -63,7 +63,7 @@
       <point_size>2</point_size>
       <waveform_index>0</waveform_index>
       <period>0.0</period>
-      <ring_size>5000</ring_size>
+      <ring_size>3000</ring_size>
       <request>OPTIMIZED</request>
       <archive>
         <name>Main</name>
@@ -74,7 +74,7 @@
     <pv>
       <display_name>Cryo-CBox:LN2:LI3685-PercOut</display_name>
       <visible>true</visible>
-      <name>Cryo-CBox:LN2:LI3685-PercOut</name>
+      <name>Cryo-CBox:LN2:LI3685-PercOut-dec</name>
       <axis>0</axis>
       <color>
         <red>255</red>
@@ -88,7 +88,7 @@
       <point_size>2</point_size>
       <waveform_index>0</waveform_index>
       <period>0.0</period>
-      <ring_size>5000</ring_size>
+      <ring_size>3000</ring_size>
       <request>OPTIMIZED</request>
       <archive>
         <name>Main</name>

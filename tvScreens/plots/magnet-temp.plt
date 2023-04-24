@@ -36,8 +36,8 @@
         <green>0</green>
         <blue>0</blue>
       </color>
-      <min>4.21002</min>
-      <max>4.31958</max>
+      <min>-13.950000000000001</min>
+      <max>292.95</max>
       <grid>true</grid>
       <autoscale>true</autoscale>
       <log_scale>false</log_scale>
@@ -49,7 +49,7 @@
     <pv>
       <display_name>Top (TT665M)</display_name>
       <visible>true</visible>
-      <name>CstatV-LHe:TT665M:sRdV</name>
+      <name>CstatV-LHe:TT665M:sRdV-dec</name>
       <axis>0</axis>
       <color>
         <red>255</red>
@@ -63,7 +63,7 @@
       <point_size>2</point_size>
       <waveform_index>0</waveform_index>
       <period>0.0</period>
-      <ring_size>5000</ring_size>
+      <ring_size>3000</ring_size>
       <request>OPTIMIZED</request>
       <archive>
         <name>Main</name>
@@ -74,7 +74,7 @@
     <pv>
       <display_name>Bottom (TT663M)</display_name>
       <visible>true</visible>
-      <name>CstatV-LHe:TT663M:sRdV</name>
+      <name>CstatV-LHe:TT663M:sRdV-dec</name>
       <axis>0</axis>
       <color>
         <red>0</red>
@@ -88,7 +88,7 @@
       <point_size>2</point_size>
       <waveform_index>0</waveform_index>
       <period>0.0</period>
-      <ring_size>5000</ring_size>
+      <ring_size>3000</ring_size>
       <request>OPTIMIZED</request>
       <archive>
         <name>pbraw://130.238.200.137:17668/retrieval</name>

@@ -2,7 +2,7 @@
 <display version="2.0.0">
   <name>FREIA-status-tv</name>
   <macros>
-    <pv_name>ioctmp:screen-vis</pv_name>
+    <pv_name>FREIA-Info:scrnSelect</pv_name>
   </macros>
   <width>1870</width>
   <height>1030</height>
@@ -70,7 +70,7 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>plots</name>
-    <file>helper-screens/plots.bob</file>
+    <file>helper-screens/plots-magnet.bob</file>
     <y>60</y>
     <width>1860</width>
     <height>970</height>

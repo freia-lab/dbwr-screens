@@ -18,7 +18,8 @@
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label_65</name>
-    <text>Screen switching variable "ioctmpt:screen-vis" not available</text>
+    <text>Screen switching variable "FREIA-Info:scrnSelect" not available
+or selects an non existing display</text>
     <x>320</x>
     <y>470</y>
     <width>1290</width>
@@ -39,7 +40,7 @@
         <exp bool_exp="pvInt0 == 0">
           <value>true</value>
         </exp>
-        <pv_name>ioctmp:screen-vis</pv_name>
+        <pv_name>FREIA-Info:scrnSelect</pv_name>
       </rule>
     </rules>
   </widget>
@@ -54,7 +55,7 @@
         <exp bool_exp="pvInt0 == 1">
           <value>true</value>
         </exp>
-        <pv_name>ioctmp:screen-vis</pv_name>
+        <pv_name>FREIA-Info:scrnSelect</pv_name>
       </rule>
     </rules>
   </widget>
