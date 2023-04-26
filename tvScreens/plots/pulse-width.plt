@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <databrowser>
-  <title>LHe and LN2 Levels</title>
+  <title>Pulse Width</title>
   <show_legend>true</show_legend>
   <show_toolbar>true</show_toolbar>
   <grid>true</grid>
@@ -27,8 +27,8 @@
   <axes>
     <axis>
       <visible>true</visible>
-      <name>Level:</name>
-      <use_axis_name>true</use_axis_name>
+      <name>Pulse Width</name>
+      <use_axis_name>false</use_axis_name>
       <use_trace_names>true</use_trace_names>
       <right>false</right>
       <color>
@@ -36,10 +36,10 @@
         <green>0</green>
         <blue>0</blue>
       </color>
-      <min>0.0</min>
-      <max>100.0</max>
+      <min>-175.0</min>
+      <max>3675.0</max>
       <grid>true</grid>
-      <autoscale>false</autoscale>
+      <autoscale>true</autoscale>
       <log_scale>false</log_scale>
     </axis>
   </axes>
@@ -47,9 +47,9 @@
   </annotations>
   <pvlist>
     <pv>
-      <display_name>Cryo-Dwr:LHe:LI5200-PercOut</display_name>
+      <display_name>PlsWdth</display_name>
       <visible>true</visible>
-      <name>Cryo-Dwr:LHe:LI5200-PercOut-dec</name>
+      <name>LLRF:SigGen:PlsWdth-dec</name>
       <axis>0</axis>
       <color>
         <red>255</red>
@@ -66,32 +66,7 @@
       <ring_size>2000</ring_size>
       <request>OPTIMIZED</request>
       <archive>
-        <name>Main</name>
-        <url>pbraw://130.238.200.137:17668/retrieval</url>
-        <key>1</key>
-      </archive>
-    </pv>
-    <pv>
-      <display_name>Cryo-CBox:LN2:LI3685-PercOut</display_name>
-      <visible>true</visible>
-      <name>Cryo-CBox:LN2:LI3685-PercOut-dec</name>
-      <axis>0</axis>
-      <color>
-        <red>255</red>
-        <green>127</green>
-        <blue>0</blue>
-      </color>
-      <trace_type>AREA</trace_type>
-      <linewidth>2</linewidth>
-      <line_style>SOLID</line_style>
-      <point_type>NONE</point_type>
-      <point_size>2</point_size>
-      <waveform_index>0</waveform_index>
-      <period>0.0</period>
-      <ring_size>2000</ring_size>
-      <request>OPTIMIZED</request>
-      <archive>
-        <name>Main</name>
+        <name>pbraw://130.238.200.137:17668/retrieval</name>
         <url>pbraw://130.238.200.137:17668/retrieval</url>
         <key>1</key>
       </archive>
@@ -99,21 +74,21 @@
     <pv>
       <display_name></display_name>
       <visible>true</visible>
-      <name>loc://min(0)</name>
+      <name>sim://const(0)</name>
       <axis>0</axis>
       <color>
         <red>0</red>
         <green>255</green>
         <blue>0</blue>
       </color>
-      <trace_type>SINGLE_LINE</trace_type>
+      <trace_type>AREA</trace_type>
       <linewidth>0</linewidth>
       <line_style>SOLID</line_style>
       <point_type>NONE</point_type>
-      <point_size>0</point_size>
+      <point_size>2</point_size>
       <waveform_index>0</waveform_index>
       <period>0.0</period>
-      <ring_size>5000</ring_size>
+      <ring_size>2000</ring_size>
       <request>OPTIMIZED</request>
       <archive>
         <name>pbraw://130.238.200.137:17668/retrieval</name>

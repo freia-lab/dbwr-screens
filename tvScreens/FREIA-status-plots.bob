@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2023-04-26 14:23:42 by konrad-->
 <display version="2.0.0">
   <name>FREIA-status-tv</name>
   <macros>
@@ -70,7 +71,7 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>plots</name>
-    <file>helper-screens/plots-magnet.bob</file>
+    <file>helper-screens/all-plots.bob</file>
     <y>60</y>
     <width>1860</width>
     <height>970</height>
@@ -87,8 +88,9 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update</name>
     <pv_name>$(pv_name)</pv_name>
-    <x>1270</x>
+    <x>1460</x>
     <y>20</y>
+    <width>20</width>
     <precision>0</precision>
     <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>

@@ -36,10 +36,10 @@
         <green>0</green>
         <blue>0</blue>
       </color>
-      <min>293.24255</min>
-      <max>294.04445</max>
+      <min>0.0</min>
+      <max>293.24255</max>
       <grid>true</grid>
-      <autoscale>true</autoscale>
+      <autoscale>false</autoscale>
       <log_scale>false</log_scale>
     </axis>
   </axes>
@@ -63,7 +63,7 @@
       <point_size>2</point_size>
       <waveform_index>0</waveform_index>
       <period>0.0</period>
-      <ring_size>3000</ring_size>
+      <ring_size>2000</ring_size>
       <request>OPTIMIZED</request>
       <archive>
         <name>Main</name>
