@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2023-05-05 11:19:05 by konrad-->
+<display version="2.0.0">
+  <name>plots</name>
+  <macros>
+    <MASK>FREIA-Info:scrnMask</MASK>
+  </macros>
+  <width>1850</width>
+  <height>950</height>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle</name>
+    <width>1850</width>
+    <height>950</height>
+    <line_width>0</line_width>
+    <line_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="databrowser" version="2.0.0">
+    <name>Cryo plant plot (screen 1)</name>
+    <file>../plots/cryo-plant.plt</file>
+    <x>200</x>
+    <y>20</y>
+    <width>1520</width>
+    <height>890</height>
+    <visible>false</visible>
+    <rules>
+      <rule name="Visibility" prop_id="visible" out_exp="false">
+        <exp bool_exp="pvInt0==1">
+          <value>true</value>
+        </exp>
+        <pv_name>$(pv_name)</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Magnet plots (screen 2)</name>
+    <x>200</x>
+    <y>20</y>
+    <width>1520</width>
+    <height>890</height>
+    <visible>false</visible>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="Visibility" prop_id="visible" out_exp="false">
+        <exp bool_exp="pvInt0==2">
+          <value>true</value>
+        </exp>
+        <pv_name>$(pv_name)</pv_name>
+      </rule>
+    </rules>
+    <widget type="group" version="2.0.0">
+      <name>Group_2</name>
+      <width>1520</width>
+      <height>290</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="databrowser" version="2.0.0">
+        <name>magnet_temp</name>
+        <file>../plots/magnet-temp.plt</file>
+        <width>1520</width>
+        <height>290</height>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group_3</name>
+      <macros>
+        <N>1</N>
+      </macros>
+      <y>300</y>
+      <width>1520</width>
+      <height>290</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="databrowser" version="2.0.0">
+        <name>magnet_current1</name>
+        <file>../plots/magnet-current.plt</file>
+        <width>1520</width>
+        <height>290</height>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group_4</name>
+      <macros>
+        <N>2</N>
+      </macros>
+      <y>600</y>
+      <width>1520</width>
+      <height>290</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="databrowser" version="2.0.0">
+        <name>magnet_current2</name>
+        <file>../plots/magnet-current.plt</file>
+        <width>1520</width>
+        <height>290</height>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>HPRF plots (screen 3)</name>
+    <x>200</x>
+    <y>20</y>
+    <width>1520</width>
+    <height>890</height>
+    <visible>false</visible>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="Visibility" prop_id="visible" out_exp="false">
+        <exp bool_exp="pvInt0==3">
+          <value>true</value>
+        </exp>
+        <pv_name>$(pv_name)</pv_name>
+      </rule>
+    </rules>
+    <widget type="databrowser" version="2.0.0">
+      <name>RF Power</name>
+      <file>../plots/HPRF.plt</file>
+      <width>1520</width>
+      <height>310</height>
+    </widget>
+    <widget type="databrowser" version="2.0.0">
+      <name>Pulse width</name>
+      <file>../plots/pulse-width.plt</file>
+      <y>320</y>
+      <width>1520</width>
+      <height>220</height>
+    </widget>
+    <widget type="databrowser" version="2.0.0">
+      <name>Coupler pressure</name>
+      <file>../plots/coupler-pressure.plt</file>
+      <y>550</y>
+      <width>1520</width>
+      <height>340</height>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>CM plots (screen 4)</name>
+    <x>200</x>
+    <y>20</y>
+    <width>1520</width>
+    <height>890</height>
+    <visible>false</visible>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="Visibility" prop_id="visible" out_exp="false">
+        <exp bool_exp="pvInt0==4">
+          <value>true</value>
+        </exp>
+        <pv_name>$(pv_name)</pv_name>
+      </rule>
+    </rules>
+    <widget type="databrowser" version="2.0.0">
+      <name>CM-LHe-Levels</name>
+      <file>../plots/CM-LHe-levels.plt</file>
+      <width>1520</width>
+      <height>420</height>
+    </widget>
+    <widget type="databrowser" version="2.0.0">
+      <name>CM-temperatures</name>
+      <file>../plots/CM-temperatures.plt</file>
+      <y>450</y>
+      <width>1520</width>
+      <height>440</height>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_screen1</name>
+    <x>10</x>
+    <y>130</y>
+    <width>170</width>
+    <height>60</height>
+    <visible>false</visible>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="Vis" prop_id="visible" out_exp="false">
+        <exp bool_exp="pvInt0==1">
+          <value>true</value>
+        </exp>
+        <pv_name>$(MASK).B1</pv_name>
+      </rule>
+    </rules>
+    <widget type="led" version="2.0.0">
+      <name>LED_2</name>
+      <pv_name>=`$(pv_name)`==1</pv_name>
+      <width>170</width>
+      <height>60</height>
+      <off_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </line_color>
+      <square>true</square>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_1</name>
+      <text>LHe &amp; LN2 Levels
+</text>
+      <width>170</width>
+      <height>60</height>
+      <font>
+        <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_screen2</name>
+    <x>10</x>
+    <y>200</y>
+    <width>170</width>
+    <height>90</height>
+    <visible>false</visible>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="Vis" prop_id="visible" out_exp="false">
+        <exp bool_exp="pvInt0==1">
+          <value>true</value>
+        </exp>
+        <pv_name>$(MASK).B2</pv_name>
+      </rule>
+    </rules>
+    <widget type="led" version="2.0.0">
+      <name>LED_3</name>
+      <pv_name>=`$(pv_name)`==2</pv_name>
+      <width>170</width>
+      <height>90</height>
+      <off_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </line_color>
+      <square>true</square>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_2</name>
+      <text>Magnet:
+Temperatures
+&amp; Currents</text>
+      <width>170</width>
+      <height>90</height>
+      <font>
+        <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_screen3</name>
+    <x>10</x>
+    <y>300</y>
+    <width>170</width>
+    <height>60</height>
+    <visible>false</visible>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="Vis" prop_id="visible" out_exp="false">
+        <exp bool_exp="pvInt0==1">
+          <value>true</value>
+        </exp>
+        <pv_name>$(MASK).B3</pv_name>
+      </rule>
+    </rules>
+    <widget type="led" version="2.0.0">
+      <name>LED_4</name>
+      <pv_name>=`$(pv_name)`==3</pv_name>
+      <width>170</width>
+      <height>60</height>
+      <off_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </line_color>
+      <square>true</square>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_3</name>
+      <text>Power Stations
+</text>
+      <width>170</width>
+      <height>60</height>
+      <font>
+        <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_screen4</name>
+    <x>10</x>
+    <y>370</y>
+    <width>170</width>
+    <height>60</height>
+    <visible>false</visible>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="Vis" prop_id="visible" out_exp="false">
+        <exp bool_exp="pvInt0==1">
+          <value>true</value>
+        </exp>
+        <pv_name>$(MASK).B4</pv_name>
+      </rule>
+    </rules>
+    <widget type="led" version="2.0.0">
+      <name>LED_5</name>
+      <pv_name>=`$(pv_name)`==4</pv_name>
+      <width>170</width>
+      <height>60</height>
+      <off_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </line_color>
+      <square>true</square>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_4</name>
+      <text>Cryomodule
+</text>
+      <width>170</width>
+      <height>60</height>
+      <font>
+        <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+  </widget>
+</display>
