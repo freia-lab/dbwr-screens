@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2023-05-16 14:41:03 by konrad-->
 <display version="2.0.0">
   <name>FREIA-status-tv</name>
   <macros>
@@ -10,7 +11,7 @@
   <widget type="rectangle" version="2.0.0">
     <name>title-bar</name>
     <width>1490</width>
-    <height>50</height>
+    <height>60</height>
     <line_width>0</line_width>
     <background_color>
       <color name="BACKGROUND" red="220" green="225" blue="221">
@@ -19,31 +20,23 @@
   </widget>
   <widget type="label" version="2.0.0">
     <name>title</name>
-    <class>TITLE</class>
-    <text>Freia Status</text>
-    <x use_class="true">20</x>
-    <y use_class="true">0</y>
-    <width>260</width>
-    <height use_class="true">50</height>
-    <font use_class="true">
-      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+    <text>Freia Status:</text>
+    <x>10</x>
+    <width>320</width>
+    <height>60</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="48.0">
       </font>
     </font>
-    <foreground_color use_class="true">
-      <color name="HEADER-TEXT" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <transparent use_class="true">true</transparent>
-    <horizontal_alignment use_class="true">0</horizontal_alignment>
-    <vertical_alignment use_class="true">1</vertical_alignment>
-    <wrap_words use_class="true">false</wrap_words>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_2</name>
     <pv_name>sys://time</pv_name>
     <x>1490</x>
     <width>370</width>
-    <height>50</height>
+    <height>60</height>
     <font>
       <font name="HUGE-SANS-BOLD" family="Source Sans Pro" style="BOLD" size="36.0">
       </font>
@@ -60,5 +53,20 @@
     <y>60</y>
     <width>1850</width>
     <height>970</height>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>FREIA-Info:News:txt</pv_name>
+    <x>340</x>
+    <y>5</y>
+    <width>1110</width>
+    <height>60</height>
+    <font>
+      <font name="HUGE-SANS-BOLD" family="Source Sans Pro" style="BOLD" size="36.0">
+      </font>
+    </font>
+    <transparent>true</transparent>
+    <format>6</format>
+    <vertical_alignment>1</vertical_alignment>
   </widget>
 </display>
