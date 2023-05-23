@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2023-05-23 16:27:35 by konrad-->
 <display version="2.0.0">
   <name>status</name>
   <macros>
@@ -1476,65 +1477,92 @@
         <vertical_alignment>1</vertical_alignment>
         <wrap_words>false</wrap_words>
       </widget>
-      <widget type="textupdate" version="2.0.0">
-        <name>Text Update_31</name>
-        <pv_name>CM-CM:TT05:sRdV</pv_name>
-        <x>231</x>
-        <y>144</y>
-        <width>150</width>
-        <height>40</height>
-        <font>
-          <font family="Source Sans Pro" style="BOLD" size="36.0">
-          </font>
-        </font>
-        <format>1</format>
-        <precision>1</precision>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
-      </widget>
       <widget type="label" version="2.0.0">
-        <name>Label_38</name>
-        <text>Cav2 Temp</text>
-        <x>21</x>
-        <y>140</y>
-        <width>210</width>
+        <name>Label_Disconnected</name>
+        <text>Disconnected</text>
+        <x>150</x>
+        <y>120</y>
+        <width>220</width>
         <height>48</height>
         <font>
           <font family="Source Sans Pro" style="BOLD" size="36.0">
           </font>
         </font>
         <vertical_alignment>1</vertical_alignment>
-        <wrap_words>false</wrap_words>
       </widget>
-      <widget type="textupdate" version="2.0.0">
-        <name>Text Update_32</name>
-        <pv_name>CM-CM:TT04:sRdV</pv_name>
-        <x>231</x>
-        <y>94</y>
-        <width>150</width>
-        <height>40</height>
-        <font>
-          <font family="Source Sans Pro" style="BOLD" size="36.0">
-          </font>
-        </font>
-        <format>1</format>
-        <precision>1</precision>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
-      </widget>
-      <widget type="label" version="2.0.0">
-        <name>Label_39</name>
-        <text>Cav1 Temp</text>
+      <widget type="group" version="2.0.0">
+        <name>Cryomodule</name>
         <x>21</x>
         <y>90</y>
-        <width>210</width>
-        <height>48</height>
-        <font>
-          <font family="Source Sans Pro" style="BOLD" size="36.0">
+        <width>360</width>
+        <height>98</height>
+        <style>3</style>
+        <rules>
+          <rule name="Visible" prop_id="visible" out_exp="false">
+            <exp bool_exp="pvInt0==3 &amp;&amp; pvInt1==3">
+              <value>false</value>
+            </exp>
+            <pv_name>CM-CM:TT04:sRdV.SEVR</pv_name>
+            <pv_name>CM-CM:TT05:sRdV.SEVR</pv_name>
+          </rule>
+        </rules>
+        <widget type="textupdate" version="2.0.0">
+          <name>Text Update_31</name>
+          <pv_name>CM-CM:TT05:sRdV</pv_name>
+          <x>210</x>
+          <y>54</y>
+          <width>150</width>
+          <height>40</height>
+          <font>
+            <font family="Source Sans Pro" style="BOLD" size="36.0">
+            </font>
           </font>
-        </font>
-        <vertical_alignment>1</vertical_alignment>
-        <wrap_words>false</wrap_words>
+          <format>1</format>
+          <precision>1</precision>
+          <horizontal_alignment>1</horizontal_alignment>
+          <vertical_alignment>1</vertical_alignment>
+        </widget>
+        <widget type="label" version="2.0.0">
+          <name>Label_38</name>
+          <text>Cav2 Temp</text>
+          <y>50</y>
+          <width>210</width>
+          <height>48</height>
+          <font>
+            <font family="Source Sans Pro" style="BOLD" size="36.0">
+            </font>
+          </font>
+          <vertical_alignment>1</vertical_alignment>
+          <wrap_words>false</wrap_words>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>Text Update_32</name>
+          <pv_name>CM-CM:TT04:sRdV</pv_name>
+          <x>210</x>
+          <y>4</y>
+          <width>150</width>
+          <height>40</height>
+          <font>
+            <font family="Source Sans Pro" style="BOLD" size="36.0">
+            </font>
+          </font>
+          <format>1</format>
+          <precision>1</precision>
+          <horizontal_alignment>1</horizontal_alignment>
+          <vertical_alignment>1</vertical_alignment>
+        </widget>
+        <widget type="label" version="2.0.0">
+          <name>Label_39</name>
+          <text>Cav1 Temp</text>
+          <width>210</width>
+          <height>48</height>
+          <font>
+            <font family="Source Sans Pro" style="BOLD" size="36.0">
+            </font>
+          </font>
+          <vertical_alignment>1</vertical_alignment>
+          <wrap_words>false</wrap_words>
+        </widget>
       </widget>
     </widget>
     <widget type="group" version="2.0.0">
