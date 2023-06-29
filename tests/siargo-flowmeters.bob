@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2023-06-29 13:51:43 by konrad-->
+<display version="2.0.0">
+  <name>siargo-flowmeter</name>
+  <width>400</width>
+  <height>400</height>
+  <widget type="group" version="2.0.0">
+    <macros>
+      <D>MFM-FREIA</D>
+      <P>Env-Gas:</P>
+    </macros>
+    <x>9</x>
+    <y>30</y>
+    <width>302</width>
+    <height>182</height>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>Serial number:</text>
+      <y>30</y>
+      <width>150</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_1</name>
+      <text>Ambient temperature:</text>
+      <y>60</y>
+      <width>150</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_2</name>
+      <text>Flow rate:</text>
+      <y>90</y>
+      <width>150</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_3</name>
+      <text>Accumulated flow:</text>
+      <y>120</y>
+      <width>150</width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update</name>
+      <pv_name>$(P)$(D):SerialNo</pv_name>
+      <x>160</x>
+      <y>30</y>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_1</name>
+      <pv_name>$(P)$(D):T</pv_name>
+      <x>160</x>
+      <y>60</y>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_2</name>
+      <pv_name>$(P)$(D):FlowRt</pv_name>
+      <x>160</x>
+      <y>90</y>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_3</name>
+      <pv_name>$(P)$(D):AccFlow</pv_name>
+      <x>160</x>
+      <y>120</y>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_4</name>
+      <text>Name:</text>
+      <width>150</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_5</name>
+      <text>$(D)</text>
+      <x>160</x>
+      <font>
+        <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <macros>
+      <D>MFM-Hus3</D>
+      <P>Env-Gas:</P>
+    </macros>
+    <x>9</x>
+    <y>212</y>
+    <width>302</width>
+    <height>182</height>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_6</name>
+      <text>Serial number:</text>
+      <y>30</y>
+      <width>150</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_7</name>
+      <text>Ambient temperature:</text>
+      <y>60</y>
+      <width>150</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_8</name>
+      <text>Flow rate:</text>
+      <y>90</y>
+      <width>150</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_9</name>
+      <text>Accumulated flow:</text>
+      <y>120</y>
+      <width>150</width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_4</name>
+      <pv_name>$(P)$(D):SerialNo</pv_name>
+      <x>160</x>
+      <y>30</y>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_5</name>
+      <pv_name>$(P)$(D):T</pv_name>
+      <x>160</x>
+      <y>60</y>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_6</name>
+      <pv_name>$(P)$(D):FlowRt</pv_name>
+      <x>160</x>
+      <y>90</y>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_7</name>
+      <pv_name>$(P)$(D):AccFlow</pv_name>
+      <x>160</x>
+      <y>120</y>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_10</name>
+      <text>Name:</text>
+      <width>150</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_11</name>
+      <text>$(D)</text>
+      <x>160</x>
+      <font>
+        <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_12</name>
+    <text>N2 Gas Flow Meters</text>
+    <x>30</x>
+    <width>260</width>
+    <height>30</height>
+    <font>
+      <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+</display>
