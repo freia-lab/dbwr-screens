@@ -1,58 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2024-04-16 13:23:30 by esape689-->
 <display version="2.0.0">
   <name>Cryo Status</name>
   <width>1310</width>
-  <height>955</height>
+  <height>970</height>
   <background_color>
     <color name="IO TCS Backgroung" red="182" green="217" blue="228">
     </color>
   </background_color>
-  <widget type="group" version="2.0.0">
-    <name>   LN2 Tank</name>
-    <x>10</x>
-    <y>60</y>
-    <width>410</width>
-    <height>80</height>
-    <style>1</style>
-    <font>
-      <font family="Source Sans Pro" style="BOLD" size="24.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color red="51" green="102" blue="150">
-      </color>
-    </foreground_color>
-    <transparent>true</transparent>
-    <widget type="label" version="2.0.0">
-      <name>Label_4</name>
-      <text>Level</text>
-      <x>10</x>
-      <y>10</y>
-      <width>170</width>
-      <height>30</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="24.0">
-        </font>
-      </font>
-      <vertical_alignment>1</vertical_alignment>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_3</name>
-      <pv_name>Cryo-CBox:LN2:LI3685-PercOut</pv_name>
-      <x>180</x>
-      <y>10</y>
-      <width>110</width>
-      <height>30</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="24.0">
-        </font>
-      </font>
-      <precision>1</precision>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
+  <widget type="group" version="3.0.0">
     <name>   LHe Dewar</name>
     <x>10</x>
     <y>160</y>
@@ -64,9 +20,13 @@
       </font>
     </font>
     <foreground_color>
-      <color red="51" green="102" blue="150">
+      <color name="BLACK-TEXT" red="255" green="255" blue="255">
       </color>
     </foreground_color>
+    <line_color>
+      <color red="51" green="102" blue="150">
+      </color>
+    </line_color>
     <transparent>true</transparent>
     <widget type="label" version="2.0.0">
       <name>Label_76</name>
@@ -140,7 +100,7 @@
       <pv_name>Cryo-Dwr:Htr:VisuState</pv_name>
       <x>180</x>
       <y>165</y>
-      <width>120</width>
+      <width>150</width>
       <height>30</height>
       <font>
         <font family="Source Sans Pro" style="BOLD" size="24.0">
@@ -237,7 +197,7 @@
       <width>30</width>
       <height>30</height>
     </widget>
-    <widget type="group" version="2.0.0">
+    <widget type="group" version="3.0.0">
       <name>   Mobile Dewar Filling</name>
       <x>10</x>
       <y>205</y>
@@ -249,9 +209,13 @@
         </font>
       </font>
       <foreground_color>
-        <color red="51" green="150" blue="150">
+        <color name="BLACK-TEXT" red="255" green="255" blue="255">
         </color>
       </foreground_color>
+      <line_color>
+        <color red="51" green="150" blue="150">
+        </color>
+      </line_color>
       <transparent>true</transparent>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_56</name>
@@ -316,7 +280,7 @@
         </font>
       </widget>
     </widget>
-    <widget type="group" version="2.0.0">
+    <widget type="group" version="3.0.0">
       <name>   Delivery to ...</name>
       <x>10</x>
       <y>345</y>
@@ -328,9 +292,13 @@
         </font>
       </font>
       <foreground_color>
-        <color red="51" green="150" blue="150">
+        <color name="BLACK-TEXT" red="255" green="255" blue="255">
         </color>
       </foreground_color>
+      <line_color>
+        <color red="51" green="150" blue="150">
+        </color>
+      </line_color>
       <transparent>true</transparent>
       <widget type="label" version="2.0.0">
         <name>Label_86</name>
@@ -386,26 +354,30 @@
       </widget>
     </widget>
   </widget>
-  <widget type="group" version="2.0.0">
+  <widget type="group" version="3.0.0">
     <name>   Helium Return</name>
     <x>440</x>
     <y>60</y>
     <width>410</width>
-    <height>520</height>
+    <height>560</height>
     <style>1</style>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="24.0">
       </font>
     </font>
     <foreground_color>
-      <color red="51" green="102" blue="150">
+      <color name="BLACK-TEXT" red="255" green="255" blue="255">
       </color>
     </foreground_color>
+    <line_color>
+      <color red="51" green="102" blue="150">
+      </color>
+    </line_color>
     <transparent>true</transparent>
-    <widget type="group" version="2.0.0">
+    <widget type="group" version="3.0.0">
       <name>   Impurity of Return GHe from ...</name>
       <x>10</x>
-      <y>270</y>
+      <y>310</y>
       <width>390</width>
       <height>160</height>
       <style>1</style>
@@ -414,9 +386,13 @@
         </font>
       </font>
       <foreground_color>
-        <color red="51" green="150" blue="150">
+        <color name="BLACK-TEXT" red="255" green="255" blue="255">
         </color>
       </foreground_color>
+      <line_color>
+        <color red="51" green="150" blue="150">
+        </color>
+      </line_color>
       <transparent>true</transparent>
       <widget type="label" version="2.0.0">
         <name>Label_133</name>
@@ -497,10 +473,10 @@
         <vertical_alignment>1</vertical_alignment>
       </widget>
     </widget>
-    <widget type="group" version="2.0.0">
+    <widget type="group" version="3.0.0">
       <name>   Gasbag</name>
       <x>10</x>
-      <y>50</y>
+      <y>90</y>
       <width>390</width>
       <style>1</style>
       <font>
@@ -508,9 +484,13 @@
         </font>
       </font>
       <foreground_color>
-        <color red="51" green="150" blue="150">
+        <color name="BLACK-TEXT" red="255" green="255" blue="255">
         </color>
       </foreground_color>
+      <line_color>
+        <color red="51" green="150" blue="150">
+        </color>
+      </line_color>
       <transparent>true</transparent>
       <widget type="label" version="2.0.0">
         <name>Label_136</name>
@@ -586,7 +566,7 @@
         <pv_name>Cryo-Rec:LP:GasBagLidar-rate</pv_name>
         <x>180</x>
         <y>50</y>
-        <width>150</width>
+        <width>160</width>
         <height>30</height>
         <font>
           <font family="Source Sans Pro" style="BOLD" size="24.0">
@@ -625,7 +605,7 @@
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_142</name>
-      <text>Bauer / Sauer</text>
+      <text>Bauer</text>
       <x>10</x>
       <y>10</y>
       <width>180</width>
@@ -641,7 +621,7 @@
       <pv_name>Cryo-Rec:LP:GSH7225</pv_name>
       <x>190</x>
       <y>10</y>
-      <width>150</width>
+      <width>160</width>
       <height>30</height>
       <font>
         <font family="Source Sans Pro" style="BOLD" size="24.0">
@@ -663,7 +643,7 @@
       <name>Label_171</name>
       <text>Gashjul</text>
       <x>10</x>
-      <y>450</y>
+      <y>490</y>
       <width>180</width>
       <height>30</height>
       <font>
@@ -676,8 +656,8 @@
       <name>Text Update_128</name>
       <pv_name>Cryo:HeVol:In</pv_name>
       <x>190</x>
-      <y>450</y>
-      <width>150</width>
+      <y>490</y>
+      <width>160</width>
       <height>30</height>
       <font>
         <font family="Source Sans Pro" style="BOLD" size="24.0">
@@ -687,8 +667,44 @@
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
     </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_151</name>
+      <text>Sauer / Orkan</text>
+      <x>10</x>
+      <y>50</y>
+      <width>180</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_105</name>
+      <pv_name>Cryo-Rec:LP:C4:GlobStat</pv_name>
+      <x>190</x>
+      <y>50</y>
+      <width>160</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <precision>1</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_88</name>
+      <pv_name>Cryo-Rec:LP:C4:GlobStat</pv_name>
+      <x>360</x>
+      <y>50</y>
+      <width>30</width>
+      <height>30</height>
+    </widget>
   </widget>
-  <widget type="group" version="2.0.0">
+  <widget type="group" version="3.0.0">
     <name>   LHe Production</name>
     <x>870</x>
     <y>60</y>
@@ -700,9 +716,13 @@
       </font>
     </font>
     <foreground_color>
-      <color red="51" green="102" blue="150">
+      <color name="BLACK-TEXT" red="255" green="255" blue="255">
       </color>
     </foreground_color>
+    <line_color>
+      <color red="51" green="102" blue="150">
+      </color>
+    </line_color>
     <transparent>true</transparent>
     <widget type="label" version="2.0.0">
       <name>Label_156</name>
@@ -844,7 +864,7 @@
         </font>
       </font>
     </widget>
-    <widget type="group" version="2.0.0">
+    <widget type="group" version="3.0.0">
       <name>   Kaeser Compressor   </name>
       <x>10</x>
       <y>20</y>
@@ -856,9 +876,13 @@
         </font>
       </font>
       <foreground_color>
-        <color red="51" green="150" blue="150">
+        <color name="BLACK-TEXT" red="255" green="255" blue="255">
         </color>
       </foreground_color>
+      <line_color>
+        <color red="51" green="150" blue="150">
+        </color>
+      </line_color>
       <transparent>true</transparent>
       <widget type="label" version="2.0.0">
         <name>Label_160</name>
@@ -950,7 +974,7 @@
         <height>30</height>
       </widget>
     </widget>
-    <widget type="group" version="2.0.0">
+    <widget type="group" version="3.0.0">
       <name>   MCD</name>
       <x>10</x>
       <y>200</y>
@@ -962,9 +986,13 @@
         </font>
       </font>
       <foreground_color>
-        <color red="51" green="150" blue="150">
+        <color name="BLACK-TEXT" red="255" green="255" blue="255">
         </color>
       </foreground_color>
+      <line_color>
+        <color red="51" green="150" blue="150">
+        </color>
+      </line_color>
       <transparent>true</transparent>
       <widget type="label" version="2.0.0">
         <name>Label_149</name>
@@ -1110,7 +1138,7 @@
         <vertical_alignment>1</vertical_alignment>
       </widget>
     </widget>
-    <widget type="group" version="2.0.0">
+    <widget type="group" version="3.0.0">
       <name>   Turbines</name>
       <x>10</x>
       <y>480</y>
@@ -1122,9 +1150,13 @@
         </font>
       </font>
       <foreground_color>
-        <color red="51" green="150" blue="150">
+        <color name="BLACK-TEXT" red="255" green="255" blue="255">
         </color>
       </foreground_color>
+      <line_color>
+        <color red="51" green="150" blue="150">
+        </color>
+      </line_color>
       <transparent>true</transparent>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_77</name>
@@ -1280,7 +1312,7 @@
         <vertical_alignment>1</vertical_alignment>
       </widget>
     </widget>
-    <widget type="group" version="2.0.0">
+    <widget type="group" version="3.0.0">
       <name>   Buffer Tank</name>
       <x>10</x>
       <y>380</y>
@@ -1292,9 +1324,13 @@
         </font>
       </font>
       <foreground_color>
-        <color red="51" green="150" blue="150">
+        <color name="BLACK-TEXT" red="255" green="255" blue="255">
         </color>
       </foreground_color>
+      <line_color>
+        <color red="51" green="150" blue="150">
+        </color>
+      </line_color>
       <transparent>true</transparent>
       <widget type="label" version="2.0.0">
         <name>Label_169</name>
@@ -1326,7 +1362,7 @@
       </widget>
     </widget>
   </widget>
-  <widget type="group" version="2.0.0">
+  <widget type="group" version="3.0.0">
     <name>   High Pressure Storage</name>
     <x>10</x>
     <y>695</y>
@@ -1338,9 +1374,13 @@
       </font>
     </font>
     <foreground_color>
-      <color red="51" green="102" blue="150">
+      <color name="BLACK-TEXT" red="255" green="255" blue="255">
       </color>
     </foreground_color>
+    <line_color>
+      <color red="51" green="102" blue="150">
+      </color>
+    </line_color>
     <transparent>true</transparent>
     <widget type="label" version="2.0.0">
       <name>Label_139</name>
@@ -1427,10 +1467,10 @@
       <vertical_alignment>1</vertical_alignment>
     </widget>
   </widget>
-  <widget type="group" version="2.0.0">
+  <widget type="group" version="3.0.0">
     <name>   Environmental Parameters</name>
     <x>440</x>
-    <y>600</y>
+    <y>640</y>
     <width>410</width>
     <height>240</height>
     <style>1</style>
@@ -1439,9 +1479,13 @@
       </font>
     </font>
     <foreground_color>
-      <color red="51" green="102" blue="150">
+      <color name="BLACK-TEXT" red="255" green="255" blue="255">
       </color>
     </foreground_color>
+    <line_color>
+      <color red="51" green="102" blue="150">
+      </color>
+    </line_color>
     <transparent>true</transparent>
     <widget type="label" version="2.0.0">
       <name>Label_143</name>
@@ -1573,7 +1617,7 @@
       <pv_name>Env-FREIA:PT001:sRdV</pv_name>
       <x>230</x>
       <y>130</y>
-      <width>150</width>
+      <width>160</width>
       <height>30</height>
       <font>
         <font family="Source Sans Pro" style="BOLD" size="24.0">
@@ -1609,7 +1653,7 @@
     </actions>
     <text>Go to "Helium Balance"</text>
     <x>451</x>
-    <y>861</y>
+    <y>900</y>
     <width>370</width>
     <height>60</height>
     <font>
@@ -1617,5 +1661,54 @@
       </font>
     </font>
     <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>   LN2 Tank</name>
+    <x>10</x>
+    <y>60</y>
+    <width>410</width>
+    <height>80</height>
+    <style>1</style>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="24.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <line_color>
+      <color red="51" green="102" blue="150">
+      </color>
+    </line_color>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_4</name>
+      <text>Level</text>
+      <x>10</x>
+      <y>10</y>
+      <width>170</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_3</name>
+      <pv_name>Cryo-CBox:LN2:LI3685-PercOut</pv_name>
+      <x>180</x>
+      <y>10</y>
+      <width>110</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="24.0">
+        </font>
+      </font>
+      <precision>1</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
   </widget>
 </display>
