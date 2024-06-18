@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-04-16 13:23:30 by esape689-->
+<!--Saved on 2024-06-18 10:54:35 by esape689-->
 <display version="2.0.0">
   <name>Cryo Status</name>
   <width>1310</width>
@@ -409,7 +409,7 @@
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_92</name>
         <pv_name>Cryo-Rec:LP:QI7230</pv_name>
-        <x>180</x>
+        <x>120</x>
         <y>10</y>
         <height>30</height>
         <font>
@@ -435,7 +435,7 @@
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_93</name>
         <pv_name>Cryo-Rec:LP:QI7240</pv_name>
-        <x>180</x>
+        <x>120</x>
         <y>50</y>
         <height>30</height>
         <font>
@@ -461,7 +461,7 @@
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_94</name>
         <pv_name>Cryo-Rec:LP:QI7250</pv_name>
-        <x>180</x>
+        <x>120</x>
         <y>90</y>
         <height>30</height>
         <font>
@@ -494,7 +494,7 @@
       <transparent>true</transparent>
       <widget type="label" version="2.0.0">
         <name>Label_136</name>
-        <text>Lidar distance</text>
+        <text>Lidar</text>
         <x>10</x>
         <y>10</y>
         <width>170</width>
@@ -508,7 +508,7 @@
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_95</name>
         <pv_name>Cryo-Rec:LP:GasBagLidar</pv_name>
-        <x>180</x>
+        <x>120</x>
         <y>10</y>
         <width>120</width>
         <height>30</height>
@@ -549,7 +549,7 @@
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_97</name>
         <pv_name>Cryo-Rec:LP:BalloonLevel</pv_name>
-        <x>180</x>
+        <x>120</x>
         <y>90</y>
         <width>120</width>
         <height>30</height>
@@ -564,7 +564,7 @@
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_99</name>
         <pv_name>Cryo-Rec:LP:GasBagLidar-rate</pv_name>
-        <x>180</x>
+        <x>120</x>
         <y>50</y>
         <width>160</width>
         <height>30</height>
@@ -591,7 +591,7 @@
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_131</name>
         <pv_name>Cryo-Rec:LP:QI7210</pv_name>
-        <x>180</x>
+        <x>120</x>
         <y>130</y>
         <height>30</height>
         <font>
@@ -619,9 +619,9 @@
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_101</name>
       <pv_name>Cryo-Rec:LP:GSH7225</pv_name>
-      <x>190</x>
+      <x>130</x>
       <y>10</y>
-      <width>160</width>
+      <width>210</width>
       <height>30</height>
       <font>
         <font family="Source Sans Pro" style="BOLD" size="24.0">
@@ -655,9 +655,9 @@
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_128</name>
       <pv_name>Cryo:HeVol:In</pv_name>
-      <x>190</x>
+      <x>130</x>
       <y>490</y>
-      <width>160</width>
+      <width>210</width>
       <height>30</height>
       <font>
         <font family="Source Sans Pro" style="BOLD" size="24.0">
@@ -669,7 +669,7 @@
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_151</name>
-      <text>Sauer / Orkan</text>
+      <text>Sauer</text>
       <x>10</x>
       <y>50</y>
       <width>180</width>
@@ -683,9 +683,9 @@
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_105</name>
       <pv_name>Cryo-Rec:LP:C4:GlobStat</pv_name>
-      <x>190</x>
+      <x>130</x>
       <y>50</y>
-      <width>160</width>
+      <width>210</width>
       <height>30</height>
       <font>
         <font family="Source Sans Pro" style="BOLD" size="24.0">
