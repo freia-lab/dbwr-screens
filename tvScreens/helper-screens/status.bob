@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-01-23 11:36:30 by konrad-->
+<!--Saved on 2024-08-27 10:59:06 by konrad-->
 <display version="2.0.0">
   <name>status</name>
   <macros>
@@ -7,7 +7,7 @@
   </macros>
   <width>1720</width>
   <height>950</height>
-  <widget type="group" version="2.0.0">
+  <widget type="group" version="3.0.0">
     <name>Group</name>
     <x>10</x>
     <y>10</y>
@@ -15,7 +15,7 @@
     <height>937</height>
     <style>3</style>
     <transparent>true</transparent>
-    <widget type="group" version="2.0.0">
+    <widget type="group" version="3.0.0">
       <name>Group</name>
       <x>1290</x>
       <y>120</y>
@@ -91,7 +91,7 @@
         </rules>
       </widget>
     </widget>
-    <widget type="group" version="2.0.0">
+    <widget type="group" version="3.0.0">
       <name>Group</name>
       <x>1290</x>
       <y>230</y>
@@ -167,7 +167,7 @@
         </rules>
       </widget>
     </widget>
-    <widget type="group" version="2.0.0">
+    <widget type="group" version="3.0.0">
       <name>Group</name>
       <x>1290</x>
       <y>337</y>
@@ -243,7 +243,7 @@
         </rules>
       </widget>
     </widget>
-    <widget type="group" version="2.0.0">
+    <widget type="group" version="3.0.0">
       <name>Group</name>
       <x>1290</x>
       <y>445</y>
@@ -318,7 +318,7 @@
         </rules>
       </widget>
     </widget>
-    <widget type="group" version="2.0.0">
+    <widget type="group" version="3.0.0">
       <name>Group</name>
       <x>1290</x>
       <y>560</y>
@@ -393,7 +393,7 @@
         </rules>
       </widget>
     </widget>
-    <widget type="group" version="2.0.0">
+    <widget type="group" version="3.0.0">
       <name>Group</name>
       <x>560</x>
       <y>460</y>
@@ -414,7 +414,7 @@
           </color>
         </background_color>
       </widget>
-      <widget type="group" version="2.0.0">
+      <widget type="group" version="3.0.0">
         <name>Group_1</name>
         <macros>
           <P>Llab-</P>
@@ -451,7 +451,7 @@
           </font>
           <horizontal_alignment>1</horizontal_alignment>
         </widget>
-        <widget type="group" version="2.0.0">
+        <widget type="group" version="3.0.0">
           <name>Group_2</name>
           <x>350</x>
           <y>13</y>
@@ -513,7 +513,7 @@
         </widget>
       </widget>
     </widget>
-    <widget type="group" version="2.0.0">
+    <widget type="group" version="3.0.0">
       <name>Group</name>
       <width>520</width>
       <height>207</height>
@@ -521,7 +521,7 @@
       <transparent>true</transparent>
       <widget type="label" version="2.0.0">
         <name>Label_29</name>
-        <text>LHE Level</text>
+        <text>LHe Level</text>
         <x>20</x>
         <y>91</y>
         <width>190</width>
@@ -615,7 +615,7 @@
           </color>
         </line_color>
       </widget>
-      <widget type="group" version="2.0.0">
+      <widget type="group" version="3.0.0">
         <name>Cryo-VisuState</name>
         <macros>
           <PV>Cryo-System:Operation:VisuState</PV>
@@ -702,11 +702,11 @@
         </widget>
       </widget>
     </widget>
-    <widget type="group" version="2.0.0">
+    <widget type="group" version="3.0.0">
       <name>Group</name>
       <y>230</y>
       <width>520</width>
-      <height>207</height>
+      <height>287</height>
       <style>3</style>
       <transparent>true</transparent>
       <widget type="multi_state_led" version="2.0.0">
@@ -827,13 +827,13 @@
         <x>1</x>
         <y>80</y>
         <width>517</width>
-        <height>127</height>
+        <height>207</height>
         <points>
           <point x="0.0" y="0.0">
           </point>
-          <point x="0.0" y="123.2089552238806">
+          <point x="0.0" y="200.82089552238804">
           </point>
-          <point x="518.0360721442886" y="123.2089552238806">
+          <point x="518.0360721442886" y="200.82089552238804">
           </point>
           <point x="518.0360721442886" y="0.0">
           </point>
@@ -844,10 +844,82 @@
           </color>
         </line_color>
       </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_31</name>
+        <text>LHe Level</text>
+        <x>20</x>
+        <y>215</y>
+        <width>190</width>
+        <height>48</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="36.0">
+          </font>
+        </font>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_8</name>
+        <pv_name>CstatH-LHe:LT100:sRdV</pv_name>
+        <x>210</x>
+        <y>218</y>
+        <width>150</width>
+        <height>40</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="36.0">
+          </font>
+        </font>
+        <precision>1</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_16</name>
+        <pv_name>CstatH-LHe:LT100:sRdV</pv_name>
+        <x>370</x>
+        <y>218</y>
+        <width>140</width>
+        <height>40</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="36.0">
+          </font>
+        </font>
+        <precision>1</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_33</name>
+        <text>VBox</text>
+        <x>258</x>
+        <y>183</y>
+        <width>91</width>
+        <height>48</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_34</name>
+        <text>Cavities</text>
+        <x>400</x>
+        <y>183</y>
+        <width>98</width>
+        <height>48</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="24.0">
+          </font>
+        </font>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+      </widget>
     </widget>
-    <widget type="group" version="2.0.0">
+    <widget type="group" version="3.0.0">
       <name>Group</name>
-      <y>460</y>
+      <y>580</y>
       <width>520</width>
       <height>250</height>
       <style>3</style>
@@ -949,7 +1021,7 @@
           </rule>
         </rules>
       </widget>
-      <widget type="group" version="2.0.0">
+      <widget type="group" version="3.0.0">
         <name>liquidInsert</name>
         <x>18</x>
         <y>88</y>
@@ -1051,7 +1123,7 @@
           <vertical_alignment>1</vertical_alignment>
         </widget>
       </widget>
-      <widget type="group" version="2.0.0">
+      <widget type="group" version="3.0.0">
         <name>magnetInsert</name>
         <x>18</x>
         <y>88</y>
@@ -1154,7 +1226,7 @@
         </widget>
       </widget>
     </widget>
-    <widget type="group" version="2.0.0">
+    <widget type="group" version="3.0.0">
       <name>Group</name>
       <x>560</x>
       <width>520</width>
@@ -1274,308 +1346,7 @@
         <wrap_words>false</wrap_words>
       </widget>
     </widget>
-    <widget type="group" version="2.0.0">
-      <name>Group</name>
-      <x>560</x>
-      <y>232</y>
-      <width>520</width>
-      <height>150</height>
-      <style>3</style>
-      <transparent>true</transparent>
-      <widget type="multi_state_led" version="2.0.0">
-        <name>LED (Multi State)_7</name>
-        <pv_name>HPRF-Esys:Ampl:VisuState</pv_name>
-        <width>520</width>
-        <height>80</height>
-        <square>true</square>
-        <states>
-          <state>
-            <value>0</value>
-            <label></label>
-            <color>
-              <color name="GRAY" red="169" green="169" blue="169">
-              </color>
-            </color>
-          </state>
-          <state>
-            <value>1</value>
-            <label></label>
-            <color>
-              <color red="255" green="0" blue="0">
-              </color>
-            </color>
-          </state>
-          <state>
-            <value>2</value>
-            <label></label>
-            <color>
-              <color red="0" green="0" blue="255">
-              </color>
-            </color>
-          </state>
-          <state>
-            <value>3</value>
-            <label></label>
-            <color>
-              <color red="0" green="255" blue="0">
-              </color>
-            </color>
-          </state>
-        </states>
-        <fallback_label></fallback_label>
-      </widget>
-      <widget type="label" version="2.0.0">
-        <name>Label_31</name>
-        <text>Electrosys</text>
-        <x>95</x>
-        <y>2</y>
-        <width>330</width>
-        <height>79</height>
-        <font>
-          <font family="Source Sans Pro" style="BOLD" size="60.0">
-          </font>
-        </font>
-        <foreground_color>
-          <color name="WHITE" red="255" green="255" blue="255">
-          </color>
-        </foreground_color>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
-        <wrap_words>false</wrap_words>
-      </widget>
-      <widget type="textupdate" version="2.0.0">
-        <name>Text Update_27</name>
-        <pv_name>HPRF-Esys:Ampl:sFwdPwr</pv_name>
-        <x>280</x>
-        <y>93</y>
-        <width>180</width>
-        <height>40</height>
-        <font>
-          <font family="Source Sans Pro" style="BOLD" size="36.0">
-          </font>
-        </font>
-        <precision>1</precision>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
-      </widget>
-      <widget type="label" version="2.0.0">
-        <name>Label_20</name>
-        <text>Output Power</text>
-        <x>20</x>
-        <y>90</y>
-        <width>260</width>
-        <height>48</height>
-        <font>
-          <font family="Source Sans Pro" style="BOLD" size="36.0">
-          </font>
-        </font>
-        <vertical_alignment>1</vertical_alignment>
-        <wrap_words>false</wrap_words>
-      </widget>
-      <widget type="polyline" version="2.0.0">
-        <name>Polyline_5</name>
-        <x>1</x>
-        <y>80</y>
-        <width>517</width>
-        <height>70</height>
-        <points>
-          <point x="0.0" y="0.0">
-          </point>
-          <point x="0.0" y="67.91044776119404">
-          </point>
-          <point x="518.0360721442886" y="67.91044776119404">
-          </point>
-          <point x="518.0360721442886" y="0.0">
-          </point>
-        </points>
-        <line_width>1</line_width>
-        <line_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </line_color>
-      </widget>
-    </widget>
-    <widget type="group" version="2.0.0">
-      <name>Group</name>
-      <y>730</y>
-      <width>520</width>
-      <height>207</height>
-      <style>3</style>
-      <transparent>true</transparent>
-      <widget type="polyline" version="2.0.0">
-        <name>Polyline_4</name>
-        <x>1</x>
-        <y>80</y>
-        <width>517</width>
-        <height>127</height>
-        <points>
-          <point x="0.0" y="0.0">
-          </point>
-          <point x="0.0" y="123.2089552238806">
-          </point>
-          <point x="518.0360721442886" y="123.2089552238806">
-          </point>
-          <point x="518.0360721442886" y="0.0">
-          </point>
-        </points>
-        <line_width>1</line_width>
-        <line_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </line_color>
-      </widget>
-      <widget type="multi_state_led" version="2.0.0">
-        <name>LED (Multi State)_8</name>
-        <pv_name>CM-Ctrl:SQ:VisuState</pv_name>
-        <width>520</width>
-        <height>80</height>
-        <square>true</square>
-        <states>
-          <state>
-            <value>0</value>
-            <label></label>
-            <color>
-              <color name="GRAY" red="169" green="169" blue="169">
-              </color>
-            </color>
-          </state>
-          <state>
-            <value>2</value>
-            <label></label>
-            <color>
-              <color red="0" green="0" blue="255">
-              </color>
-            </color>
-          </state>
-          <state>
-            <value>3</value>
-            <label></label>
-            <color>
-              <color red="0" green="255" blue="0">
-              </color>
-            </color>
-          </state>
-        </states>
-        <fallback_label></fallback_label>
-      </widget>
-      <widget type="label" version="2.0.0">
-        <name>Label_35</name>
-        <text>Cryomodule</text>
-        <x>70</x>
-        <y>2</y>
-        <width>380</width>
-        <height>79</height>
-        <font>
-          <font family="Source Sans Pro" style="BOLD" size="60.0">
-          </font>
-        </font>
-        <foreground_color>
-          <color name="WHITE" red="255" green="255" blue="255">
-          </color>
-        </foreground_color>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
-        <wrap_words>false</wrap_words>
-      </widget>
-      <widget type="label" version="2.0.0">
-        <name>Label_Disconnected</name>
-        <text>Disconnected</text>
-        <x>150</x>
-        <y>120</y>
-        <width>220</width>
-        <height>48</height>
-        <visible>false</visible>
-        <font>
-          <font family="Source Sans Pro" style="BOLD" size="36.0">
-          </font>
-        </font>
-        <vertical_alignment>1</vertical_alignment>
-        <rules>
-          <rule name="Visible" prop_id="visible" out_exp="false">
-            <exp bool_exp="pvInt0==3 &amp;&amp; pvInt1==3">
-              <value>true</value>
-            </exp>
-            <pv_name>CM-CM:TT04:sRdV.SEVR</pv_name>
-            <pv_name>CM-CM:TT05:sRdV.SEVR</pv_name>
-          </rule>
-        </rules>
-      </widget>
-      <widget type="group" version="2.0.0">
-        <name>Cryomodule</name>
-        <x>21</x>
-        <y>90</y>
-        <width>360</width>
-        <height>98</height>
-        <style>3</style>
-        <rules>
-          <rule name="Visible" prop_id="visible" out_exp="false">
-            <exp bool_exp="pvInt0==3 &amp;&amp; pvInt1==3">
-              <value>false</value>
-            </exp>
-            <pv_name>CM-CM:TT04:sRdV.SEVR</pv_name>
-            <pv_name>CM-CM:TT05:sRdV.SEVR</pv_name>
-          </rule>
-        </rules>
-        <widget type="textupdate" version="2.0.0">
-          <name>Text Update_31</name>
-          <pv_name>CM-CM:TT05:sRdV</pv_name>
-          <x>210</x>
-          <y>54</y>
-          <width>150</width>
-          <height>40</height>
-          <font>
-            <font family="Source Sans Pro" style="BOLD" size="36.0">
-            </font>
-          </font>
-          <format>1</format>
-          <precision>1</precision>
-          <horizontal_alignment>1</horizontal_alignment>
-          <vertical_alignment>1</vertical_alignment>
-        </widget>
-        <widget type="label" version="2.0.0">
-          <name>Label_38</name>
-          <text>Cav2 Temp</text>
-          <y>50</y>
-          <width>210</width>
-          <height>48</height>
-          <font>
-            <font family="Source Sans Pro" style="BOLD" size="36.0">
-            </font>
-          </font>
-          <vertical_alignment>1</vertical_alignment>
-          <wrap_words>false</wrap_words>
-        </widget>
-        <widget type="textupdate" version="2.0.0">
-          <name>Text Update_32</name>
-          <pv_name>CM-CM:TT04:sRdV</pv_name>
-          <x>210</x>
-          <y>4</y>
-          <width>150</width>
-          <height>40</height>
-          <font>
-            <font family="Source Sans Pro" style="BOLD" size="36.0">
-            </font>
-          </font>
-          <format>1</format>
-          <precision>1</precision>
-          <horizontal_alignment>1</horizontal_alignment>
-          <vertical_alignment>1</vertical_alignment>
-        </widget>
-        <widget type="label" version="2.0.0">
-          <name>Label_39</name>
-          <text>Cav1 Temp</text>
-          <width>210</width>
-          <height>48</height>
-          <font>
-            <font family="Source Sans Pro" style="BOLD" size="36.0">
-            </font>
-          </font>
-          <vertical_alignment>1</vertical_alignment>
-          <wrap_words>false</wrap_words>
-        </widget>
-      </widget>
-    </widget>
-    <widget type="group" version="2.0.0">
+    <widget type="group" version="3.0.0">
       <name>Group</name>
       <x>1290</x>
       <y>10</y>
