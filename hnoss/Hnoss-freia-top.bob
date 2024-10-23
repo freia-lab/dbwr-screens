@@ -1,0 +1,1458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2024-10-22 15:03:23 by konrad-->
+<display version="2.0.0">
+  <name>HNOSS</name>
+  <macros>
+    <P>CstatH</P>
+    <W>freia.physics.uu.se</W>
+  </macros>
+  <width>1750</width>
+  <height>1024</height>
+  <background_color>
+    <color name="BACKGROUND" red="220" green="225" blue="221">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <grid_visible>false</grid_visible>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_3</name>
+    <text>Automatic sequences</text>
+    <x>10</x>
+    <y>51</y>
+    <width>187</width>
+    <height>21</height>
+    <font>
+      <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="tabs" version="2.0.0">
+    <name>tabcontainer</name>
+    <tabs>
+      <tab>
+        <name>Overview</name>
+        <children>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display</name>
+            <file>helper-opi-files/Overview.bob</file>
+            <x>18</x>
+            <y>14</y>
+            <width>1500</width>
+            <height>850</height>
+          </widget>
+        </children>
+      </tab>
+      <tab>
+        <name>Global Operation View</name>
+        <children>
+          <widget type="embedded" version="2.0.0">
+            <name>Linking Container Template</name>
+            <macros>
+              <P>CstatH</P>
+            </macros>
+            <file>helper-opi-files/GlobOpView.bob</file>
+            <width>1500</width>
+            <height>908</height>
+            <actions>
+            </actions>
+            <border_color>
+              <color name="IO Border" red="215" green="215" blue="215">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_2</name>
+            <macros>
+              <N>1</N>
+              <POS>1</POS>
+              <CS>CstatH</CS>
+            </macros>
+            <file>../freia-symbols/display-builder/cavity-tests/embedded/cavity.bob</file>
+            <x>248</x>
+            <y>846</y>
+            <width>110</width>
+            <height>60</height>
+          </widget>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_3</name>
+            <macros>
+              <N>3</N>
+              <POS>2A</POS>
+              <CS>CstatH</CS>
+            </macros>
+            <file>../freia-symbols/display-builder/cavity-tests/embedded/cavity.bob</file>
+            <x>598</x>
+            <y>846</y>
+            <width>110</width>
+            <height>60</height>
+          </widget>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_4</name>
+            <macros>
+              <N>2</N>
+              <POS>2</POS>
+              <CS>CstatH</CS>
+            </macros>
+            <file>../freia-symbols/display-builder/cavity-tests/embedded/cavity.bob</file>
+            <x>768</x>
+            <y>846</y>
+            <width>110</width>
+            <height>60</height>
+          </widget>
+        </children>
+      </tab>
+      <tab>
+        <name>Helium Pumping and Reheating</name>
+        <children>
+          <widget type="embedded" version="2.0.0">
+            <name>Linking Container Template</name>
+            <file>helper-opi-files/ReheatSys.bob</file>
+            <x>17</x>
+            <y>16</y>
+            <width>1482</width>
+            <height>891</height>
+            <actions>
+            </actions>
+            <border_color>
+              <color name="IO Border" red="215" green="215" blue="215">
+              </color>
+            </border_color>
+          </widget>
+        </children>
+      </tab>
+      <tab>
+        <name>Liquid Nitrogen</name>
+        <children>
+          <widget type="embedded" version="2.0.0">
+            <name>Linking Container Template</name>
+            <file>helper-opi-files/LiquidN2.bob</file>
+            <width>1439</width>
+            <height>908</height>
+            <actions>
+            </actions>
+            <border_color>
+              <color name="IO Border" red="215" green="215" blue="215">
+              </color>
+            </border_color>
+          </widget>
+        </children>
+      </tab>
+      <tab>
+        <name>Tests</name>
+        <children>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_1</name>
+            <file>../freia-symbols/display-builder/cavity-tests/CstatH-DUT.bob</file>
+            <x>28</x>
+            <y>36</y>
+            <width>360</width>
+            <height>138</height>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Label_2</name>
+            <text>Cavities under test</text>
+            <x>28</x>
+            <y>6</y>
+            <width>360</width>
+            <height>30</height>
+            <font>
+              <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+              </font>
+            </font>
+            <horizontal_alignment>1</horizontal_alignment>
+            <vertical_alignment>1</vertical_alignment>
+          </widget>
+        </children>
+      </tab>
+    </tabs>
+    <x>180</x>
+    <y>5</y>
+    <width>1550</width>
+    <height>945</height>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <tab_height>10</tab_height>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_4</name>
+    <text>HNOSS</text>
+    <x>30</x>
+    <y>5</y>
+    <width>109</width>
+    <height>46</height>
+    <font>
+      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="multi_state_led" version="2.0.0">
+    <name>LED (Multi State)_1</name>
+    <pv_name>Cryo-System:Operation:VisuState</pv_name>
+    <x>22</x>
+    <y>920</y>
+    <width>124</width>
+    <height>22</height>
+    <square>true</square>
+    <states>
+      <state>
+        <value>1</value>
+        <label>OFF</label>
+        <color>
+          <color name="RED" red="252" green="13" blue="27">
+          </color>
+        </color>
+      </state>
+      <state>
+        <value>2</value>
+        <label>STANDBY</label>
+        <color>
+          <color name="BLUE" red="79" green="228" blue="250">
+          </color>
+        </color>
+      </state>
+      <state>
+        <value>3</value>
+        <label>ON</label>
+        <color>
+          <color name="ON" red="70" green="255" blue="70">
+          </color>
+        </color>
+      </state>
+    </states>
+    <fallback_label>Invalid</fallback_label>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>Liquifier status:</text>
+    <x>20</x>
+    <y>900</y>
+    <width>126</width>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Transfer Line L000
+conditioning He circuits</text>
+    <x>10</x>
+    <y>80</y>
+    <width>150</width>
+    <height>40</height>
+    <font>
+      <font name="SMALL-SANS-PLAIN" family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_3</name>
+    <text>Cryostat, 
+conditioning He circuits</text>
+    <x>10</x>
+    <y>130</y>
+    <width>150</width>
+    <height>40</height>
+    <font>
+      <font name="SMALL-SANS-PLAIN" family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_4</name>
+    <text>Couplers, 
+conditioning He circuit</text>
+    <x>10</x>
+    <y>180</y>
+    <width>150</width>
+    <height>40</height>
+    <font>
+      <font name="SMALL-SANS-PLAIN" family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_5</name>
+    <text>ICB, thermal shield 
+coolingng He circuit</text>
+    <x>10</x>
+    <y>230</y>
+    <width>150</width>
+    <height>40</height>
+    <font>
+      <font name="SMALL-SANS-PLAIN" family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_6</name>
+    <text>Cryostat, 
+thermal shield cooling</text>
+    <x>10</x>
+    <y>280</y>
+    <width>150</width>
+    <height>40</height>
+    <font>
+      <font name="SMALL-SANS-PLAIN" family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_7</name>
+    <text>Tesla couplers cooling</text>
+    <x>10</x>
+    <y>330</y>
+    <width>150</width>
+    <height>40</height>
+    <font>
+      <font name="SMALL-SANS-PLAIN" family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_8</name>
+    <text>Control level 4K vessel</text>
+    <x>10</x>
+    <y>380</y>
+    <width>150</width>
+    <height>40</height>
+    <font>
+      <font name="SMALL-SANS-PLAIN" family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_9</name>
+    <text>LHe level measurement</text>
+    <x>10</x>
+    <y>430</y>
+    <width>150</width>
+    <height>40</height>
+    <font>
+      <font name="SMALL-SANS-PLAIN" family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_10</name>
+    <text>Cryostat, cool-down He circuits</text>
+    <x>10</x>
+    <y>480</y>
+    <width>150</width>
+    <height>40</height>
+    <font>
+      <font name="SMALL-SANS-PLAIN" family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_11</name>
+    <text>4K Operation</text>
+    <x>10</x>
+    <y>530</y>
+    <width>150</width>
+    <height>40</height>
+    <font>
+      <font name="SMALL-SANS-PLAIN" family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_12</name>
+    <text>2K Operation</text>
+    <x>10</x>
+    <y>580</y>
+    <width>150</width>
+    <height>40</height>
+    <font>
+      <font name="SMALL-SANS-PLAIN" family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_13</name>
+    <text>Supercritical circuits operation</text>
+    <x>10</x>
+    <y>630</y>
+    <width>150</width>
+    <height>40</height>
+    <font>
+      <font name="SMALL-SANS-PLAIN" family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_14</name>
+    <text>Standby 40 K</text>
+    <x>10</x>
+    <y>680</y>
+    <width>150</width>
+    <height>40</height>
+    <font>
+      <font name="SMALL-SANS-PLAIN" family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_15</name>
+    <text>ICB Warm-up</text>
+    <x>10</x>
+    <y>730</y>
+    <width>150</width>
+    <height>40</height>
+    <font>
+      <font name="SMALL-SANS-PLAIN" family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_16</name>
+    <text>Cryostat Warm-up</text>
+    <x>10</x>
+    <y>780</y>
+    <width>150</width>
+    <height>40</height>
+    <font>
+      <font name="SMALL-SANS-PLAIN" family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_17</name>
+    <text>Cryostat isolated</text>
+    <x>10</x>
+    <y>830</y>
+    <width>150</width>
+    <height>40</height>
+    <font>
+      <font name="SMALL-SANS-PLAIN" family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group</name>
+    <x>163</x>
+    <y>135</y>
+    <width>16</width>
+    <height>31</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="led" version="2.0.0">
+      <name>LED Template_22</name>
+      <pv_name>CstatH-Ctrl:SQ1:sRun</pv_name>
+      <bit>0</bit>
+      <width>16</width>
+      <height>16</height>
+      <off_color>
+        <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-BLUE-ON" red="81" green="232" blue="255">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED Template_3</name>
+      <pv_name>CstatH-Ctrl:SQ1:sStopping</pv_name>
+      <bit>0</bit>
+      <y>15</y>
+      <width>16</width>
+      <height>16</height>
+      <off_color>
+        <color name="LED-ORANGE-OFF" red="110" green="105" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-ORANGE-ON" red="255" green="175" blue="81">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group</name>
+    <x>163</x>
+    <y>185</y>
+    <width>16</width>
+    <height>31</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="led" version="2.0.0">
+      <name>LED Template_21</name>
+      <pv_name>CstatH-Ctrl:SQ2:sRun</pv_name>
+      <bit>0</bit>
+      <width>16</width>
+      <height>16</height>
+      <off_color>
+        <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-BLUE-ON" red="81" green="232" blue="255">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED Template_4</name>
+      <pv_name>CstatH-Ctrl:SQ2:sStopping</pv_name>
+      <bit>0</bit>
+      <y>15</y>
+      <width>16</width>
+      <height>16</height>
+      <off_color>
+        <color name="LED-ORANGE-OFF" red="110" green="105" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-ORANGE-ON" red="255" green="175" blue="81">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group</name>
+    <x>161</x>
+    <y>85</y>
+    <width>16</width>
+    <height>31</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="led" version="2.0.0">
+      <name>LED Template_19</name>
+      <pv_name>CstatH-Ctrl:SQ0:sRun</pv_name>
+      <bit>0</bit>
+      <width>16</width>
+      <height>16</height>
+      <off_color>
+        <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-BLUE-ON" red="81" green="232" blue="255">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED Template_1</name>
+      <pv_name>CstatH-Ctrl:SQ0:sStopping</pv_name>
+      <bit>0</bit>
+      <y>15</y>
+      <width>16</width>
+      <height>16</height>
+      <off_color>
+        <color name="LED-ORANGE-OFF" red="110" green="105" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-ORANGE-ON" red="255" green="175" blue="81">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group</name>
+    <x>163</x>
+    <y>235</y>
+    <width>16</width>
+    <height>31</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="led" version="2.0.0">
+      <name>LED Template_23</name>
+      <pv_name>CstatH-Ctrl:SQ3A:sRun</pv_name>
+      <bit>0</bit>
+      <width>16</width>
+      <height>16</height>
+      <off_color>
+        <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-BLUE-ON" red="81" green="232" blue="255">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED Template_6</name>
+      <pv_name>CstatH-Ctrl:SQ3A:sStopping</pv_name>
+      <bit>0</bit>
+      <y>15</y>
+      <width>16</width>
+      <height>16</height>
+      <off_color>
+        <color name="LED-ORANGE-OFF" red="110" green="105" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-ORANGE-ON" red="255" green="175" blue="81">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group</name>
+    <x>163</x>
+    <y>285</y>
+    <width>16</width>
+    <height>31</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="led" version="2.0.0">
+      <name>LED Template_24</name>
+      <pv_name>CstatH-Ctrl:SQ3B:sRun</pv_name>
+      <bit>0</bit>
+      <width>16</width>
+      <height>16</height>
+      <off_color>
+        <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-BLUE-ON" red="81" green="232" blue="255">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED Template_7</name>
+      <pv_name>CstatH-Ctrl:SQ3B:sStopping</pv_name>
+      <bit>0</bit>
+      <y>15</y>
+      <width>16</width>
+      <height>16</height>
+      <off_color>
+        <color name="LED-ORANGE-OFF" red="110" green="105" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-ORANGE-ON" red="255" green="175" blue="81">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group</name>
+    <x>163</x>
+    <y>335</y>
+    <width>16</width>
+    <height>31</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="led" version="2.0.0">
+      <name>LED Template_25</name>
+      <pv_name>CstatH-Ctrl:SQ4:sRun</pv_name>
+      <bit>0</bit>
+      <width>16</width>
+      <height>16</height>
+      <off_color>
+        <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-BLUE-ON" red="81" green="232" blue="255">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED Template_8</name>
+      <pv_name>CstatH-Ctrl:SQ4:sStopping</pv_name>
+      <bit>0</bit>
+      <y>15</y>
+      <width>16</width>
+      <height>16</height>
+      <off_color>
+        <color name="LED-ORANGE-OFF" red="110" green="105" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-ORANGE-ON" red="255" green="175" blue="81">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group</name>
+    <x>163</x>
+    <y>385</y>
+    <width>16</width>
+    <height>31</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="led" version="2.0.0">
+      <name>LED Template_20</name>
+      <pv_name>CstatH-Ctrl:SQ5:sRun</pv_name>
+      <bit>0</bit>
+      <width>16</width>
+      <height>16</height>
+      <off_color>
+        <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-BLUE-ON" red="81" green="232" blue="255">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED Template_2</name>
+      <pv_name>CstatH-Ctrl:SQ5:sStopping</pv_name>
+      <bit>0</bit>
+      <y>15</y>
+      <width>16</width>
+      <height>16</height>
+      <off_color>
+        <color name="LED-ORANGE-OFF" red="110" green="105" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-ORANGE-ON" red="255" green="175" blue="81">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group</name>
+    <x>163</x>
+    <y>435</y>
+    <width>16</width>
+    <height>31</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="led" version="2.0.0">
+      <name>LED Template_26</name>
+      <pv_name>CstatH-Ctrl:SQ6:sRun</pv_name>
+      <bit>0</bit>
+      <width>16</width>
+      <height>16</height>
+      <off_color>
+        <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-BLUE-ON" red="81" green="232" blue="255">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED Template_9</name>
+      <pv_name>CstatH-Ctrl:SQ6:sStopping</pv_name>
+      <bit>0</bit>
+      <y>15</y>
+      <width>16</width>
+      <height>16</height>
+      <off_color>
+        <color name="LED-ORANGE-OFF" red="110" green="105" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-ORANGE-ON" red="255" green="175" blue="81">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group</name>
+    <x>163</x>
+    <y>485</y>
+    <width>16</width>
+    <height>31</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="led" version="2.0.0">
+      <name>LED Template_27</name>
+      <pv_name>CstatH-Ctrl:SQ7:sRun</pv_name>
+      <bit>0</bit>
+      <width>16</width>
+      <height>16</height>
+      <off_color>
+        <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-BLUE-ON" red="81" green="232" blue="255">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED Template_10</name>
+      <pv_name>CstatH-Ctrl:SQ7:sStopping</pv_name>
+      <bit>0</bit>
+      <y>15</y>
+      <width>16</width>
+      <height>16</height>
+      <off_color>
+        <color name="LED-ORANGE-OFF" red="110" green="105" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-ORANGE-ON" red="255" green="175" blue="81">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group</name>
+    <x>163</x>
+    <y>535</y>
+    <width>16</width>
+    <height>31</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="led" version="2.0.0">
+      <name>LED Template_28</name>
+      <pv_name>CstatH-Ctrl:SQ8:sRun</pv_name>
+      <bit>0</bit>
+      <width>16</width>
+      <height>16</height>
+      <off_color>
+        <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-BLUE-ON" red="81" green="232" blue="255">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED Template_11</name>
+      <pv_name>CstatH-Ctrl:SQ8:sStopping</pv_name>
+      <bit>0</bit>
+      <y>15</y>
+      <width>16</width>
+      <height>16</height>
+      <off_color>
+        <color name="LED-ORANGE-OFF" red="110" green="105" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-ORANGE-ON" red="255" green="175" blue="81">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group</name>
+    <x>163</x>
+    <y>585</y>
+    <width>16</width>
+    <height>31</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="led" version="2.0.0">
+      <name>LED Template_29</name>
+      <pv_name>CstatH-Ctrl:SQ9:sRun</pv_name>
+      <bit>0</bit>
+      <width>16</width>
+      <height>16</height>
+      <off_color>
+        <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-BLUE-ON" red="81" green="232" blue="255">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED Template_12</name>
+      <pv_name>CstatH-Ctrl:SQ9:sStopping</pv_name>
+      <bit>0</bit>
+      <y>15</y>
+      <width>16</width>
+      <height>16</height>
+      <off_color>
+        <color name="LED-ORANGE-OFF" red="110" green="105" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-ORANGE-ON" red="255" green="175" blue="81">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group</name>
+    <x>163</x>
+    <y>635</y>
+    <width>16</width>
+    <height>31</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="led" version="2.0.0">
+      <name>LED Template_30</name>
+      <pv_name>CstatH-Ctrl:SQ10:sRun</pv_name>
+      <bit>0</bit>
+      <width>16</width>
+      <height>16</height>
+      <off_color>
+        <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-BLUE-ON" red="81" green="232" blue="255">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED Template_13</name>
+      <pv_name>CstatH-Ctrl:SQ10:sStopping</pv_name>
+      <bit>0</bit>
+      <y>15</y>
+      <width>16</width>
+      <height>16</height>
+      <off_color>
+        <color name="LED-ORANGE-OFF" red="110" green="105" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-ORANGE-ON" red="255" green="175" blue="81">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group</name>
+    <x>163</x>
+    <y>685</y>
+    <width>16</width>
+    <height>31</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="led" version="2.0.0">
+      <name>LED Template_31</name>
+      <pv_name>CstatH-Ctrl:SQ11:sRun</pv_name>
+      <bit>0</bit>
+      <width>16</width>
+      <height>16</height>
+      <off_color>
+        <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-BLUE-ON" red="81" green="232" blue="255">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED Template_14</name>
+      <pv_name>CstatH-Ctrl:SQ11:sStopping</pv_name>
+      <bit>0</bit>
+      <y>15</y>
+      <width>16</width>
+      <height>16</height>
+      <off_color>
+        <color name="LED-ORANGE-OFF" red="110" green="105" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-ORANGE-ON" red="255" green="175" blue="81">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group</name>
+    <x>163</x>
+    <y>735</y>
+    <width>16</width>
+    <height>31</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="led" version="2.0.0">
+      <name>LED Template_32</name>
+      <pv_name>CstatH-Ctrl:SQ12A:sRun</pv_name>
+      <bit>0</bit>
+      <width>16</width>
+      <height>16</height>
+      <off_color>
+        <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-BLUE-ON" red="81" green="232" blue="255">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED Template_15</name>
+      <pv_name>CstatH-Ctrl:SQ12A:sStopping</pv_name>
+      <bit>0</bit>
+      <y>15</y>
+      <width>16</width>
+      <height>16</height>
+      <off_color>
+        <color name="LED-ORANGE-OFF" red="110" green="105" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-ORANGE-ON" red="255" green="175" blue="81">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group</name>
+    <x>163</x>
+    <y>785</y>
+    <width>16</width>
+    <height>31</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="led" version="2.0.0">
+      <name>LED Template_33</name>
+      <pv_name>CstatH-Ctrl:SQ12B:sRun</pv_name>
+      <bit>0</bit>
+      <width>16</width>
+      <height>16</height>
+      <off_color>
+        <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-BLUE-ON" red="81" green="232" blue="255">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED Template_3</name>
+      <pv_name>CstatH-Ctrl:SQ12B:sStopping</pv_name>
+      <bit>0</bit>
+      <y>15</y>
+      <width>16</width>
+      <height>16</height>
+      <off_color>
+        <color name="LED-ORANGE-OFF" red="110" green="105" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-ORANGE-ON" red="255" green="175" blue="81">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group</name>
+    <x>163</x>
+    <y>835</y>
+    <width>16</width>
+    <height>31</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="led" version="2.0.0">
+      <name>LED Template_34</name>
+      <pv_name>CstatH-Ctrl:SQ13:sRun</pv_name>
+      <bit>0</bit>
+      <width>16</width>
+      <height>15</height>
+      <off_color>
+        <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-BLUE-ON" red="81" green="232" blue="255">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED Template_17</name>
+      <pv_name>CstatH-Ctrl:SQ13:sStopping</pv_name>
+      <bit>0</bit>
+      <y>15</y>
+      <width>16</width>
+      <height>16</height>
+      <off_color>
+        <color name="LED-ORANGE-OFF" red="110" green="105" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-ORANGE-ON" red="255" green="175" blue="81">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+  </widget>
+</display>
