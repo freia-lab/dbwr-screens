@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-10-22 15:03:23 by konrad-->
+<!--Saved on 2024-10-25 15:35:22 by konrad-->
 <display version="2.0.0">
   <name>HNOSS</name>
   <macros>
@@ -20,7 +20,7 @@
     <text>Automatic sequences</text>
     <x>10</x>
     <y>51</y>
-    <width>187</width>
+    <width>151</width>
     <height>21</height>
     <font>
       <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
@@ -55,7 +55,7 @@
             <x>18</x>
             <y>14</y>
             <width>1500</width>
-            <height>850</height>
+            <height>894</height>
           </widget>
         </children>
       </tab>
@@ -77,44 +77,161 @@
               </color>
             </border_color>
           </widget>
-          <widget type="embedded" version="2.0.0">
-            <name>Embedded Display_2</name>
+          <widget type="group" version="3.0.0">
+            <name>Group_6</name>
             <macros>
-              <N>1</N>
+              <CS>CstatH</CS>
               <POS>1</POS>
-              <CS>CstatH</CS>
             </macros>
-            <file>../freia-symbols/display-builder/cavity-tests/embedded/cavity.bob</file>
-            <x>248</x>
-            <y>846</y>
-            <width>110</width>
-            <height>60</height>
+            <x>262</x>
+            <y>830</y>
+            <width>100</width>
+            <height>50</height>
+            <style>3</style>
+            <tooltip>Enter 0 if no cavity in this position</tooltip>
+            <widget type="led" version="2.0.0">
+              <name>LED</name>
+              <pv_name>$(CS)-Ctrl:Pos$(POS):DUT</pv_name>
+              <width>98</width>
+              <height>48</height>
+              <off_color>
+                <color name="BACKGROUND" red="220" green="225" blue="221">
+                </color>
+              </off_color>
+              <foreground_color>
+                <color name="BACKGROUND" red="220" green="225" blue="221">
+                </color>
+              </foreground_color>
+              <line_color>
+                <color name="BACKGROUND" red="220" green="225" blue="221">
+                </color>
+              </line_color>
+              <square>true</square>
+            </widget>
+            <widget type="label" version="2.0.0">
+              <name>Label_18</name>
+              <text>      Pos. $(POS):
+CAV-LB-</text>
+              <x>5</x>
+              <width>90</width>
+              <height>50</height>
+              <vertical_alignment>1</vertical_alignment>
+            </widget>
+            <widget type="textupdate" version="2.0.0">
+              <name>Text Entry_6</name>
+              <pv_name>$(CS)-Ctrl:Pos$(POS):CAV-LB</pv_name>
+              <x>60</x>
+              <y>23</y>
+              <width>30</width>
+              <vertical_alignment>1</vertical_alignment>
+              <wrap_words>false</wrap_words>
+              <tooltip>$(CS)-Ctrl:Pos$(POS):CAV-LB
+Cavity Id or 0 if no cavity</tooltip>
+            </widget>
           </widget>
-          <widget type="embedded" version="2.0.0">
-            <name>Embedded Display_3</name>
+          <widget type="group" version="3.0.0">
+            <name>Group_7</name>
             <macros>
-              <N>3</N>
+              <CS>CstatH</CS>
               <POS>2A</POS>
-              <CS>CstatH</CS>
             </macros>
-            <file>../freia-symbols/display-builder/cavity-tests/embedded/cavity.bob</file>
-            <x>598</x>
-            <y>846</y>
-            <width>110</width>
-            <height>60</height>
+            <x>603</x>
+            <y>830</y>
+            <width>100</width>
+            <height>50</height>
+            <style>3</style>
+            <tooltip>Enter 0 if no cavity in this position</tooltip>
+            <widget type="led" version="2.0.0">
+              <name>LED_1</name>
+              <pv_name>$(CS)-Ctrl:Pos$(POS):DUT</pv_name>
+              <width>98</width>
+              <height>48</height>
+              <off_color>
+                <color name="BACKGROUND" red="220" green="225" blue="221">
+                </color>
+              </off_color>
+              <foreground_color>
+                <color name="BACKGROUND" red="220" green="225" blue="221">
+                </color>
+              </foreground_color>
+              <line_color>
+                <color name="BACKGROUND" red="220" green="225" blue="221">
+                </color>
+              </line_color>
+              <square>true</square>
+            </widget>
+            <widget type="label" version="2.0.0">
+              <name>Label_19</name>
+              <text>      Pos. $(POS):
+CAV-LB-</text>
+              <x>5</x>
+              <width>90</width>
+              <height>50</height>
+              <vertical_alignment>1</vertical_alignment>
+            </widget>
+            <widget type="textupdate" version="2.0.0">
+              <name>Text Entry_7</name>
+              <pv_name>$(CS)-Ctrl:Pos$(POS):CAV-LB</pv_name>
+              <x>60</x>
+              <y>23</y>
+              <width>30</width>
+              <vertical_alignment>1</vertical_alignment>
+              <wrap_words>false</wrap_words>
+              <tooltip>$(CS)-Ctrl:Pos$(POS):CAV-LB
+Cavity Id or 0 if no cavity</tooltip>
+            </widget>
           </widget>
-          <widget type="embedded" version="2.0.0">
-            <name>Embedded Display_4</name>
+          <widget type="group" version="3.0.0">
+            <name>Group_9</name>
             <macros>
-              <N>2</N>
-              <POS>2</POS>
               <CS>CstatH</CS>
+              <POS>2</POS>
             </macros>
-            <file>../freia-symbols/display-builder/cavity-tests/embedded/cavity.bob</file>
-            <x>768</x>
-            <y>846</y>
-            <width>110</width>
-            <height>60</height>
+            <x>761</x>
+            <y>830</y>
+            <width>100</width>
+            <height>50</height>
+            <style>3</style>
+            <tooltip>Enter 0 if no cavity in this position</tooltip>
+            <widget type="led" version="2.0.0">
+              <name>LED_2</name>
+              <pv_name>$(CS)-Ctrl:Pos$(POS):DUT</pv_name>
+              <width>98</width>
+              <height>48</height>
+              <off_color>
+                <color name="BACKGROUND" red="220" green="225" blue="221">
+                </color>
+              </off_color>
+              <foreground_color>
+                <color name="BACKGROUND" red="220" green="225" blue="221">
+                </color>
+              </foreground_color>
+              <line_color>
+                <color name="BACKGROUND" red="220" green="225" blue="221">
+                </color>
+              </line_color>
+              <square>true</square>
+            </widget>
+            <widget type="label" version="2.0.0">
+              <name>Label_21</name>
+              <text>      Pos. $(POS):
+CAV-LB-</text>
+              <x>5</x>
+              <width>90</width>
+              <height>50</height>
+              <vertical_alignment>1</vertical_alignment>
+            </widget>
+            <widget type="textupdate" version="2.0.0">
+              <name>Text Entry_9</name>
+              <pv_name>$(CS)-Ctrl:Pos$(POS):CAV-LB</pv_name>
+              <x>60</x>
+              <y>23</y>
+              <width>30</width>
+              <vertical_alignment>1</vertical_alignment>
+              <wrap_words>false</wrap_words>
+              <tooltip>$(CS)-Ctrl:Pos$(POS):CAV-LB
+Cavity Id or 0 if no cavity</tooltip>
+            </widget>
           </widget>
         </children>
       </tab>
@@ -158,31 +275,15 @@
         <name>Tests</name>
         <children>
           <widget type="embedded" version="2.0.0">
-            <name>Embedded Display_1</name>
-            <file>../freia-symbols/display-builder/cavity-tests/CstatH-DUT.bob</file>
-            <x>28</x>
-            <y>36</y>
-            <width>360</width>
-            <height>138</height>
-          </widget>
-          <widget type="label" version="2.0.0">
-            <name>Label_2</name>
-            <text>Cavities under test</text>
-            <x>28</x>
-            <y>6</y>
-            <width>360</width>
-            <height>30</height>
-            <font>
-              <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
-              </font>
-            </font>
-            <horizontal_alignment>1</horizontal_alignment>
-            <vertical_alignment>1</vertical_alignment>
+            <name>Embedded Display_2</name>
+            <file>helper-opi-files/tests.bob</file>
+            <width>1500</width>
+            <height>894</height>
           </widget>
         </children>
       </tab>
     </tabs>
-    <x>180</x>
+    <x>177</x>
     <y>5</y>
     <width>1550</width>
     <height>945</height>
@@ -190,6 +291,7 @@
       <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
+    <active_tab>1</active_tab>
     <tab_height>10</tab_height>
     <actions>
     </actions>
@@ -200,7 +302,7 @@
     <x>30</x>
     <y>5</y>
     <width>109</width>
-    <height>46</height>
+    <height>48</height>
     <font>
       <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
       </font>

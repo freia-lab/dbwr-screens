@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-10-21 16:37:01 by konrad-->
+<!--Saved on 2024-10-25 10:54:08 by konrad-->
 <display version="2.0.0">
   <macros>
     <system>CstatH-LN2</system>
+    <V>FV400</V>
   </macros>
   <width>1440</width>
   <height>945</height>
@@ -690,108 +691,6 @@ $(pv_value)</tooltip>
       </color>
     </border_color>
   </widget>
-  <widget type="polyline" version="2.0.0">
-    <name>Polyline Template_10</name>
-    <x>129</x>
-    <y>85</y>
-    <width>178</width>
-    <height>48</height>
-    <points>
-      <point x="177.0" y="0.0">
-      </point>
-      <point x="28.0" y="0.0">
-      </point>
-      <point x="28.0" y="47.0">
-      </point>
-      <point x="0.0" y="47.0">
-      </point>
-    </points>
-    <line_width>1</line_width>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
-    <line_style>1</line_style>
-    <actions>
-    </actions>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-  </widget>
-  <widget type="polyline" version="2.0.0">
-    <name>Polyline Template_11</name>
-    <x>366</x>
-    <y>85</y>
-    <width>119</width>
-    <height>12</height>
-    <points>
-      <point x="0.0" y="0.0">
-      </point>
-      <point x="118.0" y="0.0">
-      </point>
-      <point x="118.0" y="9.0">
-      </point>
-    </points>
-    <line_width>1</line_width>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
-    <line_style>1</line_style>
-    <actions>
-    </actions>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-  </widget>
-  <widget type="polyline" version="2.0.0">
-    <name>Polyline Template_12</name>
-    <x>609</x>
-    <y>43</y>
-    <width>42</width>
-    <height>30</height>
-    <points>
-      <point x="0.0" y="29.0">
-      </point>
-      <point x="35.0" y="29.0">
-      </point>
-    </points>
-    <line_width>1</line_width>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
-    <line_style>1</line_style>
-    <actions>
-    </actions>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-  </widget>
-  <widget type="polyline" version="2.0.0">
-    <name>Polyline Template_13</name>
-    <x>108</x>
-    <y>48</y>
-    <width>442</width>
-    <height>27</height>
-    <points>
-      <point x="441.0" y="25.57894736842105">
-      </point>
-      <point x="401.0" y="25.57894736842105">
-      </point>
-      <point x="401.0" y="0.0">
-      </point>
-      <point x="0.0" y="0.0">
-      </point>
-    </points>
-    <line_width>1</line_width>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
-    <line_style>1</line_style>
-    <actions>
-    </actions>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-  </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_58</name>
     <text>TT216A</text>
@@ -993,9 +892,9 @@ $(pv_value)</tooltip>
   <widget type="label" version="2.0.0">
     <name>Label Template</name>
     <text>TESLA</text>
-    <x>651</x>
-    <y>683</y>
-    <width>37</width>
+    <x>645</x>
+    <y>672</y>
+    <width>48</width>
     <height>18</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
@@ -1010,7 +909,6 @@ $(pv_value)</tooltip>
       </color>
     </background_color>
     <vertical_alignment>1</vertical_alignment>
-    <auto_size>true</auto_size>
     <actions>
     </actions>
     <border_color>
@@ -1022,8 +920,8 @@ $(pv_value)</tooltip>
     <name>Label Template_65</name>
     <text>TESLA</text>
     <x>811</x>
-    <y>620</y>
-    <width>37</width>
+    <y>613</y>
+    <width>67</width>
     <height>18</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
@@ -1038,7 +936,6 @@ $(pv_value)</tooltip>
       </color>
     </background_color>
     <vertical_alignment>1</vertical_alignment>
-    <auto_size>true</auto_size>
     <actions>
     </actions>
     <border_color>
@@ -1640,9 +1537,9 @@ $(pv_value)</tooltip>
   <widget type="label" version="2.0.0">
     <name>Label Template_91</name>
     <text>Liquid Nitrogen</text>
-    <x>448</x>
-    <y>5</y>
-    <width>140</width>
+    <x>420</x>
+    <y>10</y>
+    <width>168</width>
     <height>27</height>
     <font>
       <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
@@ -1657,7 +1554,6 @@ $(pv_value)</tooltip>
       </color>
     </background_color>
     <vertical_alignment>1</vertical_alignment>
-    <auto_size>true</auto_size>
     <actions>
     </actions>
     <border_color>
@@ -2220,66 +2116,6 @@ $(pv_value)</tooltip>
     </border_color>
   </widget>
   <widget type="textupdate" version="2.0.0">
-    <pv_name>CstatH-LN2:FIC200:sOutV</pv_name>
-    <x>305</x>
-    <y>95</y>
-    <width>66</width>
-    <height>16</height>
-    <font>
-      <font family="Source Sans Pro" style="REGULAR" size="12.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="BACKGROUND" red="220" green="225" blue="221">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-    <precision>2</precision>
-    <show_units>false</show_units>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_width>2</border_width>
-    <border_color>
-      <color name="GRAY-BORDER" red="121" green="121" blue="121">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="textupdate" version="2.0.0">
-    <pv_name>CstatH-LN2:FIC201:sOutV</pv_name>
-    <x>549</x>
-    <y>94</y>
-    <width>66</width>
-    <height>16</height>
-    <font>
-      <font family="Source Sans Pro" style="REGULAR" size="12.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="BACKGROUND" red="220" green="225" blue="221">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-    <precision>2</precision>
-    <show_units>false</show_units>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_width>2</border_width>
-    <border_color>
-      <color name="GRAY-BORDER" red="121" green="121" blue="121">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="textupdate" version="2.0.0">
     <name>CstatH-LN2:TIC302_2</name>
     <pv_name>CstatH-LN2:TIC200:sOutV</pv_name>
     <x>476</x>
@@ -2477,51 +2313,12 @@ $(pv_value)</tooltip>
       </border_color>
     </widget>
   </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_44</name>
-    <macros>
-      <P>CstatH</P>
-      <S>Vac</S>
-      <V>FV001</V>
-    </macros>
-    <file>../../freia-symbols/display-builder/CstatHValve-h-lu-pv.bob</file>
-    <x>1272</x>
-    <y>771</y>
-    <width>35</width>
-    <height>35</height>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_45</name>
-    <macros>
-      <P>CstatH</P>
-      <S>LN2</S>
-      <V>EV201</V>
-    </macros>
-    <file>../../freia-symbols/display-builder/CstatEvalve-h-lu-pv.bob</file>
-    <x>301</x>
-    <y>167</y>
-    <width>35</width>
-    <height>35</height>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_46</name>
-    <macros>
-      <P>CstatH</P>
-      <S>LN2</S>
-      <V>EV200</V>
-    </macros>
-    <file>../../freia-symbols/display-builder/CstatEvalve-h-lu-pv.bob</file>
-    <x>265</x>
-    <y>265</y>
-    <width>35</width>
-    <height>35</height>
-  </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_14</name>
     <text>COUPLER 1</text>
-    <x>639</x>
-    <y>698</y>
-    <width>67</width>
+    <x>633</x>
+    <y>692</y>
+    <width>88</width>
     <height>18</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
@@ -2536,7 +2333,6 @@ $(pv_value)</tooltip>
       </color>
     </background_color>
     <vertical_alignment>1</vertical_alignment>
-    <auto_size>true</auto_size>
     <actions>
     </actions>
     <border_color>
@@ -2549,7 +2345,7 @@ $(pv_value)</tooltip>
     <text>COUPLER 2</text>
     <x>802</x>
     <y>634</y>
-    <width>67</width>
+    <width>90</width>
     <height>18</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
@@ -2564,65 +2360,12 @@ $(pv_value)</tooltip>
       </color>
     </background_color>
     <vertical_alignment>1</vertical_alignment>
-    <auto_size>true</auto_size>
     <actions>
     </actions>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
     </border_color>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_48</name>
-    <macros>
-      <P>CstatH</P>
-      <S>LN2</S>
-      <V>CV200</V>
-    </macros>
-    <file>../../freia-symbols/display-builder/CstatH-CtrlValve-h-pv.bob</file>
-    <x>455</x>
-    <y>92</y>
-    <width>55</width>
-    <height>50</height>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_51</name>
-    <macros>
-      <P>CstatH</P>
-      <S>LN2</S>
-      <V>CV201</V>
-    </macros>
-    <file>../../freia-symbols/display-builder/CstatH-CtrlValve-h-pv.bob</file>
-    <x>627</x>
-    <y>32</y>
-    <width>55</width>
-    <height>50</height>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_52</name>
-    <macros>
-      <P>CstatH</P>
-      <S>IBoxN2</S>
-      <V>FV400</V>
-    </macros>
-    <file>../../freia-symbols/display-builder/CstatHValve-v-lr-pv.bob</file>
-    <x>879</x>
-    <y>100</y>
-    <width>50</width>
-    <height>25</height>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_55</name>
-    <macros>
-      <P>CstatH</P>
-      <S>LN2</S>
-      <V>FV200</V>
-    </macros>
-    <file>../../freia-symbols/display-builder/CstatHValve-h-lu-pv.bob</file>
-    <x>825</x>
-    <y>767</y>
-    <width>35</width>
-    <height>35</height>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_3</name>
@@ -3035,6 +2778,7 @@ display.getWidget("tabcontainer").setActiveTabIndex(7);]]></text>
   </widget>
   <widget type="symbol" version="2.0.0">
     <name>Boolean Symbol Monitor_1</name>
+    <pv_name>sim://const(0)</pv_name>
     <symbols>
       <symbol>../../freia-symbols/cryogenics/valve_relief.svg</symbol>
     </symbols>
@@ -3052,6 +2796,7 @@ display.getWidget("tabcontainer").setActiveTabIndex(7);]]></text>
   </widget>
   <widget type="symbol" version="2.0.0">
     <name>Boolean Symbol Monitor_2</name>
+    <pv_name>sim://const(0)</pv_name>
     <symbols>
       <symbol>../../freia-symbols/cryogenics/valve_relief.svg</symbol>
     </symbols>
@@ -3066,5 +2811,596 @@ display.getWidget("tabcontainer").setActiveTabIndex(7);]]></text>
     <actions>
     </actions>
     <tooltip></tooltip>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group_18</name>
+    <macros>
+      <P>CstatH</P>
+      <S>LN2</S>
+      <V>CV201</V>
+    </macros>
+    <x>635</x>
+    <y>34</y>
+    <width>58</width>
+    <height>40</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_28</name>
+      <text>$(V)</text>
+      <x>10</x>
+      <width>32</width>
+      <height>10</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_3</name>
+      <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
+      <x>20</x>
+      <y>27</y>
+      <width>30</width>
+      <height>13</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <precision>1</precision>
+      <show_units>false</show_units>
+      <wrap_words>false</wrap_words>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="GRAY-BORDER" red="121" green="121" blue="121">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="symbol" version="2.0.0">
+      <name>CstatH-RHtr:CV551_1</name>
+      <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
+      <symbols>
+        <symbol>../../freia-symbols/cryogenics/valve_control_RED.svg</symbol>
+        <symbol>../../freia-symbols/cryogenics/valve_control_GREEN.svg</symbol>
+      </symbols>
+      <x>10</x>
+      <y>7</y>
+      <width>41</width>
+      <height>27</height>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)
+$(actions)</tooltip>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group_19</name>
+    <macros>
+      <P>CstatH</P>
+      <S>LN2</S>
+      <V>CV200</V>
+    </macros>
+    <x>490</x>
+    <y>95</y>
+    <width>58</width>
+    <height>40</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_29</name>
+      <text>$(V)</text>
+      <x>10</x>
+      <width>32</width>
+      <height>10</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_4</name>
+      <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
+      <x>20</x>
+      <y>27</y>
+      <width>30</width>
+      <height>13</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <precision>1</precision>
+      <show_units>false</show_units>
+      <wrap_words>false</wrap_words>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="GRAY-BORDER" red="121" green="121" blue="121">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="symbol" version="2.0.0">
+      <name>CstatH-RHtr:CV551_2</name>
+      <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
+      <symbols>
+        <symbol>../../freia-symbols/cryogenics/valve_control_RED.svg</symbol>
+        <symbol>../../freia-symbols/cryogenics/valve_control_GREEN.svg</symbol>
+      </symbols>
+      <x>10</x>
+      <y>7</y>
+      <width>41</width>
+      <height>27</height>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)
+$(actions)</tooltip>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group_20</name>
+    <macros>
+      <P>CstatH</P>
+      <S>LN2</S>
+      <V>EV200</V>
+    </macros>
+    <x>268</x>
+    <y>265</y>
+    <width>35</width>
+    <height>39</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="symbol" version="2.0.0">
+      <name>Symbol_11</name>
+      <pv_name>$(P)-$(S):$(V):sCmd</pv_name>
+      <symbols>
+        <symbol>../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
+        <symbol>../../freia-symbols/cryogenics/valve_general_GREEN.svg</symbol>
+        <symbol>../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
+      </symbols>
+      <x>5</x>
+      <y>15</y>
+      <width>20</width>
+      <height>15</height>
+      <tooltip>$(pv_name)
+$(pv_value)
+$(actions)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_30</name>
+      <text>$(V)</text>
+      <x>2</x>
+      <width>32</width>
+      <height>10</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <wrap_words>false</wrap_words>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group_21</name>
+    <macros>
+      <P>CstatH</P>
+      <S>LN2</S>
+      <V>EV201</V>
+    </macros>
+    <x>303</x>
+    <y>168</y>
+    <width>35</width>
+    <height>39</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="symbol" version="2.0.0">
+      <name>Symbol_12</name>
+      <pv_name>$(P)-$(S):$(V):sCmd</pv_name>
+      <symbols>
+        <symbol>../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
+        <symbol>../../freia-symbols/cryogenics/valve_general_GREEN.svg</symbol>
+        <symbol>../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
+      </symbols>
+      <x>5</x>
+      <y>15</y>
+      <width>20</width>
+      <height>15</height>
+      <tooltip>$(pv_name)
+$(pv_value)
+$(actions)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_31</name>
+      <text>$(V)</text>
+      <x>2</x>
+      <width>32</width>
+      <height>10</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <wrap_words>false</wrap_words>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group_22</name>
+    <macros>
+      <P>CstatH</P>
+      <S>IBoxN2</S>
+    </macros>
+    <x>879</x>
+    <y>115</y>
+    <width>48</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="symbol" version="2.0.0">
+      <name>Symbol_13</name>
+      <pv_name>$(P)-$(S):$(V):sOn</pv_name>
+      <symbols>
+        <symbol>../../freia-symbols/cryogenics/valve_general_closed_RED_v.svg</symbol>
+        <symbol>../../freia-symbols/cryogenics/valve_general_GREEN_v.svg</symbol>
+      </symbols>
+      <width>20</width>
+      <height>20</height>
+      <tooltip>$(pv_name)
+$(pv_value)
+$(actions)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_32</name>
+      <text>$(V)</text>
+      <x>16</x>
+      <y>2</y>
+      <width>32</width>
+      <height>10</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <wrap_words>false</wrap_words>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group_23</name>
+    <macros>
+      <P>CstatH</P>
+      <S>LN2</S>
+      <V>FV200</V>
+    </macros>
+    <x>831</x>
+    <y>767</y>
+    <width>35</width>
+    <height>39</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="symbol" version="2.0.0">
+      <name>Symbol_14</name>
+      <pv_name>$(P)-$(S):$(V):sOn</pv_name>
+      <symbols>
+        <symbol>../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
+        <symbol>../../freia-symbols/cryogenics/valve_general_GREEN.svg</symbol>
+        <symbol>../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
+      </symbols>
+      <x>5</x>
+      <y>15</y>
+      <width>20</width>
+      <height>15</height>
+      <tooltip>$(pv_name)
+$(pv_value)
+$(actions)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_33</name>
+      <text>$(V)</text>
+      <x>2</x>
+      <width>32</width>
+      <height>10</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <wrap_words>false</wrap_words>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group_24</name>
+    <macros>
+      <P>CstatH</P>
+      <S>Vac</S>
+      <V>FV001</V>
+    </macros>
+    <x>1270</x>
+    <y>770</y>
+    <width>35</width>
+    <height>39</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="symbol" version="2.0.0">
+      <name>Symbol_15</name>
+      <pv_name>$(P)-$(S):$(V):sOn</pv_name>
+      <symbols>
+        <symbol>../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
+        <symbol>../../freia-symbols/cryogenics/valve_general_GREEN.svg</symbol>
+        <symbol>../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
+      </symbols>
+      <x>5</x>
+      <y>15</y>
+      <width>20</width>
+      <height>15</height>
+      <tooltip>$(pv_name)
+$(pv_value)
+$(actions)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_34</name>
+      <text>$(V)</text>
+      <x>2</x>
+      <width>32</width>
+      <height>10</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <wrap_words>false</wrap_words>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group_25</name>
+    <macros>
+      <H>201</H>
+      <S>LN2</S>
+    </macros>
+    <x>460</x>
+    <y>378</y>
+    <width>81</width>
+    <height>40</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="symbol" version="2.0.0">
+      <name>Symbol_20</name>
+      <pv_name>CstatH-$(S):EH$(H):sCmd</pv_name>
+      <symbols>
+        <symbol>../../freia-symbols/cryogenics/Htr_General_BLACK.svg</symbol>
+        <symbol>../../freia-symbols/cryogenics/Htr_General_GREEN.svg</symbol>
+      </symbols>
+      <width>40</width>
+      <height>40</height>
+      <tooltip>$(pv_name)
+$(pv_value)
+$(actions)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_16</name>
+      <text>EH$(H)</text>
+      <x>42</x>
+      <y>10</y>
+      <width>39</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group_26</name>
+    <macros>
+      <H>202</H>
+      <S>LN2</S>
+    </macros>
+    <x>614</x>
+    <y>378</y>
+    <width>81</width>
+    <height>40</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="symbol" version="2.0.0">
+      <name>Symbol_21</name>
+      <pv_name>CstatH-$(S):EH$(H):sCmd</pv_name>
+      <symbols>
+        <symbol>../../freia-symbols/cryogenics/Htr_General_BLACK.svg</symbol>
+        <symbol>../../freia-symbols/cryogenics/Htr_General_GREEN.svg</symbol>
+      </symbols>
+      <width>40</width>
+      <height>40</height>
+      <tooltip>$(pv_name)
+$(pv_value)
+$(actions)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_17</name>
+      <text>EH$(H)</text>
+      <x>42</x>
+      <y>10</y>
+      <width>39</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group_27</name>
+    <macros>
+      <H>203</H>
+      <S>LN2</S>
+    </macros>
+    <x>777</x>
+    <y>378</y>
+    <width>81</width>
+    <height>40</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="symbol" version="2.0.0">
+      <name>Symbol_22</name>
+      <pv_name>CstatH-$(S):EH$(H):sCmd</pv_name>
+      <symbols>
+        <symbol>../../freia-symbols/cryogenics/Htr_General_BLACK.svg</symbol>
+        <symbol>../../freia-symbols/cryogenics/Htr_General_GREEN.svg</symbol>
+      </symbols>
+      <width>40</width>
+      <height>40</height>
+      <tooltip>$(pv_name)
+$(pv_value)
+$(actions)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_18</name>
+      <text>EH$(H)</text>
+      <x>42</x>
+      <y>10</y>
+      <width>39</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group_28</name>
+    <macros>
+      <H>200</H>
+      <S>LN2</S>
+    </macros>
+    <x>311</x>
+    <y>378</y>
+    <width>81</width>
+    <height>40</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="symbol" version="2.0.0">
+      <name>Symbol_23</name>
+      <pv_name>CstatH-$(S):EH$(H):sCmd</pv_name>
+      <symbols>
+        <symbol>../../freia-symbols/cryogenics/Htr_General_BLACK.svg</symbol>
+        <symbol>../../freia-symbols/cryogenics/Htr_General_GREEN.svg</symbol>
+      </symbols>
+      <width>40</width>
+      <height>40</height>
+      <tooltip>$(pv_name)
+$(pv_value)
+$(actions)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_19</name>
+      <text>EH$(H)</text>
+      <x>42</x>
+      <y>10</y>
+      <width>39</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
   </widget>
 </display>

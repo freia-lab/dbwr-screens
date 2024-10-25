@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-10-23 17:25:50 by konrad-->
+<!--Saved on 2024-10-25 13:50:22 by konrad-->
 <display version="2.0.0">
   <name>Palette</name>
   <width>500</width>
@@ -289,15 +289,15 @@ $(actions)</tooltip>
   </widget>
   <widget type="symbol" version="2.0.0">
     <name>Symbol_18</name>
-    <pv_name>sim://flipflop(5)</pv_name>
+    <pv_name>CstatH-LN2:EH200:sCmd</pv_name>
     <symbols>
       <symbol>../../freia-symbols/cryogenics/Htr_General_BLACK.svg</symbol>
       <symbol>../../freia-symbols/cryogenics/Htr_General_GREEN.svg</symbol>
     </symbols>
-    <x>360</x>
-    <y>149</y>
-    <width>55</width>
-    <height>61</height>
+    <x>372</x>
+    <y>173</y>
+    <width>43</width>
+    <height>47</height>
     <tooltip>$(pv_name)
 $(pv_value)
 $(actions)</tooltip>
@@ -424,6 +424,299 @@ $(actions)</tooltip>
         <color name="GRAY-BORDER" red="121" green="121" blue="121">
         </color>
       </border_color>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group_18</name>
+    <macros>
+      <P>CstatH</P>
+      <S>LHe</S>
+      <V>CV104</V>
+    </macros>
+    <x>330</x>
+    <y>250</y>
+    <width>58</width>
+    <height>40</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_28</name>
+      <text>$(V)</text>
+      <x>10</x>
+      <width>32</width>
+      <height>10</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_3</name>
+      <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
+      <x>20</x>
+      <y>27</y>
+      <width>30</width>
+      <height>13</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <precision>1</precision>
+      <show_units>false</show_units>
+      <wrap_words>false</wrap_words>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="GRAY-BORDER" red="121" green="121" blue="121">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="symbol" version="2.0.0">
+      <name>CstatH-RHtr:CV551_1</name>
+      <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
+      <symbols>
+        <symbol>../../freia-symbols/cryogenics/valve_control_RED.svg</symbol>
+        <symbol>../../freia-symbols/cryogenics/valve_control_GREEN.svg</symbol>
+      </symbols>
+      <x>10</x>
+      <y>7</y>
+      <width>41</width>
+      <height>27</height>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)
+$(actions)</tooltip>
+    </widget>
+  </widget>
+  <widget type="polygon" version="2.0.0">
+    <name>Polygon</name>
+    <width>15100</width>
+    <height>8190</height>
+    <points>
+      <point x="15100.0" y="8185.0">
+      </point>
+      <point x="15080.0" y="8190.0">
+      </point>
+      <point x="15080.0" y="8180.0">
+      </point>
+      <point x="6980.0" y="7820.0">
+      </point>
+      <point x="5210.0" y="7670.0">
+      </point>
+      <point x="0.0" y="7530.0">
+      </point>
+      <point x="240.0" y="4700.0">
+      </point>
+      <point x="480.0" y="4540.0">
+      </point>
+      <point x="720.0" y="4130.0">
+      </point>
+      <point x="960.0" y="2830.0">
+      </point>
+      <point x="1230.0" y="3060.0">
+      </point>
+      <point x="1500.0" y="3280.0">
+      </point>
+      <point x="1770.0" y="3500.0">
+      </point>
+      <point x="2970.0" y="3630.0">
+      </point>
+      <point x="3190.0" y="2000.0">
+      </point>
+      <point x="3940.0" y="0.0">
+      </point>
+    </points>
+    <line_width>2</line_width>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group_20</name>
+    <macros>
+      <P>CstatH</P>
+      <S>LN2</S>
+      <V>EV200</V>
+    </macros>
+    <x>380</x>
+    <y>107</y>
+    <width>35</width>
+    <height>39</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="symbol" version="2.0.0">
+      <name>Symbol_12</name>
+      <pv_name>$(P)-$(S):$(V):sCmd</pv_name>
+      <symbols>
+        <symbol>../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
+        <symbol>../../freia-symbols/cryogenics/valve_general_GREEN.svg</symbol>
+        <symbol>../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
+      </symbols>
+      <x>5</x>
+      <y>15</y>
+      <width>20</width>
+      <height>15</height>
+      <tooltip>$(pv_name)
+$(pv_value)
+$(actions)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_30</name>
+      <text>$(V)</text>
+      <x>2</x>
+      <width>32</width>
+      <height>10</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <wrap_words>false</wrap_words>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group</name>
+    <macros>
+      <H>200</H>
+      <S>LN2</S>
+    </macros>
+    <x>50</x>
+    <y>250</y>
+    <width>81</width>
+    <height>40</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="symbol" version="2.0.0">
+      <name>Symbol_20</name>
+      <pv_name>CstatH-$(S):EH$(H):sCmd</pv_name>
+      <symbols>
+        <symbol>../../freia-symbols/cryogenics/Htr_General_BLACK.svg</symbol>
+        <symbol>../../freia-symbols/cryogenics/Htr_General_GREEN.svg</symbol>
+      </symbols>
+      <width>40</width>
+      <height>40</height>
+      <tooltip>$(pv_name)
+$(pv_value)
+$(actions)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_15</name>
+      <text>EH$(H)</text>
+      <x>42</x>
+      <y>10</y>
+      <width>39</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>c-valve-h_1</name>
+    <macros>
+      <GHI>CstatH-RHtr:PT550:sRdV</GHI>
+      <GLO>CstatH-LHe:PT100:sRdV</GLO>
+      <L>MKS2</L>
+    </macros>
+    <x>70</x>
+    <y>120</y>
+    <width>65</width>
+    <height>37</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_1</name>
+      <y>1</y>
+      <width>64</width>
+      <height>34</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="MINOR" red="252" green="242" blue="17">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="30" green="144" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <rules>
+        <rule name="Transparent" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0 != 0">
+            <value>false</value>
+          </exp>
+          <pv_name>CstatH-MKS:$(L):sAuto</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_29</name>
+      <actions>
+        <action type="open_display">
+          <file>../../freia-symbols/display-builder/CmdPanels/CstatH-MKS.bob</file>
+          <macros>
+            <MKS>CstatH-MKS:$(L)</MKS>
+            <MKSname>$(L)</MKSname>
+          </macros>
+          <target>window</target>
+          <description>MKS Control</description>
+        </action>
+      </actions>
+      <text>$(L)</text>
+      <x>2</x>
+      <y>3</y>
+      <width>60</width>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <rules>
+        <rule name="background" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0==0">
+            <value>
+              <color name="MINOR" red="252" green="242" blue="17">
+              </color>
+            </value>
+          </exp>
+          <pv_name>CstatH-MKS:$(L):sAuto</pv_name>
+        </rule>
+      </rules>
+      <tooltip>CstatH-MKS:$(L)</tooltip>
     </widget>
   </widget>
 </display>

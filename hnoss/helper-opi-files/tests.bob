@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2024-10-25 15:36:42 by konrad-->
+<display version="2.0.0">
+  <name>overview</name>
+  <macros>
+    <system>CstatV-LHe</system>
+  </macros>
+  <width>1440</width>
+  <height>860</height>
+  <background_color>
+    <color name="BACKGROUND" red="220" green="225" blue="221">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <grid_visible>false</grid_visible>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Tests</text>
+    <x>30</x>
+    <y>10</y>
+    <height>40</height>
+    <font>
+      <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+      </font>
+    </font>
+  </widget>
+</display>
