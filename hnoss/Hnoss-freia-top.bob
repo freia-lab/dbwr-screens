@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-10-25 15:35:22 by konrad-->
+<!--Saved on 2024-10-30 17:33:18 by konrad-->
 <display version="2.0.0">
   <name>HNOSS</name>
   <macros>
@@ -243,8 +243,8 @@ Cavity Id or 0 if no cavity</tooltip>
             <file>helper-opi-files/ReheatSys.bob</file>
             <x>17</x>
             <y>16</y>
-            <width>1482</width>
-            <height>891</height>
+            <width>1500</width>
+            <height>908</height>
             <actions>
             </actions>
             <border_color>
@@ -260,7 +260,7 @@ Cavity Id or 0 if no cavity</tooltip>
           <widget type="embedded" version="2.0.0">
             <name>Linking Container Template</name>
             <file>helper-opi-files/LiquidN2.bob</file>
-            <width>1439</width>
+            <width>1500</width>
             <height>908</height>
             <actions>
             </actions>
@@ -278,7 +278,11 @@ Cavity Id or 0 if no cavity</tooltip>
             <name>Embedded Display_2</name>
             <file>helper-opi-files/tests.bob</file>
             <width>1500</width>
-            <height>894</height>
+            <height>908</height>
+            <border_color>
+              <color name="IO Border" red="215" green="215" blue="215">
+              </color>
+            </border_color>
           </widget>
         </children>
       </tab>
@@ -291,7 +295,7 @@ Cavity Id or 0 if no cavity</tooltip>
       <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
-    <active_tab>1</active_tab>
+    <active_tab>4</active_tab>
     <tab_height>10</tab_height>
     <actions>
     </actions>
@@ -609,8 +613,8 @@ thermal shield cooling</text>
       <name>LED Template_22</name>
       <pv_name>CstatH-Ctrl:SQ1:sRun</pv_name>
       <bit>0</bit>
-      <width>16</width>
-      <height>16</height>
+      <width>12</width>
+      <height>12</height>
       <off_color>
         <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
         </color>
@@ -635,8 +639,8 @@ thermal shield cooling</text>
       <pv_name>CstatH-Ctrl:SQ1:sStopping</pv_name>
       <bit>0</bit>
       <y>15</y>
-      <width>16</width>
-      <height>16</height>
+      <width>12</width>
+      <height>12</height>
       <off_color>
         <color name="LED-ORANGE-OFF" red="110" green="105" blue="90">
         </color>
@@ -669,8 +673,8 @@ thermal shield cooling</text>
       <name>LED Template_21</name>
       <pv_name>CstatH-Ctrl:SQ2:sRun</pv_name>
       <bit>0</bit>
-      <width>16</width>
-      <height>16</height>
+      <width>12</width>
+      <height>12</height>
       <off_color>
         <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
         </color>
@@ -695,8 +699,8 @@ thermal shield cooling</text>
       <pv_name>CstatH-Ctrl:SQ2:sStopping</pv_name>
       <bit>0</bit>
       <y>15</y>
-      <width>16</width>
-      <height>16</height>
+      <width>12</width>
+      <height>12</height>
       <off_color>
         <color name="LED-ORANGE-OFF" red="110" green="105" blue="90">
         </color>
@@ -729,8 +733,8 @@ thermal shield cooling</text>
       <name>LED Template_19</name>
       <pv_name>CstatH-Ctrl:SQ0:sRun</pv_name>
       <bit>0</bit>
-      <width>16</width>
-      <height>16</height>
+      <width>12</width>
+      <height>12</height>
       <off_color>
         <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
         </color>
@@ -755,8 +759,8 @@ thermal shield cooling</text>
       <pv_name>CstatH-Ctrl:SQ0:sStopping</pv_name>
       <bit>0</bit>
       <y>15</y>
-      <width>16</width>
-      <height>16</height>
+      <width>12</width>
+      <height>12</height>
       <off_color>
         <color name="LED-ORANGE-OFF" red="110" green="105" blue="90">
         </color>
@@ -789,8 +793,8 @@ thermal shield cooling</text>
       <name>LED Template_23</name>
       <pv_name>CstatH-Ctrl:SQ3A:sRun</pv_name>
       <bit>0</bit>
-      <width>16</width>
-      <height>16</height>
+      <width>12</width>
+      <height>12</height>
       <off_color>
         <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
         </color>
@@ -815,8 +819,8 @@ thermal shield cooling</text>
       <pv_name>CstatH-Ctrl:SQ3A:sStopping</pv_name>
       <bit>0</bit>
       <y>15</y>
-      <width>16</width>
-      <height>16</height>
+      <width>12</width>
+      <height>12</height>
       <off_color>
         <color name="LED-ORANGE-OFF" red="110" green="105" blue="90">
         </color>
@@ -849,8 +853,8 @@ thermal shield cooling</text>
       <name>LED Template_24</name>
       <pv_name>CstatH-Ctrl:SQ3B:sRun</pv_name>
       <bit>0</bit>
-      <width>16</width>
-      <height>16</height>
+      <width>12</width>
+      <height>12</height>
       <off_color>
         <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
         </color>
@@ -875,8 +879,8 @@ thermal shield cooling</text>
       <pv_name>CstatH-Ctrl:SQ3B:sStopping</pv_name>
       <bit>0</bit>
       <y>15</y>
-      <width>16</width>
-      <height>16</height>
+      <width>12</width>
+      <height>12</height>
       <off_color>
         <color name="LED-ORANGE-OFF" red="110" green="105" blue="90">
         </color>
@@ -909,8 +913,8 @@ thermal shield cooling</text>
       <name>LED Template_25</name>
       <pv_name>CstatH-Ctrl:SQ4:sRun</pv_name>
       <bit>0</bit>
-      <width>16</width>
-      <height>16</height>
+      <width>12</width>
+      <height>12</height>
       <off_color>
         <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
         </color>
@@ -935,8 +939,8 @@ thermal shield cooling</text>
       <pv_name>CstatH-Ctrl:SQ4:sStopping</pv_name>
       <bit>0</bit>
       <y>15</y>
-      <width>16</width>
-      <height>16</height>
+      <width>12</width>
+      <height>12</height>
       <off_color>
         <color name="LED-ORANGE-OFF" red="110" green="105" blue="90">
         </color>
@@ -969,8 +973,8 @@ thermal shield cooling</text>
       <name>LED Template_20</name>
       <pv_name>CstatH-Ctrl:SQ5:sRun</pv_name>
       <bit>0</bit>
-      <width>16</width>
-      <height>16</height>
+      <width>12</width>
+      <height>12</height>
       <off_color>
         <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
         </color>
@@ -995,8 +999,8 @@ thermal shield cooling</text>
       <pv_name>CstatH-Ctrl:SQ5:sStopping</pv_name>
       <bit>0</bit>
       <y>15</y>
-      <width>16</width>
-      <height>16</height>
+      <width>12</width>
+      <height>12</height>
       <off_color>
         <color name="LED-ORANGE-OFF" red="110" green="105" blue="90">
         </color>
@@ -1029,8 +1033,8 @@ thermal shield cooling</text>
       <name>LED Template_26</name>
       <pv_name>CstatH-Ctrl:SQ6:sRun</pv_name>
       <bit>0</bit>
-      <width>16</width>
-      <height>16</height>
+      <width>12</width>
+      <height>12</height>
       <off_color>
         <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
         </color>
@@ -1055,8 +1059,8 @@ thermal shield cooling</text>
       <pv_name>CstatH-Ctrl:SQ6:sStopping</pv_name>
       <bit>0</bit>
       <y>15</y>
-      <width>16</width>
-      <height>16</height>
+      <width>12</width>
+      <height>12</height>
       <off_color>
         <color name="LED-ORANGE-OFF" red="110" green="105" blue="90">
         </color>
@@ -1089,8 +1093,8 @@ thermal shield cooling</text>
       <name>LED Template_27</name>
       <pv_name>CstatH-Ctrl:SQ7:sRun</pv_name>
       <bit>0</bit>
-      <width>16</width>
-      <height>16</height>
+      <width>12</width>
+      <height>12</height>
       <off_color>
         <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
         </color>
@@ -1115,8 +1119,8 @@ thermal shield cooling</text>
       <pv_name>CstatH-Ctrl:SQ7:sStopping</pv_name>
       <bit>0</bit>
       <y>15</y>
-      <width>16</width>
-      <height>16</height>
+      <width>12</width>
+      <height>12</height>
       <off_color>
         <color name="LED-ORANGE-OFF" red="110" green="105" blue="90">
         </color>
@@ -1149,8 +1153,8 @@ thermal shield cooling</text>
       <name>LED Template_28</name>
       <pv_name>CstatH-Ctrl:SQ8:sRun</pv_name>
       <bit>0</bit>
-      <width>16</width>
-      <height>16</height>
+      <width>12</width>
+      <height>12</height>
       <off_color>
         <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
         </color>
@@ -1175,8 +1179,8 @@ thermal shield cooling</text>
       <pv_name>CstatH-Ctrl:SQ8:sStopping</pv_name>
       <bit>0</bit>
       <y>15</y>
-      <width>16</width>
-      <height>16</height>
+      <width>12</width>
+      <height>12</height>
       <off_color>
         <color name="LED-ORANGE-OFF" red="110" green="105" blue="90">
         </color>
@@ -1209,8 +1213,8 @@ thermal shield cooling</text>
       <name>LED Template_29</name>
       <pv_name>CstatH-Ctrl:SQ9:sRun</pv_name>
       <bit>0</bit>
-      <width>16</width>
-      <height>16</height>
+      <width>12</width>
+      <height>12</height>
       <off_color>
         <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
         </color>
@@ -1235,8 +1239,8 @@ thermal shield cooling</text>
       <pv_name>CstatH-Ctrl:SQ9:sStopping</pv_name>
       <bit>0</bit>
       <y>15</y>
-      <width>16</width>
-      <height>16</height>
+      <width>12</width>
+      <height>12</height>
       <off_color>
         <color name="LED-ORANGE-OFF" red="110" green="105" blue="90">
         </color>
@@ -1269,8 +1273,8 @@ thermal shield cooling</text>
       <name>LED Template_30</name>
       <pv_name>CstatH-Ctrl:SQ10:sRun</pv_name>
       <bit>0</bit>
-      <width>16</width>
-      <height>16</height>
+      <width>12</width>
+      <height>12</height>
       <off_color>
         <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
         </color>
@@ -1295,8 +1299,8 @@ thermal shield cooling</text>
       <pv_name>CstatH-Ctrl:SQ10:sStopping</pv_name>
       <bit>0</bit>
       <y>15</y>
-      <width>16</width>
-      <height>16</height>
+      <width>12</width>
+      <height>12</height>
       <off_color>
         <color name="LED-ORANGE-OFF" red="110" green="105" blue="90">
         </color>
@@ -1329,8 +1333,8 @@ thermal shield cooling</text>
       <name>LED Template_31</name>
       <pv_name>CstatH-Ctrl:SQ11:sRun</pv_name>
       <bit>0</bit>
-      <width>16</width>
-      <height>16</height>
+      <width>12</width>
+      <height>12</height>
       <off_color>
         <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
         </color>
@@ -1355,8 +1359,8 @@ thermal shield cooling</text>
       <pv_name>CstatH-Ctrl:SQ11:sStopping</pv_name>
       <bit>0</bit>
       <y>15</y>
-      <width>16</width>
-      <height>16</height>
+      <width>12</width>
+      <height>12</height>
       <off_color>
         <color name="LED-ORANGE-OFF" red="110" green="105" blue="90">
         </color>
@@ -1389,8 +1393,8 @@ thermal shield cooling</text>
       <name>LED Template_32</name>
       <pv_name>CstatH-Ctrl:SQ12A:sRun</pv_name>
       <bit>0</bit>
-      <width>16</width>
-      <height>16</height>
+      <width>12</width>
+      <height>12</height>
       <off_color>
         <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
         </color>
@@ -1415,8 +1419,8 @@ thermal shield cooling</text>
       <pv_name>CstatH-Ctrl:SQ12A:sStopping</pv_name>
       <bit>0</bit>
       <y>15</y>
-      <width>16</width>
-      <height>16</height>
+      <width>12</width>
+      <height>12</height>
       <off_color>
         <color name="LED-ORANGE-OFF" red="110" green="105" blue="90">
         </color>
@@ -1449,8 +1453,8 @@ thermal shield cooling</text>
       <name>LED Template_33</name>
       <pv_name>CstatH-Ctrl:SQ12B:sRun</pv_name>
       <bit>0</bit>
-      <width>16</width>
-      <height>16</height>
+      <width>12</width>
+      <height>12</height>
       <off_color>
         <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
         </color>
@@ -1475,8 +1479,8 @@ thermal shield cooling</text>
       <pv_name>CstatH-Ctrl:SQ12B:sStopping</pv_name>
       <bit>0</bit>
       <y>15</y>
-      <width>16</width>
-      <height>16</height>
+      <width>12</width>
+      <height>12</height>
       <off_color>
         <color name="LED-ORANGE-OFF" red="110" green="105" blue="90">
         </color>
@@ -1509,8 +1513,8 @@ thermal shield cooling</text>
       <name>LED Template_34</name>
       <pv_name>CstatH-Ctrl:SQ13:sRun</pv_name>
       <bit>0</bit>
-      <width>16</width>
-      <height>15</height>
+      <width>12</width>
+      <height>12</height>
       <off_color>
         <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
         </color>
@@ -1535,8 +1539,8 @@ thermal shield cooling</text>
       <pv_name>CstatH-Ctrl:SQ13:sStopping</pv_name>
       <bit>0</bit>
       <y>15</y>
-      <width>16</width>
-      <height>16</height>
+      <width>12</width>
+      <height>12</height>
       <off_color>
         <color name="LED-ORANGE-OFF" red="110" green="105" blue="90">
         </color>

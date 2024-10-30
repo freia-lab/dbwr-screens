@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-10-25 10:54:08 by konrad-->
+<!--Saved on 2024-10-30 15:03:46 by konrad-->
 <display version="2.0.0">
   <macros>
     <system>CstatH-LN2</system>
     <V>FV400</V>
   </macros>
-  <width>1440</width>
-  <height>945</height>
+  <width>1400</width>
+  <height>900</height>
   <background_color>
     <color name="BACKGROUND" red="220" green="225" blue="221">
     </color>
