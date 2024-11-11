@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-11-01 14:09:01 by konrad-->
+<!--Saved on 2024-11-11 15:58:51 by konrad-->
 <display version="2.0.0">
   <name>oper-view</name>
   <width>1496</width>
@@ -10,6 +10,74 @@
   </background_color>
   <grid_step_x>2</grid_step_x>
   <grid_step_y>2</grid_step_y>
+  <widget type="group" version="3.0.0">
+    <name>Group</name>
+    <x>1152</x>
+    <y>627</y>
+    <width>187</width>
+    <height>170</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_93</name>
+      <class>GROUP</class>
+      <y>20</y>
+      <width>187</width>
+      <height>150</height>
+      <line_width>1</line_width>
+      <line_color use_class="true">
+        <color name="GROUP-BORDER" red="150" green="155" blue="151">
+        </color>
+      </line_color>
+      <background_color use_class="true">
+        <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+        </color>
+      </background_color>
+      <corner_width>10</corner_width>
+      <corner_height>10</corner_height>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_92</name>
+      <y>20</y>
+      <width>187</width>
+      <height>10</height>
+      <line_width>0</line_width>
+      <background_color>
+        <color name="GROUP-BORDER" red="150" green="155" blue="151">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_91</name>
+      <width>187</width>
+      <height>30</height>
+      <line_width>0</line_width>
+      <background_color>
+        <color name="GROUP-BORDER" red="150" green="155" blue="151">
+        </color>
+      </background_color>
+      <corner_width>10</corner_width>
+      <corner_height>10</corner_height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_51</name>
+      <class>GROUP-TITLE</class>
+      <text>Archive Plots</text>
+      <width>187</width>
+      <height use_class="true">30</height>
+      <font use_class="true">
+        <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="GROUP-TEXT" red="25" green="25" blue="25">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <wrap_words use_class="true">false</wrap_words>
+    </widget>
+  </widget>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_89</name>
     <class>GROUP</class>
@@ -336,9 +404,9 @@
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_62</name>
     <class>GROUP-RED</class>
-    <x>544</x>
+    <x>496</x>
     <y>90</y>
-    <width>290</width>
+    <width>324</width>
     <height>40</height>
     <line_width>1</line_width>
     <line_color use_class="true">
@@ -355,7 +423,7 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_5</name>
     <pv_name>RadProt-Bunker1:GD-02:sDoseRt</pv_name>
-    <x>715</x>
+    <x>667</x>
     <y>100</y>
     <width>101</width>
   </widget>
@@ -687,13 +755,13 @@
   <widget type="label" version="2.0.0">
     <name>Label_29</name>
     <text>GD02 (Inside bunker):</text>
-    <x>554</x>
+    <x>506</x>
     <y>100</y>
     <width>161</width>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_130</name>
-    <text>FT550</text>
+    <text>FT551</text>
     <x>1089</x>
     <y>100</y>
     <width>36</width>
@@ -720,7 +788,7 @@
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_143</name>
-    <pv_name>CstatH-RHtr:FT550:sRdV</pv_name>
+    <pv_name>CstatH-RHtr:FT551:sRdV</pv_name>
     <x>1084</x>
     <y>118</y>
     <width>80</width>
@@ -2955,5 +3023,485 @@ $(actions)</tooltip>
     <tooltip>$(pv_name)
 $(pv_value)
 $(actions)</tooltip>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group</name>
+    <x>614</x>
+    <y>472</y>
+    <width>128</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_4</name>
+      <text>f0:</text>
+      <width>36</width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_71</name>
+      <pv_name>LLRF-PNA:Mrkr-2:Freq:sRdV</pv_name>
+      <x>22</x>
+      <width>106</width>
+      <height>17</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <precision>6</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group_1</name>
+    <x>1024</x>
+    <y>473</y>
+    <width>128</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_5</name>
+      <text>f0:</text>
+      <width>36</width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_72</name>
+      <pv_name>LLRF-PNA:Mrkr-3:Freq:sRdV</pv_name>
+      <x>22</x>
+      <width>106</width>
+      <height>17</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <precision>6</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group</name>
+    <macros>
+      <pv>CstatH-Vac:PT020:PrsR</pv>
+    </macros>
+    <x>1382</x>
+    <y>337</y>
+    <width>30</width>
+    <height>30</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="picture" version="2.0.0">
+      <name>Picture_1</name>
+      <file>databrowser@3x.png</file>
+      <width>30</width>
+      <height>30</height>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_1</name>
+      <actions>
+        <action type="open_webpage">
+          <url>https://freia.physics.uu.se/retrieval1/ui/viewer/archViewer.html?pv=$(pv)&amp;from=-1d</url>
+          <description>Open Web Page</description>
+        </action>
+      </actions>
+      <text></text>
+      <width>30</width>
+      <transparent>true</transparent>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group_2</name>
+    <macros>
+      <pv>CstatH-Vac:PT022:PrsR</pv>
+    </macros>
+    <x>1435</x>
+    <y>413</y>
+    <width>30</width>
+    <height>30</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="picture" version="2.0.0">
+      <name>Picture_5</name>
+      <file>databrowser@3x.png</file>
+      <width>30</width>
+      <height>30</height>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_2</name>
+      <actions>
+        <action type="open_webpage">
+          <url>https://freia.physics.uu.se/retrieval1/ui/viewer/archViewer.html?pv=$(pv)&amp;from=-1d</url>
+          <description>Open Web Page</description>
+        </action>
+      </actions>
+      <text></text>
+      <width>30</width>
+      <transparent>true</transparent>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group_3</name>
+    <macros>
+      <pv>CstatH-Vac:PT023:PrsR</pv>
+    </macros>
+    <x>1435</x>
+    <y>450</y>
+    <width>30</width>
+    <height>30</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="picture" version="2.0.0">
+      <name>Picture_6</name>
+      <file>databrowser@3x.png</file>
+      <width>30</width>
+      <height>30</height>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_3</name>
+      <actions>
+        <action type="open_webpage">
+          <url>https://freia.physics.uu.se/retrieval1/ui/viewer/archViewer.html?pv=$(pv)&amp;from=-1d</url>
+          <description>Open Web Page</description>
+        </action>
+      </actions>
+      <text></text>
+      <width>30</width>
+      <transparent>true</transparent>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group_4</name>
+    <macros>
+      <pv>CstatH-Vac:PT024:PrsR</pv>
+    </macros>
+    <x>399</x>
+    <y>337</y>
+    <width>30</width>
+    <height>30</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="picture" version="2.0.0">
+      <name>Picture_7</name>
+      <file>databrowser@3x.png</file>
+      <width>30</width>
+      <height>30</height>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_4</name>
+      <actions>
+        <action type="open_webpage">
+          <url>https://freia.physics.uu.se/retrieval1/ui/viewer/archViewer.html?pv=$(pv)&amp;from=-1d</url>
+          <description>Open Web Page</description>
+        </action>
+      </actions>
+      <text></text>
+      <width>30</width>
+      <transparent>true</transparent>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group_5</name>
+    <macros>
+      <pv>CstatH-Vac:PT026:PrsR</pv>
+    </macros>
+    <x>320</x>
+    <y>414</y>
+    <width>30</width>
+    <height>30</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="picture" version="2.0.0">
+      <name>Picture_8</name>
+      <file>databrowser@3x.png</file>
+      <width>30</width>
+      <height>30</height>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_5</name>
+      <actions>
+        <action type="open_webpage">
+          <url>https://freia.physics.uu.se/retrieval1/ui/viewer/archViewer.html?pv=$(pv)&amp;from=-1d</url>
+          <description>Open Web Page</description>
+        </action>
+      </actions>
+      <text></text>
+      <width>30</width>
+      <transparent>true</transparent>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group_6</name>
+    <macros>
+      <pv>CstatH-Vac:PT027:PrsR</pv>
+    </macros>
+    <x>320</x>
+    <y>449</y>
+    <width>30</width>
+    <height>30</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="picture" version="2.0.0">
+      <name>Picture_9</name>
+      <file>databrowser@3x.png</file>
+      <width>30</width>
+      <height>30</height>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_6</name>
+      <actions>
+        <action type="open_webpage">
+          <url>https://freia.physics.uu.se/retrieval1/ui/viewer/archViewer.html?pv=$(pv)&amp;from=-1d</url>
+          <description>Open Web Page</description>
+        </action>
+      </actions>
+      <text></text>
+      <width>30</width>
+      <transparent>true</transparent>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>plot_pt101</name>
+    <macros>
+      <pv>CstatH-LHe:PT101:sRdV</pv>
+    </macros>
+    <x>1059</x>
+    <y>226</y>
+    <width>30</width>
+    <height>30</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0 &gt; 9000">
+          <value>false</value>
+        </exp>
+        <pv_name>CstatH-LHe:PT101:sRdV</pv_name>
+      </rule>
+    </rules>
+    <widget type="picture" version="2.0.0">
+      <name>Picture_10</name>
+      <file>databrowser@3x.png</file>
+      <width>30</width>
+      <height>30</height>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_7</name>
+      <actions>
+        <action type="open_webpage">
+          <url>https://freia.physics.uu.se/retrieval1/ui/viewer/archViewer.html?pv=$(pv)&amp;from=-1d</url>
+          <description>Open Web Page</description>
+        </action>
+      </actions>
+      <text></text>
+      <width>30</width>
+      <transparent>true</transparent>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>plot_pt102</name>
+    <macros>
+      <pv>CstatH-LHe:PT102:sRdV</pv>
+    </macros>
+    <x>1059</x>
+    <y>226</y>
+    <width>30</width>
+    <height>30</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="vis" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0 &gt; 9000">
+          <value>false</value>
+        </exp>
+        <pv_name>CstatH-LHe:PT102:sRdV</pv_name>
+      </rule>
+    </rules>
+    <widget type="picture" version="2.0.0">
+      <name>Picture_12</name>
+      <file>databrowser@3x.png</file>
+      <width>30</width>
+      <height>30</height>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_9</name>
+      <actions>
+        <action type="open_webpage">
+          <url>https://freia.physics.uu.se/retrieval1/ui/viewer/archViewer.html?pv=$(pv)&amp;from=-1d</url>
+          <description>Open Web Page</description>
+        </action>
+      </actions>
+      <text></text>
+      <width>30</width>
+      <transparent>true</transparent>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group_8</name>
+    <macros>
+      <pv>CstatH-RHtr:FT551:sRdV</pv>
+    </macros>
+    <x>1167</x>
+    <y>104</y>
+    <width>30</width>
+    <height>30</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="picture" version="2.0.0">
+      <name>Picture_13</name>
+      <file>databrowser@3x.png</file>
+      <width>30</width>
+      <height>30</height>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_11</name>
+      <actions>
+        <action type="open_webpage">
+          <url>https://freia.physics.uu.se/retrieval1/ui/viewer/archViewer.html?pv=$(pv)&amp;from=-1d</url>
+          <description>Open Web Page</description>
+        </action>
+      </actions>
+      <text></text>
+      <width>30</width>
+      <transparent>true</transparent>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="open_webpage">
+        <url>https://freia.physics.uu.se/retrieval1/ui/viewer/archViewer.html?pv=LLRF-PNA:Mrkr-2:Freq:sRdV&amp;pv=LLRF-PNA:Mrkr-3:Freq:sRdV&amp;from=-1d</url>
+        <description>Cavities frequency</description>
+      </action>
+    </actions>
+    <x>1164</x>
+    <y>668</y>
+    <width>165</width>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_12</name>
+    <actions>
+      <action type="open_webpage">
+        <url>https://freia.physics.uu.se/retrieval1/ui/viewer/archViewer.html?pv=LLRF-Ctrl:FwdPwr:sRdV&amp;pv=LLRF-Ctrl:ReflPwr:sRdV&amp;pv=LLRF-Ctrl:InPwr:sRdV&amp;from=-8h</url>
+        <description>Power meters</description>
+      </action>
+    </actions>
+    <x>1164</x>
+    <y>708</y>
+    <width>165</width>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_13</name>
+    <actions>
+      <action type="open_webpage">
+        <url>https://freia.physics.uu.se/retrieval1/ui/viewer/archViewer.html?pv=LLRF-Ctrl:FwdPwr:sRdV&amp;pv=RadProt-Bunker1:GD-02:sDoseRt&amp;pv=CstatH-Vac:PT024:PrsR&amp;pv=CstatH-Vac:PT020:PrsR&amp;from=-8h</url>
+        <description>Conditioning</description>
+      </action>
+    </actions>
+    <x>1164</x>
+    <y>748</y>
+    <width>165</width>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group_9</name>
+    <macros>
+      <pv>RadProt-Bunker1:GD-02:sDoseRt</pv>
+    </macros>
+    <x>772</x>
+    <y>96</y>
+    <width>30</width>
+    <height>30</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="picture" version="2.0.0">
+      <name>Picture_14</name>
+      <file>databrowser@3x.png</file>
+      <width>30</width>
+      <height>30</height>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_14</name>
+      <actions>
+        <action type="open_webpage">
+          <url>https://freia.physics.uu.se/retrieval1/ui/viewer/archViewer.html?pv=$(pv)&amp;from=-1d</url>
+          <description>Open Web Page</description>
+        </action>
+      </actions>
+      <text></text>
+      <width>30</width>
+      <transparent>true</transparent>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group_10</name>
+    <macros>
+      <pv>CstatH-LHe:LT101:sRdV</pv>
+    </macros>
+    <x>794</x>
+    <y>324</y>
+    <width>30</width>
+    <height>30</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="picture" version="2.0.0">
+      <name>Picture_15</name>
+      <file>databrowser@3x.png</file>
+      <width>30</width>
+      <height>30</height>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_15</name>
+      <actions>
+        <action type="open_webpage">
+          <url>https://freia.physics.uu.se/retrieval1/ui/viewer/archViewer.html?pv=$(pv)&amp;from=-1d</url>
+          <description>Open Web Page</description>
+        </action>
+      </actions>
+      <text></text>
+      <width>30</width>
+      <transparent>true</transparent>
+      <tooltip>$(actions)</tooltip>
+    </widget>
   </widget>
 </display>
