@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-08-27 10:59:06 by konrad-->
+<!--Saved on 2024-11-19 23:14:33 by konrad-->
 <display version="2.0.0">
   <name>status</name>
   <macros>
@@ -875,7 +875,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_16</name>
-        <pv_name>CstatH-LHe:LT100:sRdV</pv_name>
+        <pv_name>CstatH-LHe:LT101:sRdV</pv_name>
         <x>370</x>
         <y>218</y>
         <width>140</width>
