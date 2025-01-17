@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-11-18 15:40:22 by konrad-->
+<!--Saved on 2025-01-17 14:58:44 by konrad-->
 <display version="2.0.0">
   <name>oper-view</name>
   <width>1496</width>
@@ -78,7 +78,7 @@
       <name>Action Button_13</name>
       <actions>
         <action type="open_webpage">
-          <url>https://freia.physics.uu.se/retrieval1/ui/viewer/archViewer.html?pv=LLRF-Ctrl:FwdPwr:sRdV&amp;pv=RadProt-Bunker1:GD-02:sDoseRt&amp;pv=LLRF-Ctrl:Eacc:sRdV&amp;from=-8h</url>
+          <url>https://freia.physics.uu.se/retrieval1/ui/viewer/archViewer.html?pv=LLRF-Ctrl:FwdPwr:sRdV&amp;pv=RadProt-Aux:GD-02:sDoseRt&amp;pv=LLRF-Ctrl:Eacc:sRdV&amp;pv=RadProt-Aux:GD-03:sDoseRt&amp;from=-8h</url>
           <description>Conditioning</description>
         </action>
       </actions>
@@ -91,7 +91,7 @@
       <name>Action Button_18</name>
       <actions>
         <action type="open_webpage">
-          <url>https://freia.physics.uu.se/retrieval1/ui/viewer/archViewer.html?pv=LLRF-Ctrl:Q0:sRdV&amp;pv=RadProt-Bunker1:GD-02:sDoseRt&amp;pv=LLRF-Ctrl:Eacc:sRdV&amp;from=-8h</url>
+          <url>https://freia.physics.uu.se/retrieval1/ui/viewer/archViewer.html?pv=LLRF-Ctrl:Q0:sRdV&amp;pv=RadProt-Aux:GD-02:sDoseRt&amp;pv=LLRF-Ctrl:Eacc:sRdV&amp;pv=RadProt-Aux:GD-03:sDoseRt&amp;from=-8h</url>
           <description>Q0. Eacc, Radiation</description>
         </action>
       </actions>
@@ -252,9 +252,9 @@
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_75</name>
     <class>GROUP</class>
-    <x>874</x>
+    <x>900</x>
     <y>90</y>
-    <width>191</width>
+    <width>165</width>
     <height>116</height>
     <line_width>1</line_width>
     <line_color use_class="true">
@@ -469,9 +469,9 @@
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_62</name>
     <class>GROUP-RED</class>
-    <x>496</x>
-    <y>90</y>
-    <width>324</width>
+    <x>788</x>
+    <y>602</y>
+    <width>273</width>
     <height>40</height>
     <line_width>1</line_width>
     <line_color use_class="true">
@@ -488,9 +488,9 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_5</name>
     <pv_name>RadProt-Bunker1:GD-02:sDoseRt</pv_name>
-    <x>667</x>
-    <y>100</y>
-    <width>101</width>
+    <x>907</x>
+    <y>612</y>
+    <width>95</width>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_91</name>
@@ -819,9 +819,9 @@
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label_29</name>
-    <text>GD02 (Inside bunker):</text>
-    <x>506</x>
-    <y>100</y>
+    <text>Bunker1:GD02:</text>
+    <x>798</x>
+    <y>612</y>
     <width>161</width>
   </widget>
   <widget type="label" version="2.0.0">
@@ -1886,7 +1886,7 @@ $(actions)</tooltip>
     <name>Text Update Template_154</name>
     <pv_name>CstatH-Vac:PT024:PrsR</pv_name>
     <x>433</x>
-    <y>345</y>
+    <y>322</y>
     <width>85</width>
     <height>17</height>
     <format>2</format>
@@ -1904,7 +1904,7 @@ $(actions)</tooltip>
     <name>Label Template_141</name>
     <text>PT024 (Pe)</text>
     <x>433</x>
-    <y>325</y>
+    <y>302</y>
     <width>81</width>
     <height>18</height>
     <font>
@@ -2019,11 +2019,12 @@ $(actions)</tooltip>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_61</name>
-    <x>466</x>
-    <y>362</y>
-    <width>1</width>
+    <x>464</x>
+    <y>342</y>
+    <width>2</width>
+    <height>40</height>
     <points>
-      <point x="0.0" y="20.0">
+      <point x="2.0" y="40.0">
       </point>
       <point x="0.0" y="0.0">
       </point>
@@ -2726,8 +2727,8 @@ $(actions)</tooltip>
   <widget type="label" version="2.0.0">
     <name>Label_3</name>
     <text>Valve Box</text>
-    <x>880</x>
-    <y>95</y>
+    <x>935</x>
+    <y>90</y>
     <font>
       <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
       </font>
@@ -3272,7 +3273,7 @@ $(actions)</tooltip>
       <pv>CstatH-Vac:PT024:PrsR</pv>
     </macros>
     <x>399</x>
-    <y>337</y>
+    <y>314</y>
     <width>30</width>
     <height>30</height>
     <style>3</style>
@@ -3473,8 +3474,8 @@ $(actions)</tooltip>
     <macros>
       <pv>RadProt-Bunker1:GD-02:sDoseRt</pv>
     </macros>
-    <x>772</x>
-    <y>96</y>
+    <x>1014</x>
+    <y>608</y>
     <width>30</width>
     <height>30</height>
     <style>3</style>
@@ -3827,5 +3828,397 @@ $(actions)</tooltip>
         <tooltip>$(actions)</tooltip>
       </widget>
     </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group</name>
+    <x>840</x>
+    <y>170</y>
+    <width>40</width>
+    <height>40</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="ellipse" version="2.0.0">
+      <name>Ellipse_1</name>
+      <width>40</width>
+      <height>40</height>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="GREEN-GROUP-BACKGROUND" red="172" green="191" blue="173">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_12</name>
+      <text>IC</text>
+      <x>10</x>
+      <y>10</y>
+      <width>20</width>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group_13</name>
+    <x>880</x>
+    <y>536</y>
+    <width>40</width>
+    <height>40</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="ellipse" version="2.0.0">
+      <name>Ellipse_2</name>
+      <width>40</width>
+      <height>40</height>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="GREEN-GROUP-BACKGROUND" red="172" green="191" blue="173">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_13</name>
+      <text>IC</text>
+      <x>10</x>
+      <y>10</y>
+      <width>20</width>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group_14</name>
+    <x>377</x>
+    <y>359</y>
+    <width>40</width>
+    <height>40</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="ellipse" version="2.0.0">
+      <name>Ellipse_3</name>
+      <width>40</width>
+      <height>40</height>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="GREEN-GROUP-BACKGROUND" red="172" green="191" blue="173">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_14</name>
+      <text>G-M</text>
+      <x>5</x>
+      <y>10</y>
+      <width>30</width>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group_15</name>
+    <x>1435</x>
+    <y>360</y>
+    <width>40</width>
+    <height>40</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="ellipse" version="2.0.0">
+      <name>Ellipse_4</name>
+      <width>40</width>
+      <height>40</height>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="GREEN-GROUP-BACKGROUND" red="172" green="191" blue="173">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_15</name>
+      <text>G-M</text>
+      <x>5</x>
+      <y>10</y>
+      <width>30</width>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_65</name>
+    <class>GROUP-RED</class>
+    <x>280</x>
+    <y>90</y>
+    <width>273</width>
+    <height>40</height>
+    <line_width>1</line_width>
+    <line_color use_class="true">
+      <color name="RED-GROUP-BORDER" red="167" green="134" blue="130">
+      </color>
+    </line_color>
+    <background_color use_class="true">
+      <color name="RED-GROUP-BACKGROUND" red="208" green="175" blue="172">
+      </color>
+    </background_color>
+    <corner_width>10</corner_width>
+    <corner_height>10</corner_height>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group_16</name>
+    <macros>
+      <pv>RadProt-Aux:GD-02:sDoseRt</pv>
+    </macros>
+    <x>506</x>
+    <y>96</y>
+    <width>30</width>
+    <height>30</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="picture" version="2.0.0">
+      <name>Picture_18</name>
+      <file>databrowser@3x.png</file>
+      <width>30</width>
+      <height>30</height>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_20</name>
+      <actions>
+        <action type="open_webpage">
+          <url>https://freia.physics.uu.se/retrieval1/ui/viewer/archViewer.html?pv=$(pv)&amp;from=-1d</url>
+          <description>Open Web Page</description>
+        </action>
+      </actions>
+      <text></text>
+      <width>30</width>
+      <transparent>true</transparent>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_6</name>
+    <pv_name>RadProt-Aux:GD-02:sDoseRt</pv_name>
+    <x>399</x>
+    <y>100</y>
+    <width>95</width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_30</name>
+    <text>Aux:GD02:</text>
+    <x>290</x>
+    <y>100</y>
+    <width>161</width>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline</name>
+    <x>394</x>
+    <y>128</y>
+    <width>2</width>
+    <height>230</height>
+    <points>
+      <point x="2.0" y="230.0">
+      </point>
+      <point x="0.0" y="0.0">
+      </point>
+    </points>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <line_style>1</line_style>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_1</name>
+    <x>742</x>
+    <y>132</y>
+    <width>118</width>
+    <height>36</height>
+    <points>
+      <point x="118.0" y="36.0">
+      </point>
+      <point x="0.0" y="0.0">
+      </point>
+    </points>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <line_style>1</line_style>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_3</name>
+    <x>898</x>
+    <y>572</y>
+    <width>30</width>
+    <height>28</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="30.0" y="28.0">
+      </point>
+    </points>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <line_style>1</line_style>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_79</name>
+    <class>GROUP-RED</class>
+    <x>602</x>
+    <y>90</y>
+    <width>273</width>
+    <height>40</height>
+    <line_width>1</line_width>
+    <line_color use_class="true">
+      <color name="RED-GROUP-BORDER" red="167" green="134" blue="130">
+      </color>
+    </line_color>
+    <background_color use_class="true">
+      <color name="RED-GROUP-BACKGROUND" red="208" green="175" blue="172">
+      </color>
+    </background_color>
+    <corner_width>10</corner_width>
+    <corner_height>10</corner_height>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group_17</name>
+    <macros>
+      <pv>RadProt-Aux:GD-01:sDoseRt</pv>
+    </macros>
+    <x>828</x>
+    <y>96</y>
+    <width>30</width>
+    <height>30</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="picture" version="2.0.0">
+      <name>Picture_19</name>
+      <file>databrowser@3x.png</file>
+      <width>30</width>
+      <height>30</height>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_21</name>
+      <actions>
+        <action type="open_webpage">
+          <url>https://freia.physics.uu.se/retrieval1/ui/viewer/archViewer.html?pv=$(pv)&amp;from=-1d</url>
+          <description>Open Web Page</description>
+        </action>
+      </actions>
+      <text></text>
+      <width>30</width>
+      <transparent>true</transparent>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_7</name>
+    <pv_name>RadProt-Aux:GD-01:sDoseRt</pv_name>
+    <x>721</x>
+    <y>100</y>
+    <width>95</width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_31</name>
+    <text>Aux:GD01:</text>
+    <x>612</x>
+    <y>100</y>
+    <width>161</width>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_90</name>
+    <class>GROUP-RED</class>
+    <x>1208</x>
+    <y>170</y>
+    <width>273</width>
+    <height>40</height>
+    <line_width>1</line_width>
+    <line_color use_class="true">
+      <color name="RED-GROUP-BORDER" red="167" green="134" blue="130">
+      </color>
+    </line_color>
+    <background_color use_class="true">
+      <color name="RED-GROUP-BACKGROUND" red="208" green="175" blue="172">
+      </color>
+    </background_color>
+    <corner_width>10</corner_width>
+    <corner_height>10</corner_height>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group_18</name>
+    <macros>
+      <pv>RadProt-Aux:GD-03:sDoseRt</pv>
+    </macros>
+    <x>1434</x>
+    <y>176</y>
+    <width>30</width>
+    <height>30</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="picture" version="2.0.0">
+      <name>Picture_20</name>
+      <file>databrowser@3x.png</file>
+      <width>30</width>
+      <height>30</height>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_22</name>
+      <actions>
+        <action type="open_webpage">
+          <url>https://freia.physics.uu.se/retrieval1/ui/viewer/archViewer.html?pv=$(pv)&amp;from=-1d</url>
+          <description>Open Web Page</description>
+        </action>
+      </actions>
+      <text></text>
+      <width>30</width>
+      <transparent>true</transparent>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_16</name>
+    <pv_name>RadProt-Aux:GD-03:sDoseRt</pv_name>
+    <x>1327</x>
+    <y>180</y>
+    <width>95</width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_32</name>
+    <text>Aux:GD03:</text>
+    <x>1218</x>
+    <y>180</y>
+    <width>161</width>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_4</name>
+    <x>1332</x>
+    <y>208</y>
+    <width>120</width>
+    <height>152</height>
+    <points>
+      <point x="120.0" y="152.0">
+      </point>
+      <point x="0.0" y="0.0">
+      </point>
+    </points>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <line_style>1</line_style>
   </widget>
 </display>
