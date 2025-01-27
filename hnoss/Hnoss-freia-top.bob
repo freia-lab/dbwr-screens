@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-10-30 17:33:18 by konrad-->
+<!--Saved on 2025-01-27 17:47:47 by konrad-->
 <display version="2.0.0">
   <name>HNOSS</name>
   <macros>
@@ -135,7 +135,7 @@ Cavity Id or 0 if no cavity</tooltip>
               <CS>CstatH</CS>
               <POS>2A</POS>
             </macros>
-            <x>603</x>
+            <x>755</x>
             <y>830</y>
             <width>100</width>
             <height>50</height>
@@ -187,7 +187,7 @@ Cavity Id or 0 if no cavity</tooltip>
               <CS>CstatH</CS>
               <POS>2</POS>
             </macros>
-            <x>761</x>
+            <x>1075</x>
             <y>830</y>
             <width>100</width>
             <height>50</height>
