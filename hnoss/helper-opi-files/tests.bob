@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-01-21 20:37:26 by konrad-->
+<!--Saved on 2025-01-27 16:56:03 by konrad-->
 <display version="2.0.0">
   <name>oper-view</name>
   <width>1496</width>
@@ -3614,7 +3614,7 @@ $(actions)</tooltip>
     </macros>
     <x>1108</x>
     <y>536</y>
-    <width>162</width>
+    <width>172</width>
     <height>40</height>
     <style>3</style>
     <transparent>true</transparent>
@@ -3627,7 +3627,7 @@ $(actions)</tooltip>
       <name>Text Update Template_75</name>
       <pv_name>LLRF-Ctrl:CstatH-$(POS):Q0</pv_name>
       <x>45</x>
-      <width>75</width>
+      <width>85</width>
       <height>17</height>
       <font>
         <font family="Source Sans Pro" style="BOLD" size="13.0">
@@ -3662,7 +3662,7 @@ $(actions)</tooltip>
       <pv_name>LLRF-Ctrl:CstatH-$(POS):Eacc</pv_name>
       <x>45</x>
       <y>23</y>
-      <width>75</width>
+      <width>85</width>
       <height>17</height>
       <font>
         <font family="Source Sans Pro" style="BOLD" size="13.0">
@@ -3691,7 +3691,7 @@ $(actions)</tooltip>
         <pv1>LLRF-Ctrl:CstatH-$(POS):Q0</pv1>
         <pv2>LLRF-Ctrl:CstatH-$(POS):Eacc</pv2>
       </macros>
-      <x>125</x>
+      <x>135</x>
       <y>7</y>
       <width>30</width>
       <height>30</height>
@@ -3725,7 +3725,7 @@ $(actions)</tooltip>
     </macros>
     <x>700</x>
     <y>536</y>
-    <width>160</width>
+    <width>170</width>
     <height>40</height>
     <style>3</style>
     <transparent>true</transparent>
@@ -3738,7 +3738,7 @@ $(actions)</tooltip>
       <name>Text Update Template_77</name>
       <pv_name>LLRF-Ctrl:CstatH-$(POS):Q0</pv_name>
       <x>45</x>
-      <width>75</width>
+      <width>85</width>
       <height>17</height>
       <font>
         <font family="Source Sans Pro" style="BOLD" size="13.0">
@@ -3773,7 +3773,7 @@ $(actions)</tooltip>
       <pv_name>LLRF-Ctrl:CstatH-$(POS):Eacc</pv_name>
       <x>45</x>
       <y>23</y>
-      <width>75</width>
+      <width>85</width>
       <height>17</height>
       <font>
         <font family="Source Sans Pro" style="BOLD" size="13.0">
@@ -3802,7 +3802,7 @@ $(actions)</tooltip>
         <pv1>LLRF-Ctrl:CstatH-$(POS):Q0</pv1>
         <pv2>LLRF-Ctrl:CstatH-$(POS):Eacc</pv2>
       </macros>
-      <x>125</x>
+      <x>135</x>
       <y>6</y>
       <width>30</width>
       <height>30</height>
