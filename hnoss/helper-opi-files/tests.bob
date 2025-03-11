@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-02-10 13:48:18 by konrad-->
+<!--Saved on 2025-03-10 13:55:38 by konrad-->
 <display version="2.0.0">
   <name>oper-view</name>
   <width>1496</width>
@@ -1439,19 +1439,6 @@
     <corner_width>10</corner_width>
     <corner_height>10</corner_height>
   </widget>
-  <widget type="label" version="2.0.0">
-    <name>Label_48</name>
-    <text>Rack Amb Temp:</text>
-    <x>20</x>
-    <y>60</y>
-    <width>130</width>
-  </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>Text Update_15</name>
-    <pv_name>LLRF-Aux:ArduinoPMC:TP-00</pv_name>
-    <x>140</x>
-    <y>60</y>
-  </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_53</name>
     <x>980</x>
@@ -2380,7 +2367,7 @@ $(actions)</tooltip>
   </widget>
   <widget type="symbol" version="2.0.0">
     <name>Symbol_5</name>
-    <pv_name>LLRF-Aux:ArduinoPMC:DO-07</pv_name>
+    <pv_name>LLRF-Ctrl:RFswitch:cOn</pv_name>
     <symbols>
       <symbol>../../freia-symbols/electronics/JS Disconnecting Switch Off-RED.svg</symbol>
       <symbol>../../freia-symbols/electronics/JS Disconnecting Switch On-GREEN.svg</symbol>
@@ -2516,14 +2503,14 @@ $(actions)</tooltip>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_2</name>
-    <pv_name>LLRF-Aux:ArduinoPMC:AO-00</pv_name>
+    <pv_name>LLRF-Ctrl:VCACtrl:cSetV</pv_name>
     <x>170</x>
     <y>331</y>
     <width>80</width>
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED</name>
-    <pv_name>LLRF-Aux:ArduinoPMC:DO-06</pv_name>
+    <pv_name>LLRF-Ctrl:SSPA:sEnable</pv_name>
     <x>587</x>
     <y>820</y>
     <width>100</width>
