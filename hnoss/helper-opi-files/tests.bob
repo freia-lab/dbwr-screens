@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-03-14 09:04:47 by konrad-->
+<!--Saved on 2025-03-14 19:11:05 by konrad-->
 <display version="2.0.0">
   <name>oper-view</name>
   <width>1496</width>
@@ -2965,7 +2965,7 @@ $(actions)</tooltip>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update Template_79</name>
-        <pv_name>LLRF-PNA:Mrkr-3:Freq:sRdV</pv_name>
+        <pv_name>LLRF-PNA:Mrkr-1:Freq:sRdV</pv_name>
         <x>22</x>
         <width>106</width>
         <height>17</height>
@@ -3007,7 +3007,7 @@ $(actions)</tooltip>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update Template_80</name>
-        <pv_name>LLRF-Ctrl:CstatH-Pos2:SEL-Fc</pv_name>
+        <pv_name>LLRF-Ctrl:CstatH-Pos2A:SEL-Fc</pv_name>
         <x>23</x>
         <width>106</width>
         <height>17</height>
@@ -4535,5 +4535,124 @@ $(actions)</tooltip>
       <font name="Fine Print" family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
     </font>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group_21</name>
+    <macros>
+      <POS>Pos2A</POS>
+    </macros>
+    <x>928</x>
+    <y>536</y>
+    <width>170</width>
+    <height>40</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="Visible" prop_id="visible" out_exp="false">
+        <exp bool_exp="!pvInt0">
+          <value>false</value>
+        </exp>
+        <pv_name>CstatH-Ctrl:Pos2A:CAV-LB</pv_name>
+      </rule>
+    </rules>
+    <widget type="label" version="2.0.0">
+      <name>Label_20</name>
+      <text>Q0:</text>
+      <width>36</width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_81</name>
+      <pv_name>LLRF-Ctrl:CstatH-$(POS):Q0</pv_name>
+      <x>45</x>
+      <width>85</width>
+      <height>17</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <format>2</format>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_21</name>
+      <text>Eacc:</text>
+      <y>20</y>
+      <width>36</width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_82</name>
+      <pv_name>LLRF-Ctrl:CstatH-$(POS):Eacc</pv_name>
+      <x>45</x>
+      <y>23</y>
+      <width>85</width>
+      <height>17</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group_22</name>
+      <macros>
+        <pv1>LLRF-Ctrl:CstatH-$(POS):Q0</pv1>
+        <pv2>LLRF-Ctrl:CstatH-$(POS):Eacc</pv2>
+      </macros>
+      <x>135</x>
+      <y>6</y>
+      <width>30</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="picture" version="2.0.0">
+        <name>Picture_21</name>
+        <file>databrowser@3x.png</file>
+        <width>30</width>
+        <height>30</height>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button_23</name>
+        <actions>
+          <action type="open_webpage">
+            <url>https://freia.physics.uu.se/retrieval1/ui/viewer/archViewer.html?pv=$(pv1)&amp;pv=$(pv2)&amp;from=-1d</url>
+            <description>Open Web Page</description>
+          </action>
+        </actions>
+        <text></text>
+        <width>30</width>
+        <transparent>true</transparent>
+        <tooltip>$(actions)</tooltip>
+      </widget>
+    </widget>
   </widget>
 </display>
