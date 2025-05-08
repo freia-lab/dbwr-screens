@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-11-19 23:14:33 by konrad-->
+<!--Saved on 2025-05-08 13:53:16 by konrad-->
 <display version="2.0.0">
   <name>status</name>
   <macros>
@@ -328,7 +328,7 @@
       <transparent>true</transparent>
       <widget type="multi_state_led" version="2.0.0">
         <name>LED (Multi State)_32</name>
-        <pv_name>IntlkF-cRio1:Intlk-1:VisuState</pv_name>
+        <pv_name>LLRF-Ctrl:RFswitch:cOn</pv_name>
         <width>400</width>
         <height>80</height>
         <line_color>
@@ -338,7 +338,7 @@
         <square>true</square>
         <states>
           <state>
-            <value>3</value>
+            <value>1</value>
             <label></label>
             <color>
               <color red="0" green="255" blue="0">
@@ -354,7 +354,7 @@
             </color>
           </state>
           <state>
-            <value>1</value>
+            <value>0</value>
             <label></label>
             <color>
               <color red="255" green="0" blue="0">
@@ -366,7 +366,7 @@
       </widget>
       <widget type="label" version="2.0.0">
         <name>Label_32</name>
-        <text>LLRF Switch Esys</text>
+        <text>Mobile LLRF Switch</text>
         <width>410</width>
         <height>79</height>
         <font>
@@ -706,7 +706,7 @@
       <name>Group</name>
       <y>230</y>
       <width>520</width>
-      <height>287</height>
+      <height>380</height>
       <style>3</style>
       <transparent>true</transparent>
       <widget type="multi_state_led" version="2.0.0">
@@ -824,18 +824,17 @@
       </widget>
       <widget type="polyline" version="2.0.0">
         <name>Polyline_3</name>
-        <x>1</x>
         <y>80</y>
-        <width>517</width>
-        <height>207</height>
+        <width>520</width>
+        <height>270</height>
         <points>
-          <point x="0.0" y="0.0">
+          <point x="1.0" y="0.0">
           </point>
-          <point x="0.0" y="200.82089552238804">
+          <point x="0.0" y="270.0">
           </point>
-          <point x="518.0360721442886" y="200.82089552238804">
+          <point x="520.0" y="270.0">
           </point>
-          <point x="518.0360721442886" y="0.0">
+          <point x="519.0360721442886" y="0.0">
           </point>
         </points>
         <line_width>1</line_width>
@@ -848,7 +847,7 @@
         <name>Label_31</name>
         <text>LHe Level</text>
         <x>20</x>
-        <y>215</y>
+        <y>270</y>
         <width>190</width>
         <height>48</height>
         <font>
@@ -862,7 +861,7 @@
         <name>Text Update_8</name>
         <pv_name>CstatH-LHe:LT100:sRdV</pv_name>
         <x>210</x>
-        <y>218</y>
+        <y>273</y>
         <width>150</width>
         <height>40</height>
         <font>
@@ -877,7 +876,7 @@
         <name>Text Update_16</name>
         <pv_name>CstatH-LHe:LT101:sRdV</pv_name>
         <x>370</x>
-        <y>218</y>
+        <y>273</y>
         <width>140</width>
         <height>40</height>
         <font>
@@ -892,7 +891,7 @@
         <name>Label_33</name>
         <text>VBox</text>
         <x>258</x>
-        <y>183</y>
+        <y>238</y>
         <width>91</width>
         <height>48</height>
         <font>
@@ -906,7 +905,7 @@
         <name>Label_34</name>
         <text>Cavities</text>
         <x>400</x>
-        <y>183</y>
+        <y>238</y>
         <width>98</width>
         <height>48</height>
         <font>
@@ -916,10 +915,54 @@
         <vertical_alignment>1</vertical_alignment>
         <wrap_words>false</wrap_words>
       </widget>
+      <widget type="group" version="3.0.0">
+        <name>Group</name>
+        <x>20</x>
+        <y>195</y>
+        <width>360</width>
+        <height>48</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <rules>
+          <rule name="Visible" prop_id="visible" out_exp="false">
+            <exp bool_exp="!pvInt0">
+              <value>false</value>
+            </exp>
+            <pv_name>CstatH-Ctrl:Pos2A:CAV-LB</pv_name>
+          </rule>
+        </rules>
+        <widget type="label" version="2.0.0">
+          <name>Label_20</name>
+          <text>Cav2A Temp</text>
+          <width>210</width>
+          <height>48</height>
+          <font>
+            <font family="Source Sans Pro" style="BOLD" size="36.0">
+            </font>
+          </font>
+          <vertical_alignment>1</vertical_alignment>
+          <wrap_words>false</wrap_words>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>Text Update_27</name>
+          <pv_name>CstatH-Spare:TT02x:sRdV</pv_name>
+          <x>210</x>
+          <width>150</width>
+          <height>40</height>
+          <font>
+            <font family="Source Sans Pro" style="BOLD" size="36.0">
+            </font>
+          </font>
+          <format>1</format>
+          <precision>1</precision>
+          <horizontal_alignment>1</horizontal_alignment>
+          <vertical_alignment>1</vertical_alignment>
+        </widget>
+      </widget>
     </widget>
     <widget type="group" version="3.0.0">
       <name>Group</name>
-      <y>580</y>
+      <y>650</y>
       <width>520</width>
       <height>250</height>
       <style>3</style>
