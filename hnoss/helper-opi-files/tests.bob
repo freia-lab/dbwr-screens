@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-03-14 19:11:05 by konrad-->
+<!--Saved on 2025-09-30 14:08:43 by konrad-->
 <display version="2.0.0">
   <name>oper-view</name>
   <width>1496</width>
@@ -52,7 +52,7 @@
       <name>Action Button</name>
       <actions>
         <action type="open_webpage">
-          <url>https://freia.physics.uu.se/retrieval1/ui/viewer/archViewer.html?pv=LLRF-PNA:Mrkr-2:Freq:sRdV&amp;pv=LLRF-PNA:Mrkr-3:Freq:sRdV&amp;from=-1d</url>
+          <url>https://freia.physics.uu.se/retrieval1/ui/viewer/archViewer.html?pv=LLRF-PNA:Mrkr-2:Freq:sRdV&amp;pv=LLRF-PNA:Mrkr-3:Freq:sRdV&amp;pv=LLRF-PNA:Mrkr-1:Freq:sRdV&amp;pv=CstatH-LHe:PT101:sRdV&amp;from=-1d</url>
           <description>Cavities frequency</description>
         </action>
       </actions>
