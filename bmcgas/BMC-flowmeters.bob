@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-04-16 16:32:27 by konrad-->
+<display version="2.0.0">
+  <name>BMC-flowmeters</name>
+  <width>2210</width>
+  <height>1200</height>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <class>TITLE</class>
+    <text>BMC Flow Meters</text>
+    <x use_class="true">20</x>
+    <y use_class="true">0</y>
+    <width>550</width>
+    <height use_class="true">50</height>
+    <font use_class="true">
+      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <transparent use_class="true">true</transparent>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <wrap_words use_class="true">false</wrap_words>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="open_display">
+        <file>../freia-symbols/display-builder/asyn/asynRecord.bob</file>
+        <macros>
+          <P>ioc40-bmcgas:</P>
+          <R>asynRec</R>
+        </macros>
+        <target>replace</target>
+        <description>Asyn Record...</description>
+      </action>
+    </actions>
+    <x>620</x>
+    <y>20</y>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display</name>
+    <macros>
+      <D>CO2</D>
+      <P>Env-Gas:</P>
+      <URL>172.16.140.2/ip_en.html</URL>
+    </macros>
+    <file>helper-opi-files/siargo-flowmeter.bob</file>
+    <y>60</y>
+    <width>730</width>
+    <height>280</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_1</name>
+    <macros>
+      <D>Gasol</D>
+      <P>Env-Gas:</P>
+      <URL>172.16.140.11/ip_en.html</URL>
+    </macros>
+    <file>helper-opi-files/epi8600-flowmeter.bob</file>
+    <y>870</y>
+    <width>730</width>
+    <height>280</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_2</name>
+    <macros>
+      <D>N2</D>
+      <P>Env-Gas:</P>
+      <URL>172.16.140.3/ip_en.html</URL>
+    </macros>
+    <file>helper-opi-files/siargo-flowmeter.bob</file>
+    <x>730</x>
+    <y>60</y>
+    <width>730</width>
+    <height>280</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_6</name>
+    <macros>
+      <D>C2H2</D>
+      <P>Env-Gas:</P>
+      <URL>172.16.140.10/ip_en.html</URL>
+    </macros>
+    <file>helper-opi-files/bronkhorst-flowmeter.bob</file>
+    <x>1460</x>
+    <y>330</y>
+    <width>730</width>
+    <height>280</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_9</name>
+    <macros>
+      <D>CH4-Ar</D>
+      <P>Env-Gas:</P>
+      <URL>172.16.140.9/ip_en.html</URL>
+    </macros>
+    <file>helper-opi-files/bronkhorst-flowmeter.bob</file>
+    <x>1460</x>
+    <y>600</y>
+    <width>730</width>
+    <height>280</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_10</name>
+    <macros>
+      <D>H2</D>
+      <P>Env-Gas:</P>
+      <URL>172.16.140.12/ip_en.html</URL>
+    </macros>
+    <file>helper-opi-files/epi8600-flowmeter.bob</file>
+    <x>730</x>
+    <y>870</y>
+    <width>730</width>
+    <height>280</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_3</name>
+    <macros>
+      <D>O2</D>
+      <P>Env-Gas:</P>
+      <URL>172.16.140.5/ip_en.html</URL>
+    </macros>
+    <file>helper-opi-files/siargo-flowmeter.bob</file>
+    <x>1460</x>
+    <y>60</y>
+    <width>730</width>
+    <height>280</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_4</name>
+    <macros>
+      <D>MedO2</D>
+      <P>Env-Gas:</P>
+      <URL>172.16.140.4/ip_en.html</URL>
+    </macros>
+    <file>helper-opi-files/siargo-flowmeter.bob</file>
+    <y>330</y>
+    <width>730</width>
+    <height>280</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_5</name>
+    <macros>
+      <D>MedAir</D>
+      <P>Env-Gas:</P>
+      <URL>172.16.140.6/ip_en.html</URL>
+    </macros>
+    <file>helper-opi-files/siargo-flowmeter.bob</file>
+    <x>730</x>
+    <y>330</y>
+    <width>730</width>
+    <height>280</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_7</name>
+    <macros>
+      <D>He</D>
+      <P>Env-Gas:</P>
+      <URL>172.16.140.7/ip_en.html</URL>
+    </macros>
+    <file>helper-opi-files/siargo-flowmeter.bob</file>
+    <y>600</y>
+    <width>730</width>
+    <height>280</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_8</name>
+    <macros>
+      <D>Ar</D>
+      <P>Env-Gas:</P>
+      <URL>172.16.140.8/ip_en.html</URL>
+    </macros>
+    <file>helper-opi-files/siargo-flowmeter.bob</file>
+    <x>730</x>
+    <y>600</y>
+    <width>730</width>
+    <height>280</height>
+  </widget>
+</display>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-04-28 11:46:44 by konrad-->
+<display version="2.0.0">
+  <name>simple-flowmeter</name>
+  <macros>
+    <pv></pv>
+  </macros>
+  <width>320</width>
+  <height>230</height>
+  <background_color>
+    <color name="GREEN-BACKGROUND" red="189" green="208" blue="189">
+    </color>
+  </background_color>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Serial number:</text>
+    <x>10</x>
+    <y>50</y>
+    <width>150</width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>Ambient temperature:</text>
+    <x>10</x>
+    <y>80</y>
+    <width>150</width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>Flow rate:</text>
+    <x>10</x>
+    <y>140</y>
+    <width>150</width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_3</name>
+    <text>Accumulated flow:</text>
+    <x>10</x>
+    <y>110</y>
+    <width>160</width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(D):SerialNo</pv_name>
+    <x>190</x>
+    <y>50</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_1</name>
+    <pv_name>$(P)$(D):T</pv_name>
+    <x>190</x>
+    <y>80</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_2</name>
+    <pv_name>$(P)$(D):FlowRt</pv_name>
+    <x>190</x>
+    <y>140</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_3</name>
+    <pv_name>$(P)$(D):AccFlow</pv_name>
+    <x>190</x>
+    <y>110</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_4</name>
+    <text>Name:</text>
+    <x>10</x>
+    <y>20</y>
+    <width>150</width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_5</name>
+    <text>$(D)</text>
+    <x>70</x>
+    <y>20</y>
+    <font>
+      <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED</name>
+    <pv_name>$(P)$(D):sAlive</pv_name>
+    <x>190</x>
+    <y>20</y>
+    <width>100</width>
+    <height>25</height>
+    <off_label>Dead</off_label>
+    <off_color>
+      <color name="MAJOR" red="252" green="13" blue="27">
+      </color>
+    </off_color>
+    <on_label>Alive</on_label>
+    <square>true</square>
+    <labels_from_pv>true</labels_from_pv>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_6</name>
+    <text>Warning level:</text>
+    <x>10</x>
+    <y>170</y>
+    <width>150</width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_7</name>
+    <text>Alarm level:</text>
+    <x>10</x>
+    <y>200</y>
+    <width>150</width>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry</name>
+    <pv_name>$(P)$(D):FlowRt.HIGH</pv_name>
+    <x>190</x>
+    <y>170</y>
+    <background_color>
+      <color name="GRAY" red="169" green="169" blue="169">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_1</name>
+    <pv_name>$(P)$(D):FlowRt.HIHI</pv_name>
+    <x>190</x>
+    <y>200</y>
+    <background_color>
+      <color name="GRAY" red="169" green="169" blue="169">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group</name>
+    <macros>
+      <pv>$(P)$(D):FlowRt</pv>
+    </macros>
+    <x>120</x>
+    <y>140</y>
+    <width>30</width>
+    <height>30</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="picture" version="2.0.0">
+      <name>Picture</name>
+      <file>databrowser@3x.png</file>
+      <width>30</width>
+      <height>30</height>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_5</name>
+      <actions>
+        <action type="open_webpage">
+          <url>https://freia.physics.uu.se/retrieval1/ui/viewer/archViewer.html?pv=$(pv)&amp;from=-1d</url>
+          <description>Open Web Page</description>
+        </action>
+      </actions>
+      <text></text>
+      <width>30</width>
+      <transparent>true</transparent>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+  </widget>
+</display>
