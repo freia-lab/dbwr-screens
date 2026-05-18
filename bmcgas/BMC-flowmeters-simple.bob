@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-04-28 10:50:28 by konrad-->
+<!--Saved on 2026-05-18 17:23:59 by konrad-->
 <display version="2.0.0">
   <name>BMC-flowmeters-simple</name>
   <width>2210</width>
@@ -25,144 +25,196 @@
     <vertical_alignment use_class="true">1</vertical_alignment>
     <wrap_words use_class="true">false</wrap_words>
   </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display</name>
-    <macros>
-      <D>CO2</D>
-      <P>Env-Gas:</P>
-      <URL>172.16.140.2/ip_en.html</URL>
-    </macros>
-    <file>helper-opi-files/simple-flowmeter.bob</file>
-    <y>60</y>
-    <width>320</width>
+  <widget type="group" version="3.0.0">
+    <name>Group</name>
+    <x>21</x>
+    <y>81</y>
+    <width>650</width>
     <height>230</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display</name>
+      <macros>
+        <D>CO2</D>
+        <P>Env-Gas:</P>
+        <URL>172.16.140.2/ip_en.html</URL>
+      </macros>
+      <file>helper-opi-files/simple-flowmeter.bob</file>
+      <width>320</width>
+      <height>230</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_2</name>
+      <macros>
+        <D>N2</D>
+        <P>Env-Gas:</P>
+        <URL>172.16.140.3/ip_en.html</URL>
+      </macros>
+      <file>helper-opi-files/simple-flowmeter.bob</file>
+      <x>330</x>
+      <width>320</width>
+      <height>230</height>
+    </widget>
   </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_1</name>
-    <macros>
-      <D>Gasol</D>
-      <P>Env-Gas:</P>
-      <URL>172.16.140.11/ip_en.html</URL>
-    </macros>
-    <file>helper-opi-files/simple-flowmeter.bob</file>
-    <x>990</x>
-    <y>300</y>
-    <width>320</width>
-    <height>230</height>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>Location: D0:1</text>
+    <x>20</x>
+    <y>50</y>
+    <width>321</width>
+    <height>28</height>
+    <font>
+      <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+      </font>
+    </font>
   </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_2</name>
-    <macros>
-      <D>N2</D>
-      <P>Env-Gas:</P>
-      <URL>172.16.140.3/ip_en.html</URL>
-    </macros>
-    <file>helper-opi-files/simple-flowmeter.bob</file>
-    <x>330</x>
-    <y>60</y>
-    <width>320</width>
-    <height>230</height>
+  <widget type="group" version="3.0.0">
+    <name>Group</name>
+    <x>19</x>
+    <y>361</y>
+    <width>1310</width>
+    <height>470</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_3</name>
+      <macros>
+        <D>O2</D>
+        <P>Env-Gas:</P>
+        <URL>172.16.140.5/ip_en.html</URL>
+      </macros>
+      <file>helper-opi-files/simple-flowmeter.bob</file>
+      <width>320</width>
+      <height>230</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_4</name>
+      <macros>
+        <D>MedO2</D>
+        <P>Env-Gas:</P>
+        <URL>172.16.140.4/ip_en.html</URL>
+      </macros>
+      <file>helper-opi-files/simple-flowmeter.bob</file>
+      <x>331</x>
+      <width>320</width>
+      <height>230</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_5</name>
+      <macros>
+        <D>MedAir</D>
+        <P>Env-Gas:</P>
+        <URL>172.16.140.6/ip_en.html</URL>
+      </macros>
+      <file>helper-opi-files/simple-flowmeter.bob</file>
+      <x>660</x>
+      <width>320</width>
+      <height>230</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_7</name>
+      <macros>
+        <D>He</D>
+        <P>Env-Gas:</P>
+        <URL>172.16.140.7/ip_en.html</URL>
+      </macros>
+      <file>helper-opi-files/simple-flowmeter.bob</file>
+      <x>990</x>
+      <width>320</width>
+      <height>230</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_8</name>
+      <macros>
+        <D>Ar</D>
+        <P>Env-Gas:</P>
+        <URL>172.16.140.8/ip_en.html</URL>
+      </macros>
+      <file>helper-opi-files/simple-flowmeter.bob</file>
+      <y>240</y>
+      <width>320</width>
+      <height>230</height>
+    </widget>
   </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_6</name>
-    <macros>
-      <D>C2H2</D>
-      <P>Env-Gas:</P>
-      <URL>172.16.140.10/ip_en.html</URL>
-    </macros>
-    <file>helper-opi-files/simple-flowmeter.bob</file>
-    <x>660</x>
-    <y>540</y>
-    <width>320</width>
+  <widget type="group" version="3.0.0">
+    <name>Group</name>
+    <x>19</x>
+    <y>881</y>
+    <width>1309</width>
     <height>230</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_1</name>
+      <macros>
+        <D>Gasol</D>
+        <P>Env-Gas:</P>
+        <URL>172.16.140.11/ip_en.html</URL>
+      </macros>
+      <file>helper-opi-files/simple-flowmeter.bob</file>
+      <x>989</x>
+      <width>320</width>
+      <height>230</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_6</name>
+      <macros>
+        <D>C2H2</D>
+        <P>Env-Gas:</P>
+        <URL>172.16.140.10/ip_en.html</URL>
+      </macros>
+      <file>helper-opi-files/simple-flowmeter.bob</file>
+      <width>320</width>
+      <height>230</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_9</name>
+      <macros>
+        <D>CH4-Ar</D>
+        <P>Env-Gas:</P>
+        <URL>172.16.140.9/ip_en.html</URL>
+      </macros>
+      <file>helper-opi-files/simple-flowmeter.bob</file>
+      <x>330</x>
+      <width>320</width>
+      <height>230</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_10</name>
+      <macros>
+        <D>H2</D>
+        <P>Env-Gas:</P>
+        <URL>172.16.140.12/ip_en.html</URL>
+      </macros>
+      <file>helper-opi-files/simple-flowmeter.bob</file>
+      <x>659</x>
+      <width>320</width>
+      <height>230</height>
+    </widget>
   </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_9</name>
-    <macros>
-      <D>CH4-Ar</D>
-      <P>Env-Gas:</P>
-      <URL>172.16.140.9/ip_en.html</URL>
-    </macros>
-    <file>helper-opi-files/simple-flowmeter.bob</file>
-    <x>330</x>
-    <y>540</y>
-    <width>320</width>
-    <height>230</height>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>Location: A1:1</text>
+    <x>20</x>
+    <y>330</y>
+    <width>319</width>
+    <height>28</height>
+    <font>
+      <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+      </font>
+    </font>
   </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_10</name>
-    <macros>
-      <D>H2</D>
-      <P>Env-Gas:</P>
-      <URL>172.16.140.12/ip_en.html</URL>
-    </macros>
-    <file>helper-opi-files/simple-flowmeter.bob</file>
-    <x>990</x>
-    <y>60</y>
-    <width>320</width>
-    <height>230</height>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_3</name>
-    <macros>
-      <D>O2</D>
-      <P>Env-Gas:</P>
-      <URL>172.16.140.5/ip_en.html</URL>
-    </macros>
-    <file>helper-opi-files/simple-flowmeter.bob</file>
-    <x>660</x>
-    <y>60</y>
-    <width>320</width>
-    <height>230</height>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_4</name>
-    <macros>
-      <D>MedO2</D>
-      <P>Env-Gas:</P>
-      <URL>172.16.140.4/ip_en.html</URL>
-    </macros>
-    <file>helper-opi-files/simple-flowmeter.bob</file>
-    <y>300</y>
-    <width>320</width>
-    <height>230</height>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_5</name>
-    <macros>
-      <D>MedAir</D>
-      <P>Env-Gas:</P>
-      <URL>172.16.140.6/ip_en.html</URL>
-    </macros>
-    <file>helper-opi-files/simple-flowmeter.bob</file>
-    <x>330</x>
-    <y>300</y>
-    <width>320</width>
-    <height>230</height>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_7</name>
-    <macros>
-      <D>He</D>
-      <P>Env-Gas:</P>
-      <URL>172.16.140.7/ip_en.html</URL>
-    </macros>
-    <file>helper-opi-files/simple-flowmeter.bob</file>
-    <y>540</y>
-    <width>320</width>
-    <height>230</height>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_8</name>
-    <macros>
-      <D>Ar</D>
-      <P>Env-Gas:</P>
-      <URL>172.16.140.8/ip_en.html</URL>
-    </macros>
-    <file>helper-opi-files/simple-flowmeter.bob</file>
-    <x>660</x>
-    <y>300</y>
-    <width>320</width>
-    <height>230</height>
+  <widget type="label" version="2.0.0">
+    <name>Label_3</name>
+    <text>Location: A5:1</text>
+    <x>20</x>
+    <y>850</y>
+    <width>319</width>
+    <height>28</height>
+    <font>
+      <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+      </font>
+    </font>
   </widget>
 </display>
